@@ -4,7 +4,7 @@
 // (rues, lieux, photos) et les bibliothèques des CDN viennent de la mémoire et se mettent à jour en arrière-plan,
 // donc une ville déjà ouverte une fois reste lisible sans réseau. Les taux de change, les traductions, la météo,
 // les itinéraires et les photos de Wikimedia passent toujours par le réseau.
-const VERSION = "2026-11-05a";
+const VERSION = "2026-11-05b";
 const PAGE = "carte-page-" + VERSION;
 const DONNEES = "carte-donnees";
 const COQUILLE = ["./", "index.html", "carte.js", "outils.js", "contenu.js", "regions.js", "manifest.webmanifest",
@@ -38,7 +38,8 @@ const cleDe = (r) => (r.mode === "navigate" ? new URL("./", self.registration.sc
 async function reseauDabord(r) {
   const c = await caches.open(PAGE);
   try {
-    const rep = await fetch(r);
+    // le cache du navigateur est vérifié auprès du serveur, pour qu'une correction publiée arrive tout de suite
+    const rep = await (r.mode === "navigate" ? fetch(r) : fetch(r, { cache: "no-cache" }));
     if (rep.ok && rep.type === "basic") await c.put(cleDe(r), rep.clone());
     return rep;
   } catch (err) {

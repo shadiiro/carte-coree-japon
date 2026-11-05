@@ -71,6 +71,16 @@ const autonome = () => matchMedia("(display-mode: standalone)").matches || navig
 function preparerApplication() {
   if (!HAUT || !window.isSecureContext || !("serviceWorker" in navigator)) return;
   const premiereVisite = !navigator.serviceWorker.controller;
+  // quand une nouvelle version du service worker prend la main, la page se recharge une fois pour lire le nouveau code,
+  // sauf si un outil est ouvert à l'écran
+  if (!premiereVisite) {
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      let deja = false;
+      try { deja = !!sessionStorage.getItem("carte-rechargee"); sessionStorage.setItem("carte-rechargee", "1"); } catch { deja = true; }
+      if (PILE.length || deja) return;
+      location.reload();
+    });
+  }
   navigator.serviceWorker.register("sw.js", { scope: "./" })
     .then(() => navigator.serviceWorker.ready)
     .then((reg) => {
@@ -394,7 +404,7 @@ function majLangues() {
   $("#trad-de").value = TRAD.de;
   $("#trad-vers").value = TRAD.vers;
   const zone = $("#trad-texte");
-  zone.placeholder = `Texte ${LANGUES[TRAD.de].dans}, écrit${Reco ? " ou dicté" : " ou dicté avec le micro du clavier"}`;
+  zone.placeholder = `Texte ${LANGUES[TRAD.de].dans}, écrit ou dicté`;
   zone.lang = TRAD.de;
   majLiens();
 }
@@ -471,13 +481,20 @@ function lireAVoixHaute(texte, langue) {
   u.onerror = (e) => { if (e.error !== "interrupted" && e.error !== "canceled") etat("La lecture à voix haute n'a pas marché sur ce téléphone.", true); };
   s.speak(u);
 }
+// La dictée passe par la reconnaissance vocale du navigateur (celle de Google dans Chrome sur Android).
+// Corrigé le 05/11/2026 après « la fonction vocale ne marche pas pour l'application » : la liste des résultats n'est
+// pas itérable dans tous les navigateurs (un for…of sur e.results arrêtait tout sans message), et Chrome sur Android
+// envoie les résultats intermédiaires en double puis s'arrête après une ou deux secondes de silence. La dictée demande
+// donc seulement le résultat final, lit la liste par ses index et dit toujours ce qui s'est passé, avec le code reçu.
+const AIDE_CLAVIER = "Le micro du clavier du téléphone sert aussi à dicter dans la case, avant un toucher sur Traduire.";
 const MESSAGES_DICTEE = {
-  "not-allowed": "Le micro est refusé pour cette page. Il s'autorise dans les réglages du site, dans le navigateur.",
-  "service-not-allowed": "Le micro est refusé pour cette page. Il s'autorise dans les réglages du site, dans le navigateur.",
-  "no-speech": "Aucune parole entendue. La dictée commence juste après le toucher sur Dicter.",
-  "audio-capture": "Aucun micro disponible pour la dictée.",
+  "not-allowed": "Le micro est bloqué pour la carte. Il se débloque dans Chrome, menu à trois points, Paramètres, Paramètres des sites, puis Micro.",
+  "service-not-allowed": "La reconnaissance vocale n'est pas disponible dans ce navigateur.",
+  "no-speech": "Aucune parole entendue. La dictée s'arrête après deux secondes de silence, donc la phrase se dit juste après le toucher sur Dicter.",
+  "audio-capture": "Aucun micro disponible, peut-être parce qu'une autre application l'utilise.",
   network: "La dictée a besoin d'internet sur ce téléphone.",
   "language-not-supported": "Cette langue n'est pas disponible pour la dictée sur ce téléphone.",
+  "bad-grammar": "La dictée a refusé la demande de la carte.",
 };
 function boutonDictee(actif) {
   const b = $("#trad-dicter");
@@ -486,30 +503,58 @@ function boutonDictee(actif) {
   $("span", b).textContent = actif ? "Arrêter" : "Dicter";
 }
 function dicter() {
+  const zone = $("#trad-texte");
+  if (!Reco) {
+    zone.focus();
+    etat(`La dictée intégrée n'existe pas dans ce navigateur. ${AIDE_CLAVIER}`, true);
+    return;
+  }
   if (ECOUTE) { ECOUTE.stop(); return; }
-  const zone = $("#trad-texte"), avant = zone.value.trim();
-  const r = new Reco();
-  r.lang = LANGUES[TRAD.de].voix;
-  r.interimResults = true;
+  const avant = zone.value.trim(), langue = TRAD.de;
+  let r;
+  try { r = new Reco(); } catch { etat(`La dictée ne démarre pas dans ce navigateur. ${AIDE_CLAVIER}`, true); return; }
+  r.lang = LANGUES[langue].voix;
+  r.interimResults = false;
   r.continuous = false;
   r.maxAlternatives = 1;
-  let final = "";
+  let entendu = "", erreur = "";
+  r.onaudiostart = () => etat(`J'écoute : parlez ${LANGUES[langue].dans} dès maintenant.`);
   r.onresult = (e) => {
+    const liste = e.results;
     let t = "";
-    for (const res of e.results) t += res[0].transcript;
+    for (let i = Number(e.resultIndex) || 0; i < (liste?.length || 0); i++) {
+      const res = liste[i], alt = res && res[0];
+      if (alt && typeof alt.transcript === "string") t += alt.transcript;
+    }
+    t = t.trim();
+    if (!t) return;
+    entendu = t;
     zone.value = (avant ? `${avant} ` : "") + t;
     majLiens();
-    if (e.results[e.results.length - 1].isFinal) final = t;
   };
-  r.onerror = (e) => { if (e.error !== "aborted") etat(MESSAGES_DICTEE[e.error] || "La dictée s'est arrêtée.", true); };
-  r.onend = () => { ECOUTE = null; boutonDictee(false); if (final.trim()) traduire(); };
+  r.onnomatch = () => { erreur = "nomatch"; etat(`La phrase n'a pas été reconnue. ${AIDE_CLAVIER}`, true); };
+  r.onerror = (e) => {
+    erreur = e?.error || "inconnue";
+    if (erreur === "aborted") return;
+    etat(`${MESSAGES_DICTEE[erreur] || "La dictée s'est arrêtée."} ${AIDE_CLAVIER} (code : ${erreur})`, true);
+  };
+  r.onend = () => {
+    ECOUTE = null;
+    boutonDictee(false);
+    if (entendu && langue === TRAD.de) { traduire(); return; }
+    if (!erreur) etat(`Aucune phrase reconnue. ${AIDE_CLAVIER}`, true);
+  };
   try {
     r.start();
     ECOUTE = r;
     boutonDictee(true);
     cacherResultat();
-    etat(`Parlez ${LANGUES[TRAD.de].dans}. La traduction se lance à la fin de la phrase.`);
-  } catch { etat("La dictée ne démarre pas sur ce téléphone. Le micro du clavier sert aussi à dicter.", true); }
+    etat(`Parlez ${LANGUES[langue].dans} juste après ce toucher. La traduction se lance à la fin de la phrase.`);
+  } catch (err) {
+    ECOUTE = null;
+    boutonDictee(false);
+    etat(`La dictée ne démarre pas sur ce téléphone. ${AIDE_CLAVIER} (code : ${err?.name || "start"})`, true);
+  }
 }
 
 // ---------- la traduction en grand, pour la personne en face ----------
@@ -549,7 +594,7 @@ function construireTraducteur(ecran) {
     <textarea id="trad-texte" rows="3" maxlength="1500" enterkeyhint="go" aria-label="Texte à traduire"></textarea>
     <div class="trad-actions">
       <button type="button" class="btn btn-or" id="trad-go">Traduire</button>
-      ${Reco ? `<button type="button" class="btn" id="trad-dicter" aria-pressed="false">${SVG.micro}<span>Dicter</span></button>` : ""}
+      <button type="button" class="btn" id="trad-dicter" aria-pressed="false">${SVG.micro}<span>Dicter</span></button>
       <button type="button" class="btn" id="trad-effacer">Effacer</button>
     </div>
     <p class="trad-etat" id="trad-etat" role="status" aria-live="polite"></p>

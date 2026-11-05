@@ -5,6 +5,8 @@
 // MapLibre garde le plus important et l'autre redevient un point de couleur, qui reprend sa place quand on s'approche.
 import { REGIONS } from "./regions.js";
 import { JOURS, EXCURSIONS, TRAJETS } from "./contenu.js";
+// le traducteur, le convertisseur et l'application à installer (ajoutés le 05/11/2026)
+import { preparerOutils, blocOutils, brancherOutils } from "./outils.js";
 
 const $ = (s) => document.querySelector(s);
 const params = new URLSearchParams(location.search);
@@ -933,6 +935,7 @@ function ouvrirLegende(partie) {
     ${detaxe("kr", "En Corée du Sud")}${detaxe("jp", "Au Japon")}
     <p>La fiche de chaque hôtel donne le magasin Uniqlo le plus proche. Le filtre Boutiques montre ces magasins sur la carte.</p>
     <p class="source">${DETAXE.source}</p>
+    ${blocOutils()}
     <h3>Les étages de la carte</h3>
     <p>La carte montre le voyage entier quand on la regarde de loin : vos cinq villes, vos trains en trait doré et votre vol en pointillés. Elle montre les villes d'un pays et vos sorties d'une journée quand on zoome sur ce pays. Quand on zoome sur une ville, la carte charge ses rues, son métro et ses lieux. La carte reste simple entre deux villes du voyage, sans rues ni lieux.</p>
     <p>La ligne au-dessus du titre dit où vous êtes. Un clic sur un de ses mots remonte à cet étage. Le titre ouvre la liste de l'étage suivant : les pays, puis les villes, puis les sorties et les arrondissements.</p>
@@ -954,6 +957,7 @@ function ouvrirLegende(partie) {
     <p><button type="button" class="btn" id="ouvrir-sources">Voir d'où viennent les données</button></p>`;
   l.querySelector(".fermer-liste").addEventListener("click", () => { l.hidden = true; });
   l.querySelector("#ouvrir-sources").addEventListener("click", ouvrirSources);
+  brancherOutils(l);
   l.hidden = false; $("#fiche").hidden = true; $("#liste").hidden = true; $("#idees").hidden = true; $("#specs").hidden = true; $("#planning").hidden = true; fermerVilles();
   if (partie === "detaxe") l.querySelector("#legende-detaxe")?.scrollIntoView({ block: "start" });
 }
@@ -2388,3 +2392,12 @@ function phraseFermeture(id, n) {
 }
 // combien de lieux prévus un jour sont fermés ce jour-là
 const fermesDuJour = (n) => PLAN.filter((e) => e.jour === n && fermeLe(e.lieu, n)).length;
+
+// ---------- Les outils du voyage : l'application, le convertisseur et le traducteur (outils.js) ----------
+// Le pays de la carte sert de choix par défaut hors des dates du voyage : la langue du traducteur et la monnaie du convertisseur.
+preparerOutils({
+  pays: () => {
+    const p = ICI.niveau >= 2 && ICI.etape ? PAYS_DE[ICI.etape] : ICI.niveau === 1 ? ICI.pays : null;
+    return p === "coree" ? "kr" : p === "japon" ? "jp" : null;
+  },
+});

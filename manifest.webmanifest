@@ -1,0 +1,36 @@
+{
+  "id": "/carte-coree-japon/",
+  "name": "Corée Japon en carte",
+  "short_name": "Corée Japon",
+  "description": "La carte du voyage en Corée du Sud et au Japon, avec votre position, un traducteur et un convertisseur entre euros, wons et yens.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F2EDE3",
+  "theme_color": "#F2EDE3",
+  "categories": ["travel", "navigation"],
+  "icons": [
+    { "src": "icones/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icones/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icones/icone-masque-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icones/icone-masque-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Traduire",
+      "short_name": "Traduire",
+      "description": "Traduire un texte entre le français, le coréen, le japonais et l'anglais",
+      "url": "./?outil=traduire",
+      "icons": [{ "src": "icones/raccourci-traduire.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Convertir",
+      "short_name": "Convertir",
+      "description": "Convertir un montant entre euros, wons et yens",
+      "url": "./?outil=convertir",
+      "icons": [{ "src": "icones/raccourci-convertir.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ]
+}

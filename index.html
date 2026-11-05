@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314171C'/%3E%3Cpath d='M32 12c-8.3 0-15 6.5-15 14.6C17 37.5 32 52 32 52s15-14.5 15-25.4C47 18.5 40.3 12 32 12z' fill='%23E9B65A'/%3E%3Ccircle cx='32' cy='27' r='5.5' fill='%2314171C'/%3E%3C/svg%3E"></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314171C'/%3E%3Cpath d='M32 12c-8.3 0-15 6.5-15 14.6C17 37.5 32 52 32 52s15-14.5 15-25.4C47 18.5 40.3 12 32 12z' fill='%23E9B65A'/%3E%3Ccircle cx='32' cy='27' r='5.5' fill='%2314171C'/%3E%3C/svg%3E"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#F2EDE3"><link rel="apple-touch-icon" href="icones/icone-180.png"><meta name="apple-mobile-web-app-title" content="Corée Japon"></head><body>
 <title>Corée Japon en carte</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -340,6 +340,87 @@ body.plan-ouvert .filtres { display: none !important; }
   .specs-liste li { grid-template-columns: 72px 1fr; }
   .specs-liste img, .spec-vide { width: 72px; height: 72px; }
 }
+/* Les outils du voyage (outils.js, 05/11/2026). Le traducteur et le convertisseur s'ouvrent en haut de l'écran pour rester
+   au-dessus du clavier du téléphone ; un toucher à côté de la feuille ou le bouton retour les referme. */
+.outil-ecran { position: fixed; inset: 0; z-index: 11; display: flex; justify-content: center; align-items: flex-start;
+  padding: calc(env(safe-area-inset-top, 0px) + 10px) 10px 10px; background: rgba(5, 8, 14, 0.42); }
+.outil-feuille { box-sizing: border-box; width: 100%; max-width: 560px; max-height: 100%; overflow-y: auto; overscroll-behavior: contain;
+  background: var(--panel-solid); color: var(--ink); border: 1px solid var(--line); border-radius: 18px; padding: 12px 14px 16px; box-shadow: var(--ombre); font-size: 14px; }
+.outil-feuille h2 { font-weight: 700; margin: 0; font-family: var(--f-display); font-size: 19px; }
+.outil-sous-titre { margin: 16px 0 6px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-texte); font-weight: 700; }
+.outil-etiquette { display: block; margin: 10px 0 4px; font-size: 13px; color: var(--muted); }
+.outil-note { margin: 8px 0 0; font-size: 12.5px; line-height: 1.45; color: var(--muted); }
+.outil-vide { margin: 4px 0; color: var(--muted); }
+.outil-feuille input, .outil-feuille textarea, .outil-feuille select { font: inherit; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 12px; }
+.outil-feuille input:focus-visible, .outil-feuille textarea:focus-visible, .outil-feuille select:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.outil-feuille .btn svg, .grand-carte .btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.outil-feuille .btn:disabled { opacity: 0.55; cursor: progress; }
+.outil.rond svg path { stroke-linejoin: round; }
+
+.conv-saisie { display: flex; gap: 8px; }
+.conv-saisie input { flex: 1; min-width: 0; font-size: 28px; font-weight: 700; padding: 8px 12px; font-variant-numeric: tabular-nums; }
+.conv-saisie .btn { font-size: 16px; font-weight: 700; padding: 0 14px; }
+.conv-devises { display: flex; gap: 4px; margin: 10px 0 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.conv-devises button { flex: 1; border: 0; background: none; padding: 7px 6px; border-radius: 999px; cursor: pointer; color: var(--muted); font-size: 14px; }
+.conv-devises button[aria-pressed="true"] { background: var(--gold-fond); color: var(--sur-or); font-weight: 700; }
+.conv-resultats { margin: 10px 0 2px; min-height: 64px; }
+.conv-depart { margin: 0; color: var(--muted); }
+.conv-gros { margin: 2px 0 0; font-size: 30px; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.conv-gros.conv-second { font-size: 21px; color: var(--muted); }
+.conv-avec-frais { margin: 6px 0 0; font-size: 13.5px; }
+.conv-frais { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; font-size: 13px; color: var(--muted); }
+.conv-frais span { flex: none; }
+.conv-frais input { width: 4.5em; padding: 6px 8px; text-align: right; font-size: 16px; }
+.conv-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 14px; }
+.conv-table th { text-align: right; font-size: 12px; color: var(--muted); font-weight: 700; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+.conv-table td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.conv-table th:first-child, .conv-table td:first-child { text-align: left; padding-left: 0; }
+
+.trad-langues { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; margin: 10px 0 8px; }
+.trad-langues select { width: 100%; min-width: 0; padding: 9px 28px 9px 12px; font-weight: 700; appearance: none; -webkit-appearance: none; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23998F80' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 9px center; background-size: 13px; }
+.outil.rond.trad-inverser { width: 40px; height: 40px; box-shadow: none; }
+#trad-texte { display: block; width: 100%; box-sizing: border-box; min-height: 84px; max-height: 40vh; resize: vertical; padding: 10px 12px; font-size: 17px; line-height: 1.4; }
+.trad-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+#trad-dicter[aria-pressed="true"] { border-color: var(--warn); color: var(--warn); font-weight: 700; }
+#trad-dicter[aria-pressed="true"] svg { animation: battement 1.1s ease-in-out infinite; }
+.trad-etat { margin: 8px 0 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
+.trad-etat:empty { display: none; }
+.trad-etat.erreur { color: var(--warn); }
+.trad-etat a { color: inherit; }
+.trad-resultat-cadre { margin-top: 10px; padding: 12px; border-radius: 14px; border: 1px solid var(--gold); background: rgba(233, 182, 90, 0.10); }
+.trad-resultat { margin: 0; font-size: 23px; line-height: 1.45; font-weight: 500; white-space: pre-wrap; overflow-wrap: anywhere; user-select: text; }
+.trad-resultat:lang(ko), .grand-texte:lang(ko), .trad-h-trad:lang(ko) { word-break: keep-all; }
+.trad-ailleurs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 12px; font-size: 13px; color: var(--muted); }
+.trad-ailleurs .btn { padding: 6px 11px; font-size: 13px; }
+.trad-historique { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.trad-historique button { width: 100%; text-align: left; background: transparent; border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; cursor: pointer; display: grid; gap: 2px; }
+.trad-h-langues { font-size: 11.5px; color: var(--gold-texte); font-weight: 700; }
+.trad-h-source { color: var(--muted); font-size: 13px; }
+.trad-h-trad { font-size: 16px; }
+.trad-h-source, .trad-h-trad { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.trad-reglages { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+.trad-reglages summary { cursor: pointer; font-size: 13.5px; color: var(--muted); }
+.trad-reglages input { width: 100%; box-sizing: border-box; padding: 9px 12px; font-size: 16px; }
+.trad-reglages .btn { margin-top: 10px; }
+
+.grand-ecran { position: fixed; inset: 0; z-index: 12; background: var(--voile-photo); display: grid; place-items: center; padding: 14px; }
+.grand-carte { box-sizing: border-box; background: var(--panel-solid); color: var(--ink); border-radius: 18px; padding: 22px 20px; width: 100%; max-width: 640px;
+  max-height: calc(100vh - 28px); overflow-y: auto; display: grid; gap: 14px; text-align: center; box-shadow: var(--ombre); transition: transform 0.35s ease; }
+.grand-carte.tourne { transform: rotate(180deg); }
+.grand-carte p { margin: 0; }
+.grand-aide, .grand-origine { font-size: 14px; color: var(--muted); }
+.grand-texte { font-size: clamp(28px, 8vw, 46px); line-height: 1.35; font-weight: 700; overflow-wrap: anywhere; white-space: pre-wrap; }
+.grand-avert { font-size: 15px; color: var(--gold-texte); }
+.grand-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+
+.bandeau-appli { position: fixed; left: 10px; right: 10px; bottom: calc(env(safe-area-inset-bottom, 0px) + 10px); z-index: 8; margin: 0 auto; max-width: 540px;
+  display: grid; grid-template-columns: auto 1fr; gap: 10px 12px; align-items: center; background: var(--panel-solid); color: var(--ink);
+  border: 1px solid var(--gold); border-radius: 16px; padding: 12px 14px; box-shadow: var(--ombre); }
+.bandeau-appli p { margin: 0; font-size: 13.5px; line-height: 1.4; }
+.bandeau-icone svg { width: 40px; height: 40px; display: block; }
+.bandeau-actions { grid-column: 1 / -1; display: flex; justify-content: flex-end; gap: 8px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
@@ -370,6 +451,10 @@ body.plan-ouvert .filtres { display: none !important; }
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg></button>
       <button type="button" class="outil rond" id="ouvrir-legende" aria-label="Lire la légende" title="Légende">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg></button>
+      <button type="button" class="outil rond" id="traduire-bouton" aria-label="Traduire un texte" title="Traduire">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h11M8.5 3v2M5.5 8c1 3.2 3.3 5.8 6.5 7.3M11.5 8c-1 3.2-3.3 5.8-6.5 7.3M13 21l4-9 4 9M14.3 18h5.4"/></svg></button>
+      <button type="button" class="outil rond" id="convertir-bouton" aria-label="Convertir des euros, des wons ou des yens" title="Convertir">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.2 8.6a4.6 4.6 0 1 0 0 6.8M6.8 10.6h6M6.8 13.4h6"/></svg></button>
       <button type="button" class="outil autour-bouton" id="autour-bouton" aria-pressed="false" title="Montrer seulement les lieux proches du centre de l'écran">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke-dasharray="3 2.6"/><circle cx="12" cy="12" r="2.2"/></svg>Autour d'ici</button>
     </div>
@@ -417,6 +502,10 @@ body.plan-ouvert .filtres { display: none !important; }
 
 <div class="message" id="message" role="status" hidden></div>
 <div id="chauffeur" class="chauffeur" hidden></div>
+<div id="traducteur" class="outil-ecran" hidden></div>
+<div id="convertisseur" class="outil-ecran" hidden></div>
+<div id="grand" class="grand-ecran" hidden></div>
+<div id="bandeau-appli" class="bandeau-appli" role="region" aria-label="Installer l'application" hidden></div>
 <div id="sources" hidden><div class="boite" role="dialog" aria-label="Sources des données"></div></div>
 <div id="chargement"><div><div class="t" id="charge-titre">Carte</div><div class="s" id="charge-txt">Chargement de la carte du voyage…</div></div></div>
 

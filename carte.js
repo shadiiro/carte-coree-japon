@@ -1970,7 +1970,8 @@ function aller(cle) {
 // ---------- Le planning jour par jour, partagé entre les personnes qui ouvrent la carte ----------
 // Demandé le 16/10/2026 : « Commence par le planning jour par jour, partagé avec ma femme. »
 // Chaque lieu prévu est un document de la base partagée de la carte (capacité « db »), dans la collection « planning » :
-// { jour, lieu, region, nom, pos: [lat, lon], ordre, ajoute }. Un document par lieu et par jour : deux personnes qui ajoutent
+// { jour, lieu, region, nom, pos: [lat, lon], ordre, ajoute }, plus deux champs facultatifs ajoutés le 07/11/2026 pour l'emploi du temps
+// demandé par Schadrac (« je veux que tu le remplisses ») : heure (« 10 h 30 ») et quoi (ce qui est prévu à cette étape). Un document par lieu et par jour : deux personnes qui ajoutent
 // chacune un lieu au même moment n'écrasent pas le travail de l'autre. Le planning se lit en direct sur tous les appareils.
 // Hors de claude.ai, la base n'existe pas : le planning se montre vide et ses boutons ne s'affichent pas.
 let DB = null, PLAN = [], PLAN_PRET = false, PLAN_LECTURE_SEULE = false;
@@ -2175,7 +2176,8 @@ function afficherPlanning() {
     const pied = m && m[0] > 0 ? `${m[0]} min à pied de ${m[4] ? "la station" : "la gare"} ${echapper(m[2])}.` : "";
     const autre = e.region !== REGION ? ` <span class="liste-cat">${echapper(ZONES[e.region]?.titre || "")}</span>` : "";
     return `<li><span class="plan-rang">${i + 1}</span>
-      <div class="plan-texte"><button type="button" class="plan-nom" data-lieu="${echapper(e.lieu)}" data-region="${echapper(e.region)}">${echapper(e.nom)}</button>${autre}
+      <div class="plan-texte">${e.heure ? `<span class="plan-heure">${echapper(e.heure)}</span> ` : ""}<button type="button" class="plan-nom" data-lieu="${echapper(e.lieu)}" data-region="${echapper(e.region)}">${echapper(e.nom)}</button>${autre}
+        ${e.quoi ? `<span class="plan-quoi">${echapper(e.quoi)}</span>` : ""}
         <span class="plan-info">${[s?.catTxt ? echapper(s.catTxt) + "." : "", pied, ecart].filter(Boolean).join(" ")}</span>
         ${e.auto ? `<span class="plan-info">Prévu dans votre programme.</span>` : ""}
         ${fermeLe(e.lieu, n) ? `<span class="plan-ferme">${phraseFermeture(e.lieu, n)}</span>` : ""}</div>

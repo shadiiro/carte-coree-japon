@@ -4,7 +4,7 @@
 // (rues, lieux, photos) et les bibliothèques des CDN viennent de la mémoire et se mettent à jour en arrière-plan,
 // donc une ville déjà ouverte une fois reste lisible sans réseau. Les taux de change, les traductions, la météo,
 // les itinéraires et les photos de Wikimedia passent toujours par le réseau.
-const VERSION = "2026-11-08a";
+const VERSION = "2026-11-08b";
 const PAGE = "carte-page-" + VERSION;
 const DONNEES = "carte-donnees";
 const COQUILLE = ["./", "index.html", "carte.js", "outils.js", "contenu.js", "regions.js", "manifest.webmanifest",
@@ -31,7 +31,7 @@ self.addEventListener("activate", (e) => {
 
 // la page, ses scripts, le manifeste et le planning : le réseau d'abord, la mémoire si le réseau ne répond pas
 const estCode = (u, r) => r.mode === "navigate" || /\.(?:html|js|webmanifest)$/.test(u.pathname) || u.pathname.endsWith("/")
-  || u.pathname.endsWith("/planning.json");
+  || u.pathname.endsWith("/planning.json") || u.pathname.endsWith("/evenements.json");
 // toutes les ouvertures de la page partagent une seule copie, quelle que soit la fin de l'adresse (?outil=, ?lieu=, #ville)
 const cleDe = (r) => (r.mode === "navigate" ? new URL("./", self.registration.scope).href : r);
 

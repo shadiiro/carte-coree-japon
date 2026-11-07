@@ -411,7 +411,8 @@ async function preparerLieux(r) {
     // niveau 1 : le programme ; niveau 2 : la sélection (lieux avec photo, adresses de ChatGPT, adresses à goûter) ; niveau 3 : le reste
     // 27/10/2026, demande de Schadrac d'« épurer » : la sélection ne garde que les lieux qui ont une vraie photo sur la carte ;
     // les adresses sans photo (dont celles de ChatGPT) passent dans la vue Tout et restent visibles avec leur filtre
-    const niveau = prog ? 1 : img ? 2 : 3;
+    // 08/11/2026 : un lieu d'événement sans photo reste dans la sélection, pour que les illuminations et les fêtes se voient
+    const niveau = prog ? 1 : img || s.evenement ? 2 : 3;
     // « proche » : restaurants, bars, boutiques et salles de jeux, qui n'apparaissent que tout près des rues ou avec leur filtre
     feats.push({ type: "Feature", properties: { id: s.id, nom: s.nom, rang: it.rang, fam, couleur, icone, photo: !!img, theme: s.theme || "", proche: !!s.proche,
       niveau, gout, jour: prog ? s.jourTxt || JOUR_DU_LIEU[s.id] || JOUR_DU_LIEU[s.pos] || (/sans jour fixé/.test(s.prevu || "") ? "Un jour à placer" : "") : "",
@@ -541,7 +542,7 @@ function ouvrirFiche(s) {
     <div class="corps"><div class="cat">${echapper(s.catTxt)}</div><h2>${echapper(s.nom)}${s.natif ? `<span class="natif">${echapper(s.natif)}</span>` : ""}</h2>
       ${s.alerte ? `<div class="alerte">${s.alerte}</div>` : ""}
       <dl>${s.texte ? `<dt>${s.hotel ? "Vos nuits" : "Le lieu"}</dt><dd>${echapper(s.texte)}</dd>` : ""}
-        ${s.prevu ? `<dt>Pourquoi</dt><dd>${s.prevu}</dd>` : ""}${s.dedans ? `<dt>${echapper(s.dedans.titre)}</dt><dd><ul class="fiche-dedans">${s.dedans.lignes.map(([t, x]) => `<li><b>${echapper(t)}.</b> ${echapper(x)}</li>`).join("")}</ul></dd>` : ""}${s.pourquoi ? `<dt>Pour vous</dt><dd>${echapper(s.pourquoi)}</dd>` : ""}${conseilJour(s)}${aGouter(s)}
+        ${s.prevu ? `<dt>Pourquoi</dt><dd>${s.prevu}</dd>` : ""}${s.dedans ? `<dt>${echapper(s.dedans.titre)}</dt><dd><ul class="fiche-dedans">${s.dedans.lignes.map(([t, x]) => `<li><b>${echapper(t)}.</b> ${echapper(x)}</li>`).join("")}</ul></dd>` : ""}${evenementsFiche(s)}${s.pourquoi ? `<dt>Pour vous</dt><dd>${echapper(s.pourquoi)}</dd>` : ""}${conseilJour(s)}${aGouter(s)}
         ${s.photoPlat ? `<dt>Photo</dt><dd>Cette photo montre le plat. Elle a été prise dans un autre lieu.</dd>` : ""}
         ${s.cat !== "base" && s.cat !== "hotel" && pos[0] != null ? ligneDistance(pos) : ""}
         ${depuisHotel(s)}${aPied(s)}${lignesHotel(s)}${s.acces ? `<dt>Trajet</dt><dd>${s.acces}</dd>` : ""}${s.foule ? `<dt>Affluence</dt><dd>${s.foule}</dd>` : ""}${lignesPratiques(p)}${ligneDetaxe(fam)}</dl>
@@ -2435,7 +2436,7 @@ function ouvrirJournee(n, garder = false) {
   const lignes = l.map((e, k) => `<li><span class="plan-rang">${k + 1}</span><div class="plan-texte">
       <span>${e.heure ? `<span class="plan-heure">${echapper(e.heure)}</span> ` : ""}<button type="button" class="plan-nom" data-lieu="${echapper(e.lieu)}" data-region="${echapper(e.region || "")}">${echapper(e.nom)}</button></span>
       ${e.quoi ? `<span class="plan-quoi">${echapper(e.quoi)}</span>` : ""}</div></li>`).join("");
-  const vide = DB && !PLAN_PRET ? "Le planning se charge." : "Aucune étape n'est encore prévue ce jour-là. Le bouton « Ajouter au planning » de chaque fiche sert à en placer une.";
+  const vide = DB && !PLAN_PRET ? "Le planning se charge." : "Aucune étape n'est encore prévue ce jour-là. Le bouton « Ajouter au planning » de chaque fiche sert à en placer une.";
   b.innerHTML = `<div class="journee-tete"><div><p class="journee-sur">${auj ? "Aujourd'hui" : "Votre journée"} · ${echapper(j.ville)}</p>
       <h2 id="journee-titre">${echapper(j.titre || titreJour(j.n))}</h2></div>
       <button type="button" class="fermer-liste" data-fermer aria-label="Fermer la fenêtre">×</button></div>
@@ -2444,6 +2445,7 @@ function ouvrirJournee(n, garder = false) {
     <p class="liste-aide">${echapper(j.texte || "")}${j.alerte ? ` ${echapper(j.alerte)}` : ""}</p>
     ${j.region ? `<p><button type="button" class="btn btn-or" data-carte>Voir ce jour sur la carte</button></p>` : ""}
     ${l.length ? `<ol class="plan-liste">${lignes}</ol><p class="liste-aide">Le nom d'une étape ouvre sa fiche, avec son adresse, ses horaires et son trajet.</p>` : `<p class="liste-aide">${vide}</p>`}
+    ${evenementsJour(j)}
     <div class="journee-boutons"><button type="button" class="btn" data-aide>Comment se servir de la carte</button></div>`;
   b.querySelector("[data-fermer]").addEventListener("click", fermerJournee);
   b.querySelectorAll(".journee-nav [data-n]").forEach((x) => x.addEventListener("click", () => ouvrirJournee(+x.dataset.n)));
@@ -2469,7 +2471,7 @@ function journeeAuLancement() {
   ouvrirJournee();
 }
 const AIDE = [
-  ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure et le programme de chacune. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
+  ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure et le programme de chacune, puis les illuminations, les fêtes et les marchés de la ville ce jour-là. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
   ["Le jour sur la carte", "Le bouton « Voir ce jour sur la carte » numérote les étapes et les relie par un trait doré depuis votre hôtel. La barre « Jour » au bas de l'écran montre de la même façon chaque jour passé dans la ville. Le panneau qui s'ouvre alors sert à changer l'ordre des étapes ou à en retirer une."],
   ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix. Sur un téléphone, une fiche ouverte cache les boutons du bas, et la croix de la fiche les fait revenir."],
   ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Les pastilles de couleur apparaissent avec les choix Sélection et Tout. Une pastille comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],
@@ -2501,3 +2503,28 @@ const majPanneau = () => {
 new MutationObserver(majPanneau).observe($("#bas"), { attributes: true, attributeFilter: ["hidden"], subtree: true });
 document.body.classList.toggle("vue-programme", vue === "programme");
 majPanneau();
+
+// ---------- les événements du voyage (08/11/2026) ----------
+// Demandés par Schadrac le 8/11 : « tout ce qui est illumination, feux d'artifice, événements spéciaux », en Corée et au Japon.
+// data/evenements.json liste chaque événement avec son lieu, sa ville et ses dates (du, au) ; la fiche du lieu les montre, et la
+// fenêtre de la journée montre ceux de la ville ce jour-là. Un événement sans date de fin (« au » absent) court jusqu'à la fin du voyage.
+let EVENEMENTS = [];
+const MOIS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+fetch("data/evenements.json").then((r) => (r.ok ? r.json() : [])).then((l) => {
+  EVENEMENTS = Array.isArray(l) ? l : [];
+  if (!$("#journee").hidden && JOUR_FENETRE) ouvrirJournee(JOUR_FENETRE, true);
+}).catch(() => { /* sans le fichier, les fiches et la fenêtre restent sans événements */ });
+function evenementsFiche(s) {
+  const l = EVENEMENTS.filter((e) => e.lieu === s.id);
+  if (!l.length) return "";
+  return `<dt>Pendant votre voyage</dt><dd><ul class="fiche-dedans">${l.map((e) => `<li><b>${echapper(e.titre)}.</b> ${echapper(e.quand)} ${echapper(e.texte)}
+    ${e.source ? `<span class="source">Sources : ${e.source}</span>` : ""}</li>`).join("")}</ul></dd>`;
+}
+function evenementsJour(j) {
+  const iso = `2026-11-${String(j.n).padStart(2, "0")}`, villes = [j.region, ...(j.regions || [])].filter(Boolean);
+  const l = EVENEMENTS.filter((e) => villes.includes(e.region) && e.du <= iso && (!e.au || iso <= e.au));
+  if (!l.length) return "";
+  return `<h3 class="journee-ev">Les événements ce jour-là</h3><ul class="journee-ev-liste">${l.map((e) => `<li>
+      <button type="button" class="plan-nom" data-lieu="${echapper(e.lieu)}" data-region="${echapper(e.region)}">${echapper(e.titre)}</button>
+      <span class="plan-quoi">${echapper(e.nom)}. ${echapper(e.quand)}</span></li>`).join("")}</ul>`;
+}

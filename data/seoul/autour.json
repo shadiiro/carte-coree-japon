@@ -9828,5 +9828,26 @@
   "niveau": 3,
   "proche": false,
   "priorite": 40
+ },
+ {
+  "id": "ev_seoul_lotte_sogong",
+  "nom": "Grand magasin Lotte de Sogong-dong",
+  "natif": "롯데백화점 본점",
+  "cat": "faire",
+  "catTxt": "Événement",
+  "lat": 37.56468,
+  "lon": 126.98085,
+  "texte": "Le grand magasin historique de Lotte, à l'entrée de Myeongdong, se transforme chaque hiver en rue de lumières.",
+  "prevu": "Ce lieu accueille un événement pendant votre séjour, détaillé plus bas.",
+  "adresse": "81 Namdaemun-ro, Jung-gu (서울 중구 남대문로 81)",
+  "source": "Texte d'après <a href=\"https://www.koreancenter.or.kr/news/articleView.html?idxno=1432147\" target=\"_blank\" rel=\"noopener\">Yonhap, 30 octobre 2026</a>, <a href=\"https://www.fnnews.com/news/202610301552190031\" target=\"_blank\" rel=\"noopener\">Financial News, octobre 2026</a>. Lus le 8 novembre 2026. Position : OpenStreetMap.",
+  "photo": false,
+  "niveau": 2,
+  "proche": false,
+  "priorite": 60,
+  "evenement": true,
+  "trajet": {
+   "moyen": "La sortie 7 de la station Euljiro 1-ga, sur la ligne 2, donne sur le magasin."
+  }
  }
 ]

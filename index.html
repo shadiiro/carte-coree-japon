@@ -243,6 +243,13 @@ a.outil.rond { color: var(--ink); text-decoration: none; box-sizing: border-box;
 /* le panneau du jour garde la barre du bas pour choisir le jour ; ses propres boutons de jour et les filtres se cachent */
 #planning > .jours { display: none; }
 body.plan-ouvert .filtres { display: none !important; }
+body.vue-programme .filtres { display: none !important; }
+@media (max-width: 699px) {
+  body.panneau-ouvert .filtres, body.panneau-ouvert:not(.plan-ouvert) .jours-barre, body.panneau-ouvert:not(.plan-ouvert) .rangee:not(.jours-barre) { display: none !important; }
+  body.panneau-ouvert .fiche { max-height: 72vh; }
+  body.panneau-ouvert .fiche .photo { max-height: 26vh; }
+  body.panneau-ouvert:not(.plan-ouvert) .carte-panneau { max-height: 68vh; }
+}
 @media (max-width: 699px) { body.plan-ouvert .planning { max-height: 34vh; } }
 /* les idées à côté du programme (27/10/2026) */
 .plan-idees-titre { font-size: 14px; font-weight: 700; margin: 14px 0 4px; color: var(--gold-texte); }
@@ -297,7 +304,7 @@ body.plan-ouvert .filtres { display: none !important; }
 .fiche .photo { position: relative; aspect-ratio: 16 / 9; max-width: 100%; max-height: 30vh; background: var(--photo-vide); overflow: hidden; flex-shrink: 0; }
 .fiche .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .fiche .photo .credit { position: absolute; right: 8px; bottom: 6px; font-size: 10.5px; color: var(--sur-photo); background: var(--voile-photo); padding: 2px 6px; border-radius: 6px; max-width: 80%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.fiche .photo.sans-photo { display: grid; place-items: center; aspect-ratio: 16 / 5; color: var(--sur-photo); }
+.fiche .photo.sans-photo { display: grid; place-items: center; aspect-ratio: auto; height: 64px; color: var(--sur-photo); }
 .grande-icone { width: 56px; height: 56px; display: grid; place-items: center; }
 .grande-icone svg { width: 62%; height: 62%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .fiche .corps { padding: 14px 16px 16px; overflow-y: auto; }

@@ -635,6 +635,7 @@ function filtresAutres() {
 }
 function choisirVue(v) {
   vue = v;
+  document.body.classList.toggle("vue-programme", v === "programme");
   document.querySelectorAll("#vues button[data-v]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
   choisirFiltre("tout");
 }
@@ -2470,8 +2471,8 @@ function journeeAuLancement() {
 const AIDE = [
   ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure et le programme de chacune. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
   ["Le jour sur la carte", "Le bouton « Voir ce jour sur la carte » numérote les étapes et les relie par un trait doré depuis votre hôtel. La barre « Jour » au bas de l'écran montre de la même façon chaque jour passé dans la ville. Le panneau qui s'ouvre alors sert à changer l'ordre des étapes ou à en retirer une."],
-  ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix."],
-  ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Une pastille de couleur comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],
+  ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix. Sur un téléphone, une fiche ouverte cache les boutons du bas, et la croix de la fiche les fait revenir."],
+  ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Les pastilles de couleur apparaissent avec les choix Sélection et Tout. Une pastille comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],
   ["Les autres villes du voyage", "Le nom de la ville écrit en haut de l'écran ouvre la liste des villes du voyage. Le fil « Voyage › Corée › Séoul » placé au-dessus sert à revenir en arrière."],
   ["Les outils", "Les boutons ronds en haut à droite servent à traduire un texte, à convertir les euros en wons ou en yens, à montrer votre position et à recentrer la carte. Le bouton « ? » rouvre ce mode d'emploi."],
   ["Les mises à jour", "Une modification faite par Claude apparaît après une fermeture puis une réouverture de l'application."],
@@ -2488,3 +2489,15 @@ function ouvrirAide() {
 }
 $("#aide-bouton").addEventListener("click", ouvrirAide);
 $("#journee").addEventListener("click", (e) => { if (e.target.id === "journee") fermerJournee(); });
+
+// ---------- l'écran du téléphone moins chargé (07/11/2026) ----------
+// Une fiche ou un panneau ouvert cache les rangées de boutons du bas, pour prendre la hauteur de l'écran (index.html,
+// body.panneau-ouvert). La vue Programme cache les pastilles de sorte : elle montre peu de lieux, donc le tri ne sert pas.
+const PANNEAUX = ["fiche", "liste", "legende", "idees", "specs", "planning"].map((i) => $("#" + i)).filter(Boolean);
+const majPanneau = () => {
+  document.body.classList.toggle("panneau-ouvert", PANNEAUX.some((p) => !p.hidden));
+  document.body.classList.toggle("plan-ouvert", !$("#planning").hidden);
+};
+new MutationObserver(majPanneau).observe($("#bas"), { attributes: true, attributeFilter: ["hidden"], subtree: true });
+document.body.classList.toggle("vue-programme", vue === "programme");
+majPanneau();

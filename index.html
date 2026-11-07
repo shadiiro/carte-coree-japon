@@ -318,6 +318,20 @@ body.plan-ouvert .filtres { display: none !important; }
 #sources .boite { background: var(--panel-solid); border: 1px solid var(--line); border-radius: 16px; max-width: 620px; max-height: 80vh; overflow-y: auto; padding: 18px 20px; line-height: 1.5; font-size: 13.5px; }
 #sources h2 { font-weight: 700; margin: 0 0 8px; font-family: var(--f-display); }
 #sources li { margin: 6px 0; }
+.journee { position: fixed; inset: 0; z-index: 10; background: var(--voile-photo); display: grid; place-items: center; padding: 14px; }
+.journee[hidden] { display: none; }
+.journee .boite { background: var(--panel-solid); color: var(--ink); border: 1px solid var(--line); border-radius: 18px; width: 100%; max-width: 560px; max-height: calc(100vh - 28px); overflow-y: auto; padding: 16px 16px 18px; line-height: 1.45; font-size: 14px; box-shadow: var(--ombre); box-sizing: border-box; }
+.journee-tete { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.journee-sur { margin: 0; font-size: 12.5px; font-weight: 700; color: var(--gold-texte); text-transform: uppercase; letter-spacing: .04em; }
+.journee h2 { margin: 2px 0 0; font-family: var(--f-display); font-size: 21px; font-weight: 700; }
+.journee-nav { display: flex; justify-content: space-between; gap: 8px; margin: 10px 0 4px; }
+.journee-nav .btn { padding: 7px 11px; font-size: 13px; }
+.journee-boutons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.journee .plan-liste li { grid-template-columns: auto minmax(0, 1fr); }
+.aide-liste { margin: 10px 0 0; padding-left: 22px; display: grid; gap: 10px; }
+.aide-liste h3 { margin: 0 0 2px; font-size: 15px; font-weight: 700; }
+.aide-liste p { margin: 0; }
+.fiche-dedans { margin: 0; padding-left: 18px; display: grid; gap: 5px; }
 #sources a { color: var(--gold); }
 #chargement { position: fixed; inset: 0; display: grid; place-items: center; z-index: 9; background: var(--fond); transition: opacity 0.5s ease; }
 #chargement.fini { opacity: 0; pointer-events: none; }
@@ -451,6 +465,8 @@ body.plan-ouvert .filtres { display: none !important; }
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5 3.9 10.3c-.7.3-.6 1.3.1 1.5l6.4 1.8 1.8 6.4c.2.7 1.2.8 1.5.1z"/></svg></a>
       <button type="button" class="outil rond" id="recentrer" aria-label="Revenir à la vue de départ" title="Recentrer">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg></button>
+      <button type="button" class="outil rond" id="aide-bouton" aria-label="Comment se servir de la carte" title="Mode d'emploi">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 1 1 3.6 2.3c-.8.4-1.2 1-1.2 1.8v.6M12 17v.4"/></svg></button>
       <button type="button" class="outil rond" id="ouvrir-legende" aria-label="Lire la légende" title="Légende">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg></button>
       <button type="button" class="outil rond" id="traduire-bouton" aria-label="Traduire un texte" title="Traduire">
@@ -508,6 +524,7 @@ body.plan-ouvert .filtres { display: none !important; }
 <div id="convertisseur" class="outil-ecran" hidden></div>
 <div id="grand" class="grand-ecran" hidden></div>
 <div id="bandeau-appli" class="bandeau-appli" role="region" aria-label="Installer l'application" hidden></div>
+<div id="journee" class="journee" hidden><div class="boite" role="dialog" aria-modal="true" aria-labelledby="journee-titre"></div></div>
 <div id="sources" hidden><div class="boite" role="dialog" aria-label="Sources des données"></div></div>
 <div id="chargement"><div><div class="t" id="charge-titre">Carte</div><div class="s" id="charge-txt">Chargement de la carte du voyage…</div></div></div>
 

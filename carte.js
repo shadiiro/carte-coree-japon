@@ -541,7 +541,7 @@ function ouvrirFiche(s) {
     <div class="corps"><div class="cat">${echapper(s.catTxt)}</div><h2>${echapper(s.nom)}${s.natif ? `<span class="natif">${echapper(s.natif)}</span>` : ""}</h2>
       ${s.alerte ? `<div class="alerte">${s.alerte}</div>` : ""}
       <dl>${s.texte ? `<dt>${s.hotel ? "Vos nuits" : "Le lieu"}</dt><dd>${echapper(s.texte)}</dd>` : ""}
-        ${s.prevu ? `<dt>Pourquoi</dt><dd>${s.prevu}</dd>` : ""}${s.pourquoi ? `<dt>Pour vous</dt><dd>${echapper(s.pourquoi)}</dd>` : ""}${conseilJour(s)}${aGouter(s)}
+        ${s.prevu ? `<dt>Pourquoi</dt><dd>${s.prevu}</dd>` : ""}${s.dedans ? `<dt>${echapper(s.dedans.titre)}</dt><dd><ul class="fiche-dedans">${s.dedans.lignes.map(([t, x]) => `<li><b>${echapper(t)}.</b> ${echapper(x)}</li>`).join("")}</ul></dd>` : ""}${s.pourquoi ? `<dt>Pour vous</dt><dd>${echapper(s.pourquoi)}</dd>` : ""}${conseilJour(s)}${aGouter(s)}
         ${s.photoPlat ? `<dt>Photo</dt><dd>Cette photo montre le plat. Elle a été prise dans un autre lieu.</dd>` : ""}
         ${s.cat !== "base" && s.cat !== "hotel" && pos[0] != null ? ligneDistance(pos) : ""}
         ${depuisHotel(s)}${aPied(s)}${lignesHotel(s)}${s.acces ? `<dt>Trajet</dt><dd>${s.acces}</dd>` : ""}${s.foule ? `<dt>Affluence</dt><dd>${s.foule}</dd>` : ""}${lignesPratiques(p)}${ligneDetaxe(fam)}</dl>
@@ -1138,6 +1138,7 @@ map.on("load", async () => {
     if (params.get("zoom")) map.jumpTo({ zoom: +params.get("zoom") });
     if (params.get("centre")) map.jumpTo({ center: params.get("centre").split(",").map(Number) });
     if (params.get("lieu") && PAR_ID[params.get("lieu")]) ouvrirFiche(PAR_ID[params.get("lieu")]);
+    if (!["lieu", "specs", "vue", "filtre"].some((k) => params.has(k)) && params.get("journee") !== "0") journeeAuLancement();
   } catch (err) {
     console.error(err);
     $("#charge-txt").textContent = "La carte n'a pas pu se charger : " + err.message;
@@ -2231,12 +2232,14 @@ function planFiche(s) {
 
 function rafraichirPlan() {
   if (!$("#planning").hidden) afficherPlanning();
+  if (!$("#journee").hidden && JOUR_FENETRE) ouvrirJournee(JOUR_FENETRE, true);
   const f = $("#fiche");
   if (!f.hidden && f.dataset.id) planFiche(PAR_ID[f.dataset.id]);
   dessinerPlan();
 }
 
-$("#planning-bouton").addEventListener("click", () => ($("#planning").hidden ? ouvrirPlanning() : fermerPlanning()));
+// 07/11/2026 : le bouton Planning ouvre d'abord la fenêtre de la journée, plus simple à lire que le panneau posé sur la carte
+$("#planning-bouton").addEventListener("click", () => ($("#planning").hidden ? ouvrirJournee() : fermerPlanning()));
 // la base partagée arrive après le premier affichage de la carte : le planning s'allume quand elle répond
 (async () => {
   try { DB = window.claude?.use ? await window.claude.use("db") : null; } catch { DB = null; }
@@ -2403,3 +2406,85 @@ preparerOutils({
     return p === "coree" ? "kr" : p === "japon" ? "jp" : null;
   },
 });
+
+// ---------- la fenêtre de la journée et le mode d'emploi (07/11/2026) ----------
+// Demandés par Schadrac le 7/11 : il trouvait la carte « compliquée d'accès », jusqu'au planning. La fenêtre s'ouvre seule au premier
+// lancement de chaque jour, et le bouton Planning la rouvre. Elle montre les étapes du jour dans l'ordre, avec l'heure et ce qu'il y a
+// à faire, toutes villes confondues, sans passer par le panneau de la carte. Le mode d'emploi s'ouvre depuis cette fenêtre et depuis
+// le bouton rond « ? ».
+let JOUR_FENETRE = null;
+const etapesDuJour = (n) => [...planAuto().filter((a) => a.jour === n && !PLAN.some((e) => e.jour === n && e.lieu === a.lieu)), ...PLAN.filter((e) => e.jour === n)]
+  .sort((a, b) => (a.auto === b.auto ? (a.ordre ?? 0) - (b.ordre ?? 0) : a.auto ? -1 : 1));
+function jourDuMoment() {
+  const d = surPlace(), dans = d.an === 2026 && d.mois === 10;
+  return (dans && JOURS.find((j) => j.n === d.jour)) || (dans && JOURS.find((j) => j.n > d.jour)) || (dans && d.jour > 27 ? JOURS[JOURS.length - 1] : JOURS[0]);
+}
+function fermerJournee() { $("#journee").hidden = true; document.removeEventListener("keydown", echapJournee); }
+function echapJournee(e) { if (e.key === "Escape") fermerJournee(); }
+function montrerJournee() {
+  const f = $("#journee");
+  if (f.hidden) { f.hidden = false; document.addEventListener("keydown", echapJournee); }
+  f.querySelector(".boite").scrollTop = 0;
+}
+function ouvrirJournee(n, garder = false) {
+  const j = jourDe(n) || jourDuMoment(), f = $("#journee"), b = f.querySelector(".boite");
+  JOUR_FENETRE = j.n;
+  const i = JOURS.indexOf(j), prec = JOURS[i - 1], suiv = JOURS[i + 1], d = surPlace();
+  const auj = d.an === 2026 && d.mois === 10 && d.jour === j.n, l = etapesDuJour(j.n);
+  const lignes = l.map((e, k) => `<li><span class="plan-rang">${k + 1}</span><div class="plan-texte">
+      <span>${e.heure ? `<span class="plan-heure">${echapper(e.heure)}</span> ` : ""}<button type="button" class="plan-nom" data-lieu="${echapper(e.lieu)}" data-region="${echapper(e.region || "")}">${echapper(e.nom)}</button></span>
+      ${e.quoi ? `<span class="plan-quoi">${echapper(e.quoi)}</span>` : ""}</div></li>`).join("");
+  const vide = DB && !PLAN_PRET ? "Le planning se charge." : "Aucune étape n'est encore prévue ce jour-là. Le bouton « Ajouter au planning » de chaque fiche sert à en placer une.";
+  b.innerHTML = `<div class="journee-tete"><div><p class="journee-sur">${auj ? "Aujourd'hui" : "Votre journée"} · ${echapper(j.ville)}</p>
+      <h2 id="journee-titre">${echapper(j.titre || titreJour(j.n))}</h2></div>
+      <button type="button" class="fermer-liste" data-fermer aria-label="Fermer la fenêtre">×</button></div>
+    <div class="journee-nav">${prec ? `<button type="button" class="btn" data-n="${prec.n}">‹ ${etiquetteJour(prec)}</button>` : "<span></span>"}
+      ${suiv ? `<button type="button" class="btn" data-n="${suiv.n}">${etiquetteJour(suiv)} ›</button>` : ""}</div>
+    <p class="liste-aide">${echapper(j.texte || "")}${j.alerte ? ` ${echapper(j.alerte)}` : ""}</p>
+    ${j.region ? `<p><button type="button" class="btn btn-or" data-carte>Voir ce jour sur la carte</button></p>` : ""}
+    ${l.length ? `<ol class="plan-liste">${lignes}</ol><p class="liste-aide">Le nom d'une étape ouvre sa fiche, avec son adresse, ses horaires et son trajet.</p>` : `<p class="liste-aide">${vide}</p>`}
+    <div class="journee-boutons"><button type="button" class="btn" data-aide>Comment se servir de la carte</button></div>`;
+  b.querySelector("[data-fermer]").addEventListener("click", fermerJournee);
+  b.querySelectorAll(".journee-nav [data-n]").forEach((x) => x.addEventListener("click", () => ouvrirJournee(+x.dataset.n)));
+  b.querySelector("[data-carte]")?.addEventListener("click", () => voirJourSurCarte(j));
+  b.querySelector("[data-aide]").addEventListener("click", ouvrirAide);
+  b.querySelectorAll(".plan-nom[data-lieu]").forEach((x) => x.addEventListener("click", () => ouvrirEtape(x.dataset.lieu, x.dataset.region)));
+  if (!garder || f.hidden) montrerJournee();
+}
+async function voirJourSurCarte(j) {
+  fermerJournee();
+  const r = j.region === REGION || j.regions?.includes(REGION) ? REGION : j.region;
+  if (r !== REGION) await aller(`etape:${r}`);
+  ouvrirPlanning(j.n); cadrerJour(j.n);
+}
+async function ouvrirEtape(id, r) {
+  fermerJournee();
+  if (r && r !== REGION) await aller(`etape:${r}`);
+  if (PAR_ID[id]) ouvrirFiche(PAR_ID[id]);
+}
+function journeeAuLancement() {
+  const d = surPlace(), cle = `journee:vue:${d.an}-${d.mois}-${d.jour}`;
+  try { if (localStorage.getItem(cle)) return; localStorage.setItem(cle, "1"); } catch { /* sans stockage, la fenêtre s'ouvre à chaque lancement */ }
+  ouvrirJournee();
+}
+const AIDE = [
+  ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure et le programme de chacune. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
+  ["Le jour sur la carte", "Le bouton « Voir ce jour sur la carte » numérote les étapes et les relie par un trait doré depuis votre hôtel. La barre « Jour » au bas de l'écran montre de la même façon chaque jour passé dans la ville. Le panneau qui s'ouvre alors sert à changer l'ordre des étapes ou à en retirer une."],
+  ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix."],
+  ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Une pastille de couleur comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],
+  ["Les autres villes du voyage", "Le nom de la ville écrit en haut de l'écran ouvre la liste des villes du voyage. Le fil « Voyage › Corée › Séoul » placé au-dessus sert à revenir en arrière."],
+  ["Les outils", "Les boutons ronds en haut à droite servent à traduire un texte, à convertir les euros en wons ou en yens, à montrer votre position et à recentrer la carte. Le bouton « ? » rouvre ce mode d'emploi."],
+  ["Les mises à jour", "Une modification faite par Claude apparaît après une fermeture puis une réouverture de l'application."],
+];
+function ouvrirAide() {
+  const b = $("#journee").querySelector(".boite");
+  b.innerHTML = `<div class="journee-tete"><div><p class="journee-sur">Mode d'emploi</p><h2 id="journee-titre">Comment se servir de la carte</h2></div>
+      <button type="button" class="fermer-liste" data-fermer aria-label="Fermer la fenêtre">×</button></div>
+    <ol class="aide-liste">${AIDE.map(([t, x]) => `<li><h3>${echapper(t)}</h3><p>${echapper(x)}</p></li>`).join("")}</ol>
+    <div class="journee-boutons"><button type="button" class="btn btn-or" data-retour>Voir votre journée</button></div>`;
+  b.querySelector("[data-fermer]").addEventListener("click", fermerJournee);
+  b.querySelector("[data-retour]").addEventListener("click", () => ouvrirJournee(JOUR_FENETRE));
+  montrerJournee();
+}
+$("#aide-bouton").addEventListener("click", ouvrirAide);
+$("#journee").addEventListener("click", (e) => { if (e.target.id === "journee") fermerJournee(); });

@@ -141,17 +141,17 @@
   },
   {
    "jour": 8,
-   "lieu": "myeongdong",
    "region": "seoul",
-   "nom": "Myeongdong",
-   "pos": [
-    37.56131,
-    126.98509
-   ],
    "ordre": 1004,
    "ajoute": "2026-11-08T02:30:00.000Z",
    "heure": "19 h",
-   "quoi": "La ligne 3 va de Sinsa à Chungmuro, puis la ligne 4 va de Chungmuro à Myeongdong. Le quartier rassemble le grand magasin Nike Seoul au 14 Myeongdong-gil, le magasin phare d'Adidas au 27 Myeongdong 8-gil, la boutique Kodak Center Shop, le plus grand magasin Uniqlo de Corée et le Musinsa Store. Le soir, l'écran géant de la façade du grand magasin Shinsegae diffuse son film de Noël. Le magasin de trois étages ouvert par ASICS se trouve à Hongdae et non à Myeongdong."
+   "lieu": "sug_seoul_lotte_world_mall",
+   "nom": "Lotte World Mall",
+   "pos": [
+    37.513493,
+    127.099895
+   ],
+   "quoi": "Le centre commercial se trouve à environ 7 km à l'est de Garosu-gil, au pied de la Lotte World Tower, à la station Jamsil des lignes 2 et 8. Il compte plus de 600 enseignes. Le magasin Nike du 3e étage ouvre jusqu'à 22 h, et le grand magasin Lotte relié au centre a un magasin Nike consacré à la course au sous-sol. Le plus grand magasin Adidas des grands magasins coréens a ouvert au 3e étage en février 2026. La présence d'ASICS et de Kodak dans le centre reste à vérifier sur place."
   }
  ]
 }

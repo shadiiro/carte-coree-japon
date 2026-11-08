@@ -66,7 +66,7 @@
    ],
    "ordre": 1003,
    "ajoute": "2026-11-07T15:51:00.000Z",
-   "heure": "18 h 15",
+   "heure": "17 h 30",
    "quoi": "La ligne 6 va de Dongmyo à Yaksu, puis la ligne 3 va de Yaksu à Sinsa, et la sortie 8 mène à Garosu-gil. Ce dépôt-vente vend des vêtements de marque et de luxe portés par des célébrités et des stylistes. Ses horaires ne sont pas confirmés, donc son compte Instagram est à vérifier avant le départ."
   },
   {
@@ -138,6 +138,20 @@
    "ajoute": "2026-11-07T06:51:20.000Z",
    "heure": "18 h",
    "quoi": "Ce bar à makgeolli sert des galettes coréennes avec une belle vue sur la ville, pour finir la journée. Le retour se fait en bus jusqu'à la gare de Suwon, puis par la ligne 1 jusqu'à Jongno 5-ga."
+  },
+  {
+   "jour": 8,
+   "lieu": "myeongdong",
+   "region": "seoul",
+   "nom": "Myeongdong",
+   "pos": [
+    37.56131,
+    126.98509
+   ],
+   "ordre": 1004,
+   "ajoute": "2026-11-08T02:30:00.000Z",
+   "heure": "19 h",
+   "quoi": "La ligne 3 va de Sinsa à Chungmuro, puis la ligne 4 va de Chungmuro à Myeongdong. Le quartier rassemble le grand magasin Nike Seoul au 14 Myeongdong-gil, le magasin phare d'Adidas au 27 Myeongdong 8-gil, la boutique Kodak Center Shop, le plus grand magasin Uniqlo de Corée et le Musinsa Store. Le soir, l'écran géant de la façade du grand magasin Shinsegae diffuse son film de Noël. Le magasin de trois étages ouvert par ASICS se trouve à Hongdae et non à Myeongdong."
   }
  ]
 }

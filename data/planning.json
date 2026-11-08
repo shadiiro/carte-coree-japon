@@ -15,6 +15,62 @@
   },
   {
    "jour": 8,
+   "lieu": "gyeongbokgung",
+   "region": "seoul",
+   "nom": "Gyeongbokgung",
+   "pos": [
+    37.57975,
+    126.97668
+   ],
+   "ordre": 1000,
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "12 h 30",
+   "quoi": "Le départ de l'hôtel est prévu vers 12 h, par la ligne 1 jusqu'à Jongno 3-ga, puis par la ligne 3 jusqu'à la station Gyeongbokgung. L'entrée est gratuite jusqu'au 15 novembre. En novembre, le palais ferme à 17 h, avec une dernière entrée à 16 h. En cas de forte pluie, le Musée national du palais, juste à côté, expose à l'abri les objets des rois de Joseon, de 9 h 30 à 17 h 30."
+  },
+  {
+   "jour": 8,
+   "lieu": "wv_seoul_jogyesa_temple",
+   "region": "seoul",
+   "nom": "Temple Jogyesa",
+   "pos": [
+    37.5739,
+    126.9819
+   ],
+   "ordre": 1001,
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "14 h 45",
+   "quoi": "Le temple est à une dizaine de minutes à pied du palais. C'est le temple principal de l'ordre Jogye, le plus grand ordre du bouddhisme coréen. Le restaurant Balwoo Gongyang, en face, est fermé le dimanche."
+  },
+  {
+   "jour": 8,
+   "lieu": "web_seoul_ach_seoulvintage",
+   "region": "seoul",
+   "nom": "Seoul Vintage",
+   "pos": [
+    37.57328,
+    127.01733
+   ],
+   "ordre": 1002,
+   "ajoute": "2026-11-07T15:50:00.000Z",
+   "heure": "16 h",
+   "quoi": "La ligne 1 va de Jonggak à Dongmyo en quatre stations, et la sortie 3 donne sur la boutique, reconnaissable à son enseigne blanche. Les vêtements sont rangés par marque et par style, avec beaucoup de polos et de vestes épaisses. Le marché aux puces de Dongmyo commence juste devant, avec plus de stands ouverts le week-end qu'en semaine. La boutique ferme à 19 h."
+  },
+  {
+   "jour": 8,
+   "lieu": "web_seoul_ach_stillnice",
+   "region": "seoul",
+   "nom": "Stillnice",
+   "pos": [
+    37.5204,
+    127.0208
+   ],
+   "ordre": 1003,
+   "ajoute": "2026-11-07T15:51:00.000Z",
+   "heure": "18 h 15",
+   "quoi": "La ligne 6 va de Dongmyo à Yaksu, puis la ligne 3 va de Yaksu à Sinsa, et la sortie 8 mène à Garosu-gil. Ce dépôt-vente vend des vêtements de marque et de luxe portés par des célébrités et des stylistes. Ses horaires ne sont pas confirmés, donc son compte Instagram est à vérifier avant le départ."
+  },
+  {
+   "jour": 9,
    "lieu": "sug_seoul_hwaseong_haenggung",
    "region": "seoul",
    "nom": "Palais Hwaseong Haenggung",
@@ -25,10 +81,10 @@
    "ordre": 1000,
    "ajoute": "2026-11-07T06:51:20.000Z",
    "heure": "10 h 30",
-   "quoi": "Le départ de l'hôtel est prévu à 9 h, par la ligne 1 depuis Jongno 5-ga, dans un train qui va vers Cheonan, Sinchang ou Byeongjeom et non vers Incheon, jusqu'à la gare de Suwon. Les bus 11, 13 et 720-2 mènent ensuite au palais en 15 à 20 minutes. L'entrée coûte 2 000 wons et le palais ouvre de 9 h à 17 h en novembre. Le spectacle des 24 arts martiaux de l'époque Joseon commence à 11 h devant la porte Sinpungnu, il est gratuit et dure 30 minutes."
+   "quoi": "Le départ de l'hôtel est prévu à 9 h, par la ligne 1 depuis Jongno 5-ga, dans un train qui va vers Cheonan, Sinchang ou Byeongjeom et non vers Incheon, jusqu'à la gare de Suwon. Les bus 11, 13 et 720-2 mènent ensuite au palais en 15 à 20 minutes. L'entrée coûte 2 000 wons et le palais ouvre de 9 h à 17 h en novembre. Le spectacle des 24 arts martiaux de l'époque Joseon n'a pas lieu le lundi."
   },
   {
-   "jour": 8,
+   "jour": 9,
    "lieu": "sug_seoul_chogajib",
    "region": "seoul",
    "nom": "Namun Tongdak",
@@ -39,10 +95,10 @@
    "ordre": 1001,
    "ajoute": "2026-11-07T06:51:20.000Z",
    "heure": "12 h",
-   "quoi": "Le restaurant ouvre à midi et ne vend qu'une centaine de poulets par jour, donc il vaut mieux arriver dès l'ouverture."
+   "quoi": "Le restaurant ouvre à midi en semaine et ne vend qu'une centaine de poulets par jour, donc il vaut mieux arriver dès l'ouverture."
   },
   {
-   "jour": 8,
+   "jour": 9,
    "lieu": "suwon",
    "region": "seoul",
    "nom": "Forteresse de Hwaseong",
@@ -56,7 +112,7 @@
    "quoi": "Le tour complet des remparts fait 5,7 km et demande environ trois heures. Le plus beau morceau part de la porte Paldalmun et monte au poste de commandement Seojangdae, qui a la plus belle vue sur la ville, puis redescend par la porte Hwaseomun jusqu'à la porte Janganmun. La montée sur le mont Paldal est la seule partie raide, et l'accès aux remparts est gratuit."
   },
   {
-   "jour": 8,
+   "jour": 9,
    "lieu": "sug_seoul_banghwasuryujeong",
    "region": "seoul",
    "nom": "Pavillon Banghwasuryujeong",
@@ -70,7 +126,7 @@
    "quoi": "Ce pavillon domine l'étang Yongyeon, entouré d'arbres en couleurs d'automne. Le soleil se couche à 17 h 28, donc la lumière est la plus belle juste avant."
   },
   {
-   "jour": 8,
+   "jour": 9,
    "lieu": "sug_seoul_pal_dal_san",
    "region": "seoul",
    "nom": "Paldalsan",
@@ -82,90 +138,6 @@
    "ajoute": "2026-11-07T06:51:20.000Z",
    "heure": "18 h",
    "quoi": "Ce bar à makgeolli sert des galettes coréennes avec une belle vue sur la ville, pour finir la journée. Le retour se fait en bus jusqu'à la gare de Suwon, puis par la ligne 1 jusqu'à Jongno 5-ga."
-  },
-  {
-   "jour": 9,
-   "lieu": "gyeongbokgung",
-   "region": "seoul",
-   "nom": "Gyeongbokgung",
-   "pos": [
-    37.57975,
-    126.97668
-   ],
-   "ordre": 1000,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "9 h",
-   "quoi": "Le départ de l'hôtel est prévu à 8 h 30, par la ligne 1 jusqu'à Jongno 3-ga, puis par la ligne 3 jusqu'à la station Gyeongbokgung. L'entrée est gratuite jusqu'au 15 novembre. En novembre, le palais ouvre de 9 h à 17 h, avec une dernière entrée à 16 h. La relève de la garde a lieu à 10 h devant la porte Gwanghwamun."
-  },
-  {
-   "jour": 9,
-   "lieu": "wv_seoul_jogyesa_temple",
-   "region": "seoul",
-   "nom": "Temple Jogyesa",
-   "pos": [
-    37.5739,
-    126.9819
-   ],
-   "ordre": 1001,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "11 h 30",
-   "quoi": "C'est le temple principal de l'ordre Jogye, le plus grand ordre du bouddhisme coréen. Le déjeuner est prévu juste en face au Balwoo Gongyang, le restaurant de cuisine des temples tenu par l'ordre Jogye, au 5e étage du 56 Ujeongguk-ro. Le restaurant ouvre à 11 h 30, le repas dure 1 h 30, et la réservation se fait au 02-733-2081."
-  },
-  {
-   "jour": 9,
-   "lieu": "web_seoul_ach_gyeongdong",
-   "region": "seoul",
-   "nom": "Marché Gyeongdong et Seoul Yangnyeongsi",
-   "pos": [
-    37.57936,
-    127.03881
-   ],
-   "ordre": 1002,
-   "ajoute": "2026-11-07T07:50:00.000Z",
-   "heure": "13 h 45",
-   "quoi": "La ligne 1 va de Jongno 3-ga à la station Jegi-dong en cinq stations, puis la sortie 2 mène au marché. C'est le plus grand marché de plantes médicinales de Corée, avec du ginseng au 2e étage du bâtiment principal, des racines, des herbes séchées, des épices et de l'huile de sésame pressée sur place. Le café Starbucks installé dans l'ancien cinéma de 1962 permet une pause. Le musée de la médecine traditionnelle est fermé le lundi. La plupart des vendeurs préfèrent l'argent liquide."
-  },
-  {
-   "jour": 9,
-   "lieu": "web_seoul_ach_dapsimni",
-   "region": "seoul",
-   "nom": "Antiquaires de Dapsimni",
-   "pos": [
-    37.56422,
-    127.05794
-   ],
-   "ordre": 1003,
-   "ajoute": "2026-11-07T07:50:00.000Z",
-   "heure": "15 h 15",
-   "quoi": "Le taxi depuis le marché Gyeongdong prend une dizaine de minutes. Le bâtiment 2 est le plus animé, avec des livres anciens, des calligraphies et des objets en pierre. Le bâtiment 5 vend surtout des statues de Bouddha et des antiquités chinoises, et le bâtiment 6 des antiquités coréennes. L'heure de fermeture n'est pas confirmée, donc il vaut mieux arriver avant 16 h."
-  },
-  {
-   "jour": 9,
-   "lieu": "web_seoul_ach_seoulvintage",
-   "region": "seoul",
-   "nom": "Seoul Vintage",
-   "pos": [
-    37.57328,
-    127.01733
-   ],
-   "ordre": 1004,
-   "ajoute": "2026-11-07T15:50:00.000Z",
-   "heure": "16 h 45",
-   "quoi": "La sortie 3 de la station Dongmyo donne sur la boutique, reconnaissable à son enseigne blanche. Depuis Dapsimni, un taxi parcourt environ 5 km. Les vêtements sont rangés par marque et par style, avec beaucoup de polos et de vestes épaisses. La boutique ferme à 19 h."
-  },
-  {
-   "jour": 9,
-   "lieu": "web_seoul_ach_stillnice",
-   "region": "seoul",
-   "nom": "Stillnice",
-   "pos": [
-    37.5204,
-    127.0208
-   ],
-   "ordre": 1005,
-   "ajoute": "2026-11-07T15:51:00.000Z",
-   "heure": "18 h 15",
-   "quoi": "La ligne 6 va de Dongmyo à Yaksu, puis la ligne 3 va de Yaksu à Sinsa, et la sortie 8 mène à Garosu-gil. Ce dépôt-vente vend des vêtements de marque et de luxe portés par des célébrités et des stylistes. Ses horaires ne sont pas confirmés, donc son compte Instagram est à vérifier avant le départ."
   }
  ]
 }

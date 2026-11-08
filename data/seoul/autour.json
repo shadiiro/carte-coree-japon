@@ -9681,7 +9681,7 @@
   "lat": 37.56422,
   "lon": 127.05794,
   "texte": "Ce quartier réunit environ 140 boutiques d'antiquités, venues dans les années 1980 des bords du Cheonggyecheon, de Hwanghak-dong et d'Ahyeon-dong. Les boutiques vendent des peintures et calligraphies anciennes, des meubles, des céramiques et des objets du quotidien, de quelques milliers de wons à plusieurs millions. Les objets se touchent et portent souvent leur date et leur prix.",
-  "prevu": "C'est l'adresse la plus proche de votre souvenir de Kyoto pour les rouleaux anciens, avec des prix plus bas qu'à Insadong. Ces antiquaires sont la quatrième étape de votre lundi, à 15 h 15. Beaucoup d'objets viennent de Chine et certains sont des reproductions, donc une attestation de l'association coréenne des antiquaires peut être demandée au vendeur.",
+  "prevu": "C'est l'adresse la plus proche de votre souvenir de Kyoto pour les rouleaux anciens, avec des prix plus bas qu'à Insadong. Ces antiquaires n'ont plus de jour prévu, car ils ferment le dimanche et votre lundi est passé à Suwon. Beaucoup d'objets viennent de Chine et certains sont des reproductions, donc une attestation de l'association coréenne des antiquaires peut être demandée au vendeur.",
   "adresse": "99 Gomisul-ro, Dongdaemun-gu (서울 동대문구 고미술로 99)",
   "horaires": "Fermé le dimanche et les jours fériés. Les horaires changent selon les boutiques. L'heure de fermeture n'est pas confirmée, donc une arrivée avant 16 h est plus sûre.",
   "trajet": {
@@ -9727,9 +9727,9 @@
   "lat": 37.57936,
   "lon": 127.03881,
   "texte": "Ce marché ouvert en 1960 est le plus grand marché de plantes médicinales de Corée, et 70 % des plantes médicinales du pays y passent. Le Seoul Yangnyeongsi, le quartier des herboristes, fait face au marché de l'autre côté de l'avenue Gosanja-ro, et les habitants appellent l'ensemble « marché Gyeongdong ».",
-  "prevu": "Ce marché est la troisième étape de votre lundi, à 13 h 45, entre le temple Jogyesa et les antiquaires de Dapsimni. Les épices s'y trouvent, mais il ne faut pas s'attendre à un souk aux épices comme au Maroc. La plupart des vendeurs préfèrent l'argent liquide et beaucoup laissent sentir les herbes aux curieux.",
+  "prevu": "Ce marché n'a plus de jour prévu, car la plupart des herboristes ferment le dimanche et votre lundi est passé à Suwon. Les épices s'y trouvent, mais il ne faut pas s'attendre à un souk aux épices comme au Maroc. La plupart des vendeurs préfèrent l'argent liquide et beaucoup laissent sentir les herbes aux curieux.",
   "adresse": "Gyeongdong-sijang, Jegi-dong, Dongdaemun-gu (서울 동대문구 제기동 경동시장)",
-  "horaires": "Les herboristes du Seoul Yangnyeongsi ouvrent du lundi au samedi de 9 h à 19 h. Les étals de produits séchés et de légumes ouvrent chaque jour de 4 h à 19 h, avec des horaires qui changent selon les boutiques. Le marché ferme le jour de Seollal et de Chuseok.",
+  "horaires": "Les herboristes du Seoul Yangnyeongsi ouvrent du lundi au samedi de 9 h à 19 h, et seuls quelques étals de rue ouvrent le dimanche. Les étals de produits séchés et de légumes ouvrent chaque jour de 4 h à 19 h, avec des horaires qui changent selon les boutiques. Le marché ferme le jour de Seollal et de Chuseok.",
   "trajet": {
    "moyen": "La ligne 1 va sans changement de la station Jongno 5-ga, près de votre hôtel, à la station Jegi-dong. La sortie 2 mène au marché en quelques minutes."
   },
@@ -9778,7 +9778,7 @@
     ],
     [
      "Le musée de la médecine traditionnelle",
-     "Le centre de la médecine traditionnelle contient un petit musée à 1 000 wons, avec des dizaines de plantes dans des bocaux et un costume ancien prêté pour la visite. Le centre est fermé le lundi, donc le musée ne se visite pas le jour de votre passage."
+     "Le centre de la médecine traditionnelle contient un petit musée à 1 000 wons, avec des dizaines de plantes dans des bocaux et un costume ancien prêté pour la visite. Le centre est fermé le lundi."
     ],
     [
      "Le marché de nuit",
@@ -9796,7 +9796,7 @@
   "lat": 37.57328,
   "lon": 127.01733,
   "texte": "Cette grande boutique d'occasion du quartier de Dongmyo range un très grand stock de vêtements par marque et par style. Les vestes épaisses et les polos Polo Ralph Lauren y sont nombreux, avec une majorité de vêtements pour homme.",
-  "prevu": "Cette boutique est la cinquième étape de votre lundi, à 16 h 45, pour fouiller un grand choix de vêtements de marque d'occasion à vingt minutes à pied de votre hôtel. Le marché aux puces de Dongmyo commence juste devant, avec des prix plus bas et une qualité très inégale.",
+  "prevu": "Cette boutique est la troisième étape de votre dimanche, à 16 h, pour fouiller un grand choix de vêtements de marque d'occasion à vingt minutes à pied de votre hôtel. Le marché aux puces de Dongmyo commence juste devant, avec des prix plus bas et une qualité très inégale.",
   "adresse": "358 Jong-ro, Jongno-gu, 1er et 2e étages (서울 종로구 종로 358)",
   "horaires": "La boutique annonce une ouverture de 10 h à 19 h sur son compte Instagram, sans jour de fermeture indiqué.",
   "trajet": {
@@ -9817,7 +9817,7 @@
   "lat": 37.5204,
   "lon": 127.0208,
   "texte": "Ce grand dépôt-vente de Garosu-gil occupe l'ancienne boulangerie Our Bakery. Ses vendeurs sont surtout des célébrités, des directeurs de marque et des stylistes, qui fixent eux-mêmes leurs prix et cherchent avant tout à vendre vite. Les marques vont de Polo Ralph Lauren, Nike, Supreme et Stüssy jusqu'à Kapital, Dior, Chanel et Hermès.",
-  "prevu": "C'est l'adresse de Séoul la plus proche du Super Bazaar pour les vêtements d'occasion de grande qualité. Cette boutique est la dernière étape de votre lundi, à 18 h 15.",
+  "prevu": "C'est l'adresse de Séoul la plus proche du Super Bazaar pour les vêtements d'occasion de grande qualité. Cette boutique est la dernière étape de votre dimanche, à 18 h 15.",
   "adresse": "39 Gangnam-daero 162-gil, Gangnam-gu (서울 강남구 강남대로162길 39)",
   "horaires": "Aucune source lue ne donne les horaires de la boutique, donc son compte Instagram @stillnice_official est à vérifier avant le départ.",
   "trajet": {

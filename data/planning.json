@@ -150,22 +150,8 @@
    ],
    "ordre": 1004,
    "ajoute": "2026-11-08T02:50:00.000Z",
-   "heure": "18 h",
-   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à dix minutes à pied du pavillon Banghwasuryujeong. Il sert du makgeolli, du soju et de la bière avec des galettes, des ragoûts et des fritures, et il ouvre le lundi de 17 h à 1 h."
-  },
-  {
-   "jour": 9,
-   "lieu": "web_suwon_ssalsuljip",
-   "region": "seoul",
-   "nom": "Ssalsuljip",
-   "pos": [
-    37.2853,
-    127.0128
-   ],
-   "ordre": 1005,
-   "ajoute": "2026-11-08T02:50:00.000Z",
-   "heure": "19 h 30",
-   "quoi": "Ce bar à makgeolli et à alcools traditionnels se trouve dans les ruelles de Haenggung-dong, près de la porte Hwaseomun, et ouvre tous les jours de 16 h 30 à minuit. Le retour se fait en bus jusqu'à la gare de Suwon, puis par la ligne 1 jusqu'à Jongno 5-ga."
+   "heure": "17 h 45",
+   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à dix minutes à pied du pavillon Banghwasuryujeong. La carte associe le makgeolli et le soju à des galettes, des ragoûts et des fritures, et le bar ouvre le lundi à 17 h. Le départ vers Gangnam est prévu vers 18 h 50, en taxi jusqu'à la station Gwanggyo Jungang (광교중앙역) en un quart d'heure environ, puis par la ligne Shinbundang en une demi-heure."
   },
   {
    "jour": 10,
@@ -180,6 +166,34 @@
    "ajoute": "2026-11-08T02:55:00.000Z",
    "heure": "11 h 58",
    "quoi": "Le KTX 031 part à 11 h 58 et arrive à Busan à 14 h 42, voiture 6, places 10A et 10B. Le départ de l'hôtel est prévu vers 11 h, par la ligne 1 depuis Jongno 5-ga jusqu'à la gare de Séoul, en direction d'Incheon ou de Cheonan. Le billet se présente directement sur l'application, sans passer par un guichet."
+  },
+  {
+   "ajoute": "2026-11-08T10:40:00.000Z",
+   "heure": "20 h",
+   "jour": 9,
+   "lieu": "act_seoul_strikezone_gangnam",
+   "nom": "Strike Zone Gangnam",
+   "ordre": 1005,
+   "pos": [
+    37.49925,
+    127.02547
+   ],
+   "region": "seoul",
+   "quoi": "Cette salle de baseball sur écran se trouve au sous-sol du bâtiment Center Plaza, à quatre minutes à pied de la station Gangnam. La salle privée se loue à l'heure avec tout le matériel, et les balles plus souples que des balles de match conviennent aux débutants. Les horaires du lundi ne sont pas publiés en ligne, donc ils sont à vérifier sur Naver Map avant de quitter Suwon."
+  },
+  {
+   "ajoute": "2026-11-08T10:40:00.000Z",
+   "heure": "21 h 15",
+   "jour": 9,
+   "lieu": "act_seoul_templestrike",
+   "nom": "Temple Strike",
+   "ordre": 1006,
+   "pos": [
+    37.49888,
+    127.02556
+   ],
+   "region": "seoul",
+   "quoi": "Ce bowling se trouve juste en face de la salle Strike Zone, au sous-sol du numéro 13 de la même rue. Les pistes passent en ambiance rock après 18 h avec néons, musique et balles fluorescentes, et une partie à deux coûte environ 10 000 wons. Le retour vers l'hôtel se fait ensuite en taxi, en une demi-heure environ selon la circulation."
   }
  ]
 }

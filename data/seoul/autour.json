@@ -9803,7 +9803,7 @@
   "adresse": "358 Jong-ro, Jongno-gu, 1er et 2e étages (서울 종로구 종로 358)",
   "horaires": "La boutique annonce une ouverture de 10 h à 19 h sur son compte Instagram, sans jour de fermeture indiqué.",
   "trajet": {
-   "moyen": "La sortie 3 de la station Dongmyo, sur les lignes 1 et 6, donne sur la boutique, reconnaissable à son enseigne blanche. Depuis Dapsimni, un taxi parcourt environ 5 km."
+   "moyen": "La boutique occupe le numéro 358 de Jong-ro, sur le trottoir sud de l'avenue, juste à l'ouest du mur du sanctuaire de Dongmyo et à une minute à pied de la station Dongmyo (lignes 1 et 6). Le rez-de-chaussée du même immeuble abrite le restaurant de nouilles Haemulwon Kalguksu (해물원칼국수), et la boutique se trouve dans les étages. Le plus sûr reste de taper 서울빈티지 dans Naver Map pour suivre l'itinéraire jusqu'à la porte."
   },
   "source": "Texte d'après <a href=\"https://www.esquirekorea.co.kr/article/1908079\" target=\"_blank\" rel=\"noopener\">Esquire Korea, août 2026</a>. Horaires : <a href=\"https://www.instagram.com/seoulvintage.co.kr/\" target=\"_blank\" rel=\"noopener\">compte Instagram de la boutique</a>. Lus le 8 novembre 2026. Position : OpenStreetMap, numéro 358 de Jong-ro.",
   "photo": false,
@@ -9862,7 +9862,7 @@
   "lat": 37.2882,
   "lon": 127.0143,
   "texte": "Ce bar coréen sert du makgeolli, du soju et de la bière avec des galettes, des ragoûts, des grillades et des fritures. Il se trouve dans un bâtiment noir juste en face de la porte Janganmun de la forteresse.",
-  "prevu": "Ce bar est prévu le lundi à 18 h, juste après le coucher du soleil au pavillon Banghwasuryujeong.",
+  "prevu": "Ce bar est prévu le lundi à 17 h 45 pour dîner, juste après le coucher du soleil au pavillon Banghwasuryujeong et avant la soirée d'activités à Gangnam.",
   "adresse": "136-1 Buksu-dong, Paldal-gu, Suwon (수원시 팔달구 북수동 136-1)",
   "horaires": "Du lundi au jeudi de 17 h à 1 h, le vendredi et le samedi jusqu'à 2 h, le dimanche jusqu'à minuit",
   "source": "Horaires et adresse d'après la fiche publique du bar et des guides de restaurants coréens, vérifiés le 8 novembre 2026.",
@@ -9881,7 +9881,7 @@
   "lat": 37.2853,
   "lon": 127.0128,
   "texte": "Ce bar sert du makgeolli et des alcools traditionnels coréens dans les ruelles de Haenggung-dong, près de la porte Hwaseomun. Il a quelques tables dehors, et la position sur la carte est approximative.",
-  "prevu": "Ce bar est prévu le lundi à 19 h 30, pour un deuxième verre avant le retour à Séoul.",
+  "prevu": "Ce bar à makgeolli reste une bonne adresse pour un verre près de la porte Hwaseomun si vous restez à Suwon le soir.",
   "adresse": "15-15 Hwaseomun-ro 41beon-gil, Paldal-gu, Suwon (경기도 수원시 팔달구 화서문로41번길 15-15)",
   "horaires": "Tous les jours de 16 h 30 à minuit, dernière commande à 23 h",
   "source": "Horaires et adresse d'après la fiche publique du bar et des guides de restaurants coréens, vérifiés le 8 novembre 2026.",
@@ -9908,5 +9908,210 @@
   "proche": false,
   "evenement": true,
   "arret": "Ligne 1 du métro jusqu'à la station Seoul Station (서울역), à quatre stations de Jongno 5-ga, sans changement."
+ },
+ {
+  "id": "act_seoul_strikezone_gangnam",
+  "nom": "Strike Zone Gangnam",
+  "natif": "스트라이크존 강남점",
+  "catTxt": "Baseball sur écran",
+  "lat": 37.49925,
+  "lon": 127.02547,
+  "nuit": true,
+  "top": true,
+  "texte": "Dans cette salle de baseball sur écran de la marque Strike Zone, chaque groupe joue dans une salle privée face à un grand écran et à un lanceur automatique. Les balles sont plus souples que des balles de match, la hauteur du lancer se règle pour chaque joueur et les parties se jouent dans les vrais stades de la ligue coréenne. Tout le matériel est fourni sur place, des battes aux gants et aux balles.",
+  "prevu": "Cette salle est prévue le lundi à 20 h pour une heure de baseball, juste avant le bowling Temple Strike situé en face.",
+  "adresse": "10 Gangnam-daero 61-gil, Seocho-gu, sous-sol du bâtiment Center Plaza (서울 서초구 강남대로61길 10, 센터프라자 지하1층)",
+  "horaires": "Une offre d'emploi d'août 2026 décrit un service du soir de 18 h 30 à 3 h, du vendredi au dimanche. Les horaires des autres jours ne sont pas publiés en ligne et figurent sur Naver Map.",
+  "prix": "La salle coûtait 48 000 wons l'heure sans limite de joueurs en 2019, et le tarif de 2026 n'est pas publié.",
+  "trajet": {
+   "moyen": "La salle se trouve à environ 300 mètres au nord-ouest de la station Gangnam (lignes 2 et Shinbundang), dans les ruelles de Seocho situées derrière l'avenue Gangnam-daero."
+  },
+  "arret": "La ligne Shinbundang relie sans changement la station Gwanggyo Jungang (광교중앙역) de Suwon à la station Gangnam (강남역).",
+  "source": "Adresse et horaires du soir : <a href=\"https://www.albamon.com/jobs/detail/118218539\" target=\"_blank\" rel=\"noopener\">offre d’emploi sur Albamon, août 2026</a>. Matériel, balles et stades : <a href=\"https://m.ekn.kr/view.php?key=219338\" target=\"_blank\" rel=\"noopener\">Energy Economy, 2016</a>. Prix de 2019 : <a href=\"https://www.fnnews.com/news/201901041434591323\" target=\"_blank\" rel=\"noopener\">Financial News</a>. Lus le 8 novembre 2026. Position : OpenStreetMap, bâtiment Center Plaza.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
+ },
+ {
+  "id": "act_seoul_templestrike",
+  "nom": "Temple Strike",
+  "natif": "템플스트라이크",
+  "catTxt": "Bowling",
+  "lat": 37.49888,
+  "lon": 127.02556,
+  "nuit": true,
+  "top": true,
+  "texte": "Ce bowling de douze pistes tout près de la station Gangnam passe en ambiance rock le soir, avec néons, musique forte et balles fluorescentes. Un bar à bières et des fléchettes complètent les pistes, et quelques salles de bowling privées existent aussi.",
+  "prevu": "Ce bowling est prévu le lundi à 21 h 15, juste en face de la salle de baseball sur écran Strike Zone.",
+  "adresse": "13 Gangnam-daero 61-gil, Seocho-gu, sous-sol (서울 서초구 강남대로61길 13, 지하1층)",
+  "horaires": "Les pistes fonctionnent en bowling classique à partir de 11 h, puis en ambiance rock à partir de 18 h. L'heure de fermeture n'est pas publiée en ligne.",
+  "prix": "Une partie à deux coûte environ 10 000 wons d'après un avis client d'août 2026.",
+  "trajet": {
+   "moyen": "Le bowling se trouve juste en face de la salle Strike Zone, à environ 350 mètres au nord-ouest de la station Gangnam (lignes 2 et Shinbundang)."
+  },
+  "arret": "Le bowling se trouve à environ 350 mètres de la station Gangnam (강남역), sur la ligne 2 et la ligne Shinbundang.",
+  "source": "Ambiance, horaires du bowling classique et avis d'août 2026 : <a href=\"https://datepop.co.kr/item/1737\" target=\"_blank\" rel=\"noopener\">DatePop</a>. Adresse : <a href=\"https://v.daum.net/v/V0mMAHEQ9w\" target=\"_blank\" rel=\"noopener\">Daum</a>. Nombre de pistes : <a href=\"https://xn--ok0b236bp0a.com/place/25446\" target=\"_blank\" rel=\"noopener\">guide de 2022</a>. Lus le 8 novembre 2026. Position : OpenStreetMap, numéro 13 de Gangnam-daero 61-gil.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
+ },
+ {
+  "id": "act_seoul_gain_bowling",
+  "nom": "Gain Bowling Center Samseong",
+  "natif": "가인볼링센터",
+  "catTxt": "Bowling",
+  "lat": 37.5128,
+  "lon": 127.0655,
+  "nuit": true,
+  "top": true,
+  "texte": "Ce grand bowling occupe deux niveaux de sous-sol sous le siège de la fédération des caisses MG, à l'est du centre COEX. La dernière équipe y termine vers 2 h du matin d'après une offre d'emploi de juillet 2026, ce qui en fait une bonne adresse tardive.",
+  "prevu": "Ce bowling est une autre adresse sûre près de COEX si le bowling Temple Strike est complet.",
+  "adresse": "20 Bongeunsa-ro 114-gil, Gangnam-gu, premier et deuxième sous-sols du bâtiment de la fédération MG (서울 강남구 봉은사로114길 20, 새마을금고중앙회 지하1층·2층)",
+  "horaires": "D'après une offre d'emploi de juillet 2026, la dernière équipe travaille jusque vers 2 h du matin.",
+  "trajet": {
+   "moyen": "Le bowling se trouve à environ 650 mètres au nord de la station Samseong, sur la ligne 2, à trois arrêts de la station Gangnam."
+  },
+  "source": "Adresse et horaires de l'équipe du soir : <a href=\"https://www.albamon.com/jobs/detail/118191125\" target=\"_blank\" rel=\"noopener\">offre d’emploi sur Albamon, juillet 2026</a>. Lue le 8 novembre 2026. Position approchée : OpenStreetMap, arrêt de bus du bâtiment.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
+ },
+ {
+  "id": "act_seoul_smashingbowl_cheongdam",
+  "nom": "Smashing Bowl Cheongdam",
+  "natif": "스매싱볼 청담점",
+  "catTxt": "Bowling bar",
+  "lat": 37.52474,
+  "lon": 127.04005,
+  "nuit": true,
+  "top": true,
+  "ouvert": {
+   "tous": [
+    [
+     780,
+     1350
+    ]
+   ]
+  },
+  "texte": "Ce bowling bar de la chaîne Smashing Bowl mêle pistes de bowling, cocktails, bières et fléchettes sous des lumières fluorescentes, au deuxième sous-sol d'un immeuble de Cheongdam.",
+  "adresse": "818 Seolleung-ro, Gangnam-gu, deuxième sous-sol du bâtiment Designer Club (서울 강남구 선릉로 818, 디자이너클럽 지하2층)",
+  "horaires": "Une offre d'emploi de juillet 2026 décrit un service entre 13 h et 22 h 30.",
+  "trajet": {
+   "moyen": "Le bowling se trouve à environ 400 mètres de la station Apgujeong Rodeo, sur la ligne Suin-Bundang."
+  },
+  "source": "Adresse et horaires : <a href=\"https://www.albamon.com/jobs/detail/118199853\" target=\"_blank\" rel=\"noopener\">offre d’emploi sur Albamon, juillet 2026</a>. Ambiance de la chaîne : <a href=\"https://www.trazy.com/spot/1700/smashing-bowl-%EC%8A%A4%EB%A7%A4%EC%8B%B1-%EB%B3%BC-nightlife-bar\" target=\"_blank\" rel=\"noopener\">Trazy</a>. Lus le 8 novembre 2026. Position : OpenStreetMap, numéro 818 de Seolleung-ro.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
+ },
+ {
+  "id": "act_seoul_realshot_jongno",
+  "nom": "Real Shot Jongno",
+  "natif": "리얼샷 종로점",
+  "catTxt": "Tir et tir à l'arc",
+  "lat": 37.5694,
+  "lon": 126.9858,
+  "top": true,
+  "ouvert": {
+   "tous": [
+    [
+     720,
+     1440
+    ]
+   ]
+  },
+  "texte": "Dans ce stand de tir couvert, les visiteurs visent des cibles avec des répliques de fusils, de pistolets et de fusils de précision à billes, et peuvent aussi s'essayer au tir à l'arc. Le stand se trouve à deux arrêts de la station Jongno 5-ga par la ligne 1, près de la station Jonggak.",
+  "adresse": "10 Jong-ro 12-gil, Jongno-gu, troisième étage du bâtiment Jongno Woori (서울 종로구 종로12길 10, 종로우리빌딩 3층)",
+  "horaires": "Le stand ouvre tous les jours de midi à minuit, avec ou sans réservation sur Naver.",
+  "prix": "Un tir seul coûte 4 000 ou 5 000 wons selon l'arme, le tir à l'arc 6 000 wons, et la formule complète avec arc, fusil, pistolet et fusil de précision 14 000 wons.",
+  "trajet": {
+   "moyen": "Le stand se trouve dans une petite rue au sud de l'avenue Jongno, entre les stations Jonggak et Jongno 3-ga de la ligne 1."
+  },
+  "source": "Adresse, horaires et prix : <a href=\"https://mom-mom.net/travel/places/69dcc3cef34bd37f5ecb1583\" target=\"_blank\" rel=\"noopener\">MomMom</a>. Lu le 8 novembre 2026. Position approchée : OpenStreetMap, rue Jong-ro 12-gil.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
+ },
+ {
+  "id": "act_seoul_realshot_hongdae",
+  "nom": "Real Shot Hongdae",
+  "natif": "리얼샷 홍대점",
+  "catTxt": "Tir et tir à l'arc",
+  "lat": 37.55161,
+  "lon": 126.9216,
+  "texte": "Ce stand de tir couvert de la même enseigne que celui de Jongno associe tir à billes et tir à l'arc, au quatrième étage d'un immeuble du quartier de Hongdae.",
+  "adresse": "74 Eoulmadang-ro, Mapo-gu, quatrième étage du bâtiment Geumgwang (서울 마포구 어울마당로 74, 금광빌딩 4층)",
+  "horaires": "Les horaires du jour ne sont pas publiés en ligne et figurent sur Naver Map.",
+  "trajet": {
+   "moyen": "Le stand se trouve à environ 600 mètres de la station Sangsu, sur la ligne 6, dans le sud du quartier de Hongdae."
+  },
+  "source": "Adresse : <a href=\"https://www.albamon.com/jobs/detail/118114463\" target=\"_blank\" rel=\"noopener\">offre d’emploi sur Albamon, juillet 2026</a>. Lue le 8 novembre 2026. Position : OpenStreetMap, numéro 74 d'Eoulmadang-ro.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
+ },
+ {
+  "id": "act_suwon_smob",
+  "nom": "SMOB Suwon",
+  "natif": "스몹 수원",
+  "catTxt": "Parc sportif couvert",
+  "lat": 37.28745,
+  "lon": 126.99158,
+  "top": true,
+  "ouvert": {
+   "tous": [
+    [
+     600,
+     1185
+    ]
+   ]
+  },
+  "texte": "Ce parc de sports couvert du centre commercial Starfield Suwon réunit environ 25 attractions, dont la batte et le lancer de baseball, le tir à l'arc, le tir aux pigeons et l'escalade. Un toboggan vertical de 9 mètres, une balançoire à 360 degrés et des trampolines complètent le parc, et le cinquième étage du centre abrite aussi la salle d'arcade Fun City. Les personnes qui ont bu de l'alcool peuvent se voir refuser certaines attractions.",
+  "prevu": "Ce parc sert de solution de repli le lundi soir si vous préférez rester à Suwon plutôt que de rejoindre Gangnam.",
+  "adresse": "175 Suseong-ro, Jangan-gu, Suwon, septième étage du centre Starfield Suwon (경기 수원시 장안구 수성로 175, 스타필드 수원 7층)",
+  "horaires": "Le parc ouvre tous les jours de 10 h à 21 h, avec une dernière entrée à 19 h, et le billet donne droit à deux heures de jeu.",
+  "prix": "Le billet de deux heures coûte de 25 000 à 30 000 wons selon la saison et le site de vente.",
+  "trajet": {
+   "moyen": "Le centre Starfield Suwon se trouve à environ un kilomètre à pied de la gare de Hwaseo, sur la ligne 1, qui va jusqu'à Jongno 5-ga sans changement."
+  },
+  "source": "Horaires, dernière entrée et prix : <a href=\"https://timeticket.co.kr/product/7015\" target=\"_blank\" rel=\"noopener\">Timeticket</a> et <a href=\"https://koreatriptips.com/en/leisure-sports/3303077.html\" target=\"_blank\" rel=\"noopener\">Korea Trip Tips</a>. Attractions : <a href=\"https://www.ktriptips.com/eng/leisure/3303077\" target=\"_blank\" rel=\"noopener\">Korea Trip Tips</a>, <a href=\"https://dealsite.co.kr/articles/116948\" target=\"_blank\" rel=\"noopener\">Dealsite</a> et <a href=\"https://dategom.com/%ec%84%9c%ec%9a%b8-%ec%9d%b4%ec%83%89-%eb%8d%b0%ec%9d%b4%ed%8a%b8-%ec%bd%94%ec%8a%a4-%ec%b6%94%ec%b2%9c-list-%eb%aa%a8%ec%9d%8c-%ec%84%9c%ec%9a%b8%eb%8d%b0%ec%9d%b4%ed%8a%b8/\" target=\"_blank\" rel=\"noopener\">Dategom</a>. Salle d'arcade : <a href=\"https://mom-mom.net/en/travel/places/65b6fa00abd92fac2f7bcc20\" target=\"_blank\" rel=\"noopener\">MomMom</a>. Règles d'accès des parcs SMOB : <a href=\"https://xn--ok0b236bp0a.com/place/15466\" target=\"_blank\" rel=\"noopener\">fiche du parc de Hanam</a>. Lus le 8 novembre 2026. Position : OpenStreetMap, centre Starfield Suwon.",
+  "cat": "faire",
+  "theme": "jeu",
+  "interet": "jeu",
+  "couvert": true,
+  "ambiance": "anime",
+  "photo": false,
+  "proche": false,
+  "priorite": 45
  }
 ]

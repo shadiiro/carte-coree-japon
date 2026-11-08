@@ -4,7 +4,7 @@
 // (rues, lieux, photos) et les bibliothèques des CDN viennent de la mémoire et se mettent à jour en arrière-plan,
 // donc une ville déjà ouverte une fois reste lisible sans réseau. Les taux de change, les traductions, la météo,
 // les itinéraires et les photos de Wikimedia passent toujours par le réseau.
-const VERSION = "2026-11-08g";
+const VERSION = "2026-11-08h";
 const PAGE = "carte-page-" + VERSION;
 const DONNEES = "carte-donnees";
 const COQUILLE = ["./", "index.html", "carte.js", "outils.js", "contenu.js", "regions.js", "manifest.webmanifest",

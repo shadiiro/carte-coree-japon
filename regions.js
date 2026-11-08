@@ -73,7 +73,7 @@ export const SEOUL = [
 
 export const BUSAN = [
   L("busan", "busan", "Gare de Busan", "부산역", "base", "Votre base", "busan_gare",
-    "Le terminus sud de la ligne à grande vitesse qui relie Séoul à Busan. Votre hôtel est à Busan du 10 au 14 novembre, mais son adresse n'apparaît pas encore dans la conversation. Les distances de cette région sont mesurées depuis cette gare.",
+    "Le terminus sud de la ligne à grande vitesse qui relie Séoul à Busan. Votre hôtel, le Tinto Hotel Busan Station, se trouve à 3 km au nord-est de la gare, à moins de 300 m de la station de métro Beomil de la ligne 1. Les distances de cette région sont mesurées depuis cette gare.",
     "", ["en", "Busan station"]),
   L("haedong", "haedong", "Haedong Yonggungsa", "해동용궁사", "histoire", "Temple au bord de la mer", "haedong",
     "Un temple bouddhiste construit au bord de la mer, ce qui est rare en Corée. Il est proche de la plage de Haeundae.",
@@ -86,7 +86,7 @@ export const BUSAN = [
     "Sur ta liste : Nampo en soirée.", ["ko", "BIFF 광장"]),
   L("gwangalli", "gwangalli", "Plage de Gwangalli", "광안리", "mer", "Plage et sortie", "gwangalli",
     "Une plage de sable en demi-lune, longue de 1,4 km, face au pont Gwangan. Des restaurants, des cafés et des clubs la bordent.",
-    LISTE, ["en", "Gwangalli Beach"]),
+    LISTE, ["en", "Gwangalli Beach"], { nuit: true }),
   L("gamcheon", "gamcheon", "Village de Gamcheon", "감천문화마을", "ville", "Village", "gamcheon",
     "Un village construit sur une pente raide, connu pour ses ruelles en labyrinthe et ses maisons peintes de couleurs vives.",
     LISTE, ["en", "Gamcheon Culture Village"]),
@@ -98,7 +98,7 @@ export const BUSAN = [
     "Votre journée à Gyeongju est le mercredi 11 novembre.", ["en", "Daereungwon"]),
   L("woljeonggyo", "woljeonggyo", "Pont Woljeonggyo", "월정교", "histoire", "Pont", "woljeonggyo",
     "Un pont couvert construit en 760, disparu sous la dynastie Joseon, puis reconstruit et rouvert en avril 2018.",
-    "Prévu le mercredi 11 novembre, avec les tombes.", ["en", "Woljeonggyo"]),
+    "Prévu le mercredi 11 novembre, avec les tombes.", ["en", "Woljeonggyo"], { nuit: true }),
   L("seokguram", "seokguram", "Grotte de Seokguram", "석굴암", "histoire", "Grotte", "seokguram",
     "Un ermitage à 750 m d'altitude sur le mont Toham, à quatre kilomètres du temple Bulguksa. Il est inscrit au patrimoine mondial de l'UNESCO depuis 1995.",
     "Prévu le mercredi 11 novembre.", ["fr", "Grotte de Seokguram"]),

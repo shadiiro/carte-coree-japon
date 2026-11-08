@@ -374,7 +374,7 @@ function aPied(s) {
   return `<dt>À pied</dt><dd>${t}</dd>`;
 }
 // les conditions du serveur de calcul demandent sa mention et un lien pour corriger la carte (routing.openstreetmap.de, lu le 16/10/2026)
-const SOURCE_MARCHE = ` Temps de marche : calculé le 16 octobre 2026 sur les rues d'OpenStreetMap par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, à raison d'une minute pour 80 m. <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Signaler une erreur de la carte</a>.`;
+const SOURCE_MARCHE = ` Temps de marche : calculé entre le 16 octobre et le 8 novembre 2026 sur les rues d'OpenStreetMap par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, à raison d'une minute pour 80 m. <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Signaler une erreur de la carte</a>.`;
 // jour de visite des excursions du programme : le jour du voyage quand il est fixé (contenu.js, JOURS), sinon « Un jour à placer »
 const JOUR_DU_LIEU = Object.fromEntries(EXCURSIONS.map((x) => {
   const j = JOURS.find((d) => d.focus === x.id);
@@ -412,7 +412,8 @@ async function preparerLieux(r) {
     // 27/10/2026, demande de Schadrac d'« épurer » : la sélection ne garde que les lieux qui ont une vraie photo sur la carte ;
     // les adresses sans photo (dont celles de ChatGPT) passent dans la vue Tout et restent visibles avec leur filtre
     // 08/11/2026 : un lieu d'événement sans photo reste dans la sélection, pour que les illuminations et les fêtes se voient
-    const niveau = prog ? 1 : img || s.evenement ? 2 : 3;
+    // 08/11/2026 : les meilleures adresses (« top » : guide Michelin, salles d'arcade, bars calmes, friperies, vues de nuit) aussi
+    const niveau = prog ? 1 : img || s.evenement || s.top ? 2 : 3;
     // « proche » : restaurants, bars, boutiques et salles de jeux, qui n'apparaissent que tout près des rues ou avec leur filtre
     feats.push({ type: "Feature", properties: { id: s.id, nom: s.nom, rang: it.rang, fam, couleur, icone, photo: !!img, theme: s.theme || "", proche: !!s.proche,
       niveau, gout, jour: prog ? s.jourTxt || JOUR_DU_LIEU[s.id] || JOUR_DU_LIEU[s.pos] || (/sans jour fixé/.test(s.prevu || "") ? "Un jour à placer" : "") : "",
@@ -983,7 +984,7 @@ function ouvrirSources() {
     <li>Météo : prévision d'<a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, lue par le connecteur Exa de la personne qui regarde la carte. Elle couvre les 16 jours qui suivent.</li>
     <li>Jours de fermeture : fiches préparées par ChatGPT et horaires de Wikivoyage, relus un par un le 16 octobre 2026. Le lundi 23 novembre est férié au Japon d'après le <a href="https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html" target="_blank" rel="noopener">Cabinet Office japonais</a>.</li>
     <li>Hôtels : adresses envoyées par Schadrac le 16 octobre 2026. Le <a href="https://msearch.gsi.go.jp/" target="_blank" rel="noopener">service d'adresses de l'Institut géographique du Japon</a> place les hôtels de Fukuoka, de Kobe et de Tokyo. L'hôtel de Gimpo est placé par OpenStreetMap. Les hôtels de Séoul et de Busan sont placés d'après les numéros de leur rue, à environ 100 m près. La fiche de chaque hôtel dit d'où vient sa position. Phrases pour le chauffeur : guides de conversation coréen et japonais de <a href="https://en.wikivoyage.org/wiki/Korean_phrasebook" target="_blank" rel="noopener">Wikivoyage</a>, licence CC BY-SA.</li>
-    <li>Temps de marche : trajet sur les rues et les chemins d'OpenStreetMap, calculé le 16 octobre 2026 par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, depuis la gare ou la station la plus proche. Une minute compte pour 80 m de rue, comme dans les annonces immobilières au Japon. Le temps ne compte ni l'attente aux feux, ni les escaliers, ni la marche dans la gare. La gare est placée sur son point OpenStreetMap, qui peut être au milieu d'une grande gare. Une erreur de la carte se signale sur <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">OpenStreetMap</a>.</li>
+    <li>Temps de marche : trajet sur les rues et les chemins d'OpenStreetMap, calculé entre le 16 octobre et le 8 novembre 2026 par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, depuis la gare ou la station la plus proche. Une minute compte pour 80 m de rue, comme dans les annonces immobilières au Japon. Le temps ne compte ni l'attente aux feux, ni les escaliers, ni la marche dans la gare. La gare est placée sur son point OpenStreetMap, qui peut être au milieu d'une grande gare. Une erreur de la carte se signale sur <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">OpenStreetMap</a>.</li>
     <li>Dessin de la carte : <a href="https://maplibre.org" target="_blank" rel="noopener">MapLibre GL JS</a> 5.24. Lettres : police Noto Sans (licence OFL).</li></ul>
     <p><button type="button" class="btn" id="fermer-sources">Fermer</button></p>`;
   d.hidden = false;
@@ -1153,7 +1154,7 @@ map.on("error", (e) => { if (!String(e.error?.message).includes("hors de la rég
 // La page interroge Claude avec la capacité « sample », sur le compte Claude de la personne qui regarde la carte (demandé le 15/10/2026).
 // Claude ne lit pas le web : il reçoit le programme du jour, vos goûts et une liste de lieux proches tirée de la carte,
 // et il répond par trois identifiants de cette liste. Une réponse est gardée dans ce navigateur, par ville et par jour.
-const GOUTS = "Ils aiment les jeux vidéo et les salles d'arcade, les bars sur un toit, les bars calmes et la chicha. Ils n'aiment pas trop les boîtes de nuit. Ils voyagent sans voiture, en métro, en bus et en train.";
+const GOUTS = "Ils aiment les jeux vidéo et les salles d'arcade, les bars sur un toit, les bars calmes et la chicha. Ils aiment aussi l'histoire, les temples, les friperies de qualité, les marques comme Kodak, Nike et ASICS, et les marchés de livres et d'objets anciens. Ils n'aiment pas trop les boîtes de nuit. Ils voyagent sans voiture, en métro, en bus et en train.";
 const SANS_CLAUDE = ["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "capability_removed"];
 let SAMPLE = null, JOUR_IDEES = null, CTL_IDEES = null;
 // un jour de changement de ville compte pour les deux villes : le 21 pour Kobe et Tokyo, le 26 pour Tokyo et Séoul
@@ -1197,7 +1198,8 @@ function coucherSoleil(lat, lon, n) {
   return Math.round(((utc / 6e4 + 9 * 60) % 1440 + 1440) % 1440);
 }
 const ENVIES_GUIDE = [["vue", "Voir quelque chose d'impressionnant"], ["flaner", "Flâner dans un quartier"], ["manger", "Bien manger une spécialité"],
-  ["jouer", "Vous amuser : arcade, bowling, sport"], ["musique", "Musique ou bar calme"], ["ralentir", "Ralentir dans un jardin"], ["unique", "Une chose qu'on ne fait qu'ici"]];
+  ["jouer", "Vous amuser : arcade, bowling, sport"], ["musique", "Musique ou bar calme"], ["histoire", "Histoire, temples et musées"],
+  ["shopping", "Friperies et boutiques"], ["ralentir", "Ralentir dans un jardin"], ["unique", "Une chose qu'on ne fait qu'ici"]];
 const HUMEURS = [["anime", "En forme, envie d'animation"], ["calme", "Un peu fatigués, envie de calme"], ["plaisir", "Envie de vous faire plaisir"], ["surprise", "Envie d'être surpris"]];
 const QUANDS = [["heure", "Une heure, maintenant"], ["matin", "Le matin"], ["aprem", "L'après-midi"], ["soir", "La soirée"], ["journee", "Toute la journée"]];
 const REGLAGES = [
@@ -1221,6 +1223,8 @@ const POUR_ENVIE = {
   jouer: (s) => FAMILLE[s.cat] === "faire" || JEU(s),
   musique: (s) => !JEU(s) && ((FAMILLE[s.cat] === "sortir" && s.cat !== "sortie") || ["toit", "chicha", "cabaret"].includes(s.theme)),
   ralentir: (s) => ["marcher", "marche", "mer", "histoire", "voir"].includes(s.cat) && !JEU(s),
+  histoire: (s) => histoireDe(s),
+  shopping: (s) => FAMILLE[s.cat] === "acheter",
   unique: () => true,
 };
 const CONSIGNE_ENVIE = {
@@ -1230,6 +1234,8 @@ const CONSIGNE_ENVIE = {
   jouer: "Ils veulent s'amuser : salle d'arcade, bowling ou activité sportive.",
   musique: "Ils veulent de la musique ou un bar calme.",
   ralentir: "Ils veulent ralentir, dans un jardin ou un lieu calme.",
+  histoire: "Ils veulent de l'histoire : temples, palais, musées et lieux anciens.",
+  shopping: "Ils veulent faire des boutiques : friperies de qualité, marques comme Kodak, Nike ou ASICS, livres anciens.",
   unique: "Ils veulent faire une chose qu'on ne fait qu'ici.",
 };
 const CONSIGNE_HUMEUR = {
@@ -1275,16 +1281,29 @@ const FENETRES = { matin: [9, 12], aprem: [13, 18], soir: [18, 23], journee: [9,
 const dateIso = (n) => `2026-11-${String(n).padStart(2, "0")}`;
 const joursAvant = (n) => { const p = surPlace(); return Math.round((Date.UTC(2026, 10, n) - Date.UTC(p.an, p.mois, p.jour)) / 864e5); };
 const cleMeteo = (j) => `${REGION}:${j.n}`;
-async function chargerMeteo(j) {
-  const cle = cleMeteo(j), avant = joursAvant(j.n);
-  if (["ok", "encours"].includes(METEO[cle]?.etat)) return;
+const METEO_ATTENTE = {};
+function chargerMeteo(j) {
+  const cle = cleMeteo(j);
+  if (METEO[cle]?.etat === "encours") return METEO_ATTENTE[cle] || Promise.resolve();
+  if (METEO[cle]?.etat === "ok") return Promise.resolve();
+  return (METEO_ATTENTE[cle] = lireMeteo(j, cle));
+}
+async function lireMeteo(j, cle) {
+  const avant = joursAvant(j.n);
   if (avant < 0 || avant > 15) { METEO[cle] = { etat: "loin", avant }; return; }
-  if (!MCP) { METEO[cle] = { etat: "sans" }; return; }
   const dep = departIdees(j), d = dateIso(j.n), tz = coree() ? "Asia%2FSeoul" : "Asia%2FTokyo";
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${dep.pos[0].toFixed(4)}&longitude=${dep.pos[1].toFixed(4)}`
     + "&current=temperature_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&hourly=temperature_2m,precipitation_probability,weather_code"
     + `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunset&timezone=${tz}&start_date=${d}&end_date=${d}`;
   METEO[cle] = { etat: "encours" };
+  // 08/11/2026 : la copie en ligne lit Open-Meteo directement, ce service acceptant les pages des autres sites ; la carte ouverte
+  // dans claude.ai ne joint pas les autres sites et passe ensuite par le connecteur Exa
+  try {
+    const r = await fetch(url, { cache: "no-store" });
+    const donnees = r.ok ? await r.json() : null;
+    if (donnees?.daily?.time?.length) { METEO[cle] = { etat: "ok", donnees, lu: Date.now() }; return; }
+  } catch { /* lecture directe refusée : le connecteur Exa prend le relais */ }
+  if (!MCP) { METEO[cle] = { etat: "sans" }; return; }
   try {
     const r = await MCP.callTool("Exa", "web_fetch_exa", { urls: [url], maxCharacters: 8000 }, { cache: { staleTime: 300000, gcTime: 1800000 } });
     const texte = [...(r?.content || []).filter((c) => c.type === "text").map((c) => c.text), typeof r?.payload === "string" ? r.payload : JSON.stringify(r?.payload || "")].join("\n");
@@ -1320,7 +1339,7 @@ function meteoHtml(j) {
   if (!m || m.etat === "encours") corps = `La météo prévue à ${ville} se charge.`;
   else if (m.etat === "ok") { const p = phrasesMeteo(j, quandDuJour(j)); corps = `${p.l.join(" ")} <span class="question-aide">Source : Open-Meteo, lu à ${heureTexte(Math.round(((m.lu / 6e4) + 9 * 60) % 1440))}.</span>`; }
   else if (m.etat === "loin") corps = m.avant < 0 ? "Ce jour est passé." : `La prévision de ce jour sera disponible à partir du ${j.n - 15 > 0 ? `${j.n - 15} novembre` : `${31 + j.n - 15} octobre`}. Le temps se règle en attendant dans « Plus de réglages ».`;
-  else if (m.etat === "sans") corps = "La météo en direct passe par le connecteur Exa de claude.ai, absent ici. Le temps se règle dans « Plus de réglages ».";
+  else if (m.etat === "sans") corps = "La météo en direct n'a pas pu être lue sur cet appareil. Le temps se règle dans « Plus de réglages ».";
   else {
     const msg = { needs_reauth: "Il faut reconnecter Exa dans les réglages de claude.ai, partie Connecteurs.", server_not_connected: "Il faut ajouter Exa dans les réglages de claude.ai, partie Connecteurs.",
       not_in_manifest: "La météo en direct attend votre accord pour utiliser Exa.", approval_required: "La météo en direct attend votre accord pour utiliser Exa.",
@@ -1337,8 +1356,11 @@ function majMeteo(j) {
 }
 (async () => { try { MCP = window.claude?.use ? await window.claude.use("mcp") : null; } catch { MCP = null; } })();
 
+// 08/11/2026 : votre position sert de point de départ quand le téléphone la donne (copie en ligne) et qu'elle est dans la région
+const positionUtile = () => !!POS && kmEntre([POS.lat, POS.lng], LIEUX[REGIONS[REGION].base]) < 80;
 function choixDepart(j) {
   const l = [["hotel", "De l'hôtel"], ["carte", "Du centre de la carte"]];
+  if (POSITION_POSSIBLE) l.unshift(["position", "De votre position"]);
   const x = lieuExcursion(j);
   if (x) l.unshift(["sortie", `De ${x.nom}`]);
   if (lieuxDuJour(j.n).some((e) => e.pos && e.region === REGION)) l.push(["plan", "Du dernier lieu prévu"]);
@@ -1346,11 +1368,14 @@ function choixDepart(j) {
 }
 function reponseDepart(j) {
   const ok = choixDepart(j).map((c) => c[0]), r = departDuJourChoisi(j);
-  return ok.includes(r) ? r : lieuExcursion(j) ? "sortie" : "hotel";
+  if (ok.includes(r)) return r;
+  if (positionUtile() && estAujourdhui(j) && ok.includes("position")) return "position";
+  return lieuExcursion(j) ? "sortie" : "hotel";
 }
 function departIdees(j) {
   const R = REGIONS[REGION], r = reponseDepart(j);
   if (r === "carte") { const c = map.getCenter(); return { pos: [c.lat, c.lng], nom: "le centre de la carte" }; }
+  if (r === "position" && positionUtile()) return { pos: [POS.lat, POS.lng], nom: "votre position" };
   if (r === "plan") { const e = lieuxDuJour(j.n).filter((x) => x.pos && x.region === REGION).at(-1); if (e) return { pos: e.pos, nom: e.nom }; }
   if (r === "sortie") { const x = lieuExcursion(j); if (x) return { pos: LIEUX[x.pos], nom: x.nom }; }
   const h = hotelDeLaNuit(j.n) || hotelDeLaNuit(j.n - 1) || hotelPrincipal(REGION);
@@ -1481,7 +1506,7 @@ function sortieHtml(res) {
     if (pos[0] != null) prec = pos;
     const faits = [ecart, p.horaires ? `Horaires : ${echapper(court(p.horaires, 110))}${String(p.horaires).length > 110 ? "…" : ""}` : ""].filter(Boolean).join(" ");
     return `<li><div class="etape-tete"><span class="etape-heure">${echapper(e.heure)}</span><span class="pastille" style="background:${COULEUR_FAMILLE[fam]}"></span><strong>${echapper(s.nom)}</strong></div>
-      <p>${echapper(e.quoi)}</p>${e.conseil ? `<p class="etape-conseil">${echapper(e.conseil)}</p>` : ""}${faits ? `<p class="idee-faits">${faits}</p>` : ""}
+      <p>${echapper(e.quoi)}</p>${e.raisons?.length ? `<p class="idee-raisons">${e.raisons.map((t) => `<span>${echapper(t)}</span>`).join("")}</p>` : ""}${e.conseil ? `<p class="etape-conseil">${echapper(e.conseil)}</p>` : ""}${faits ? `<p class="idee-faits">${faits}</p>` : ""}
       <button type="button" class="outil" data-id="${echapper(e.id)}">Voir sur la carte</button>
       <a class="outil" target="_blank" rel="noopener" href="${lien}">Itinéraire</a>
       ${DB && !PLAN_LECTURE_SEULE ? `<button type="button" class="outil" data-plan="${echapper(e.id)}">${joursDuLieu(e.id).includes(JOUR_IDEES.n) ? "Déjà au planning" : "Ajouter au planning"}</button>` : ""}</li>`;
@@ -1527,15 +1552,18 @@ function afficherIdees(corps, enCours) {
     ${resultat ? `<div class="idees-corps">${resultat}</div>` : ""}
     <details class="questions"${resultat && !enCours ? "" : " open"}><summary>${resultat ? "Changer mes réponses" : "Trois questions suffisent pour proposer une sortie."}</summary>
       ${questionsHtml(j)}
-      <p>${enCours ? "" : `<button type="button" class="btn btn-or" id="demander-idees">${sortie ? "Demander une nouvelle sortie" : "Demander une sortie"}</button>`}</p></details>
+      <p>${enCours ? "" : `<button type="button" class="btn btn-or" id="demander-idees">${sortie ? "Demander une nouvelle sortie" : "Demander une sortie"}</button>${SAMPLE ? ` <button type="button" class="btn" id="demander-local">Réponse immédiate</button>` : ""}`}</p></details>
     ${enCours ? `<p><button type="button" class="btn" id="arreter-idees">Arrêter</button></p>` : ""}
-    <p class="liste-aide">Le guide est Claude. Il choisit seulement parmi les lieux de la carte qui sont ouverts ce jour-là d'après leur fiche. Les horaires restent à vérifier avant d'y aller.</p>`;
+    <p class="liste-aide">${sortie?.local || !SAMPLE ? "Le guide choisit lui-même parmi les lieux de la carte, selon vos réponses, la météo prévue, les heures d'ouverture et la distance." : "Le guide est Claude. Il choisit seulement parmi les lieux de la carte qui sont ouverts ce jour-là d'après leur fiche."} Les horaires restent à vérifier avant d'y aller.</p>`;
   l.querySelector(".fermer-liste").addEventListener("click", () => { CTL_IDEES?.abort(); l.hidden = true; });
   l.querySelectorAll('[aria-label="Choisir le jour"] button').forEach((b) => b.addEventListener("click", () => { JOUR_IDEES = joursDe(REGION).find((x) => x.n === +b.dataset.n); REACTION = null; afficherIdees(); }));
   l.querySelector("#mot-guide")?.addEventListener("input", (e) => { MOT_GUIDE = e.target.value; });
   l.querySelectorAll("button[data-q]").forEach((b) => b.addEventListener("click", () => {
     const cle = b.dataset.q, v = b.dataset.v;
-    if (cle === "depart") { try { localStorage.setItem(`idees:depart:${j.n}`, v); } catch { /* sans stockage, le choix vaut pour cet écran */ } }
+    if (cle === "depart") {
+      try { localStorage.setItem(`idees:depart:${j.n}`, v); } catch { /* sans stockage, le choix vaut pour cet écran */ }
+      if (v === "position" && !POS && VEILLE == null) demarrerPosition(false);
+    }
     // une envie ou une humeur se désélectionne d'un second toucher
     else REPONSES[cle] = (cle === "envie" || cle === "humeur") && REPONSES[cle] === v ? "" : v;
     garderReponses();
@@ -1555,7 +1583,8 @@ function afficherIdees(corps, enCours) {
     b.textContent = "Ajouté au planning";
   });
   l.querySelectorAll("[data-reaction]").forEach((b) => b.addEventListener("click", () => reagir(b.dataset.reaction, lireIdees(cleIdees(JOUR_IDEES)) || sortie)));
-  l.querySelector("#demander-idees")?.addEventListener("click", () => { REACTION = null; demanderIdees(); });
+  l.querySelector("#demander-idees")?.addEventListener("click", () => { REACTION = null; demanderIdees(!SAMPLE); });
+  l.querySelector("#demander-local")?.addEventListener("click", () => { REACTION = null; demanderIdees(true); });
   l.querySelector("#arreter-idees")?.addEventListener("click", () => CTL_IDEES?.abort());
   majMeteo(j);
   if (!["ok", "encours"].includes(METEO[cleMeteo(j)]?.etat)) chargerMeteo(j).then(() => majMeteo(j));
@@ -1575,7 +1604,7 @@ function reagir(cle, precedente) {
   };
   const exclus = cle === "repas" ? repas : cle === "autre" ? [...ids, ...(precedente.autres || []).map((a) => a.id)] : [];
   REACTION = { cle, consigne: consignes[cle], precedente, exclus, max: precedente.max || 10 };
-  demanderIdees();
+  demanderIdees(!!precedente.local || !SAMPLE);
 }
 
 function ouvrirIdees(n) {
@@ -1586,8 +1615,20 @@ function ouvrirIdees(n) {
   afficherIdees();
 }
 
-async function demanderIdees() {
+async function demanderIdees(local = !SAMPLE) {
   const j = JOUR_IDEES, cle = cleIdees(j), quand = quandDuJour(j), dep = departIdees(j);
+  if (local) {
+    if (REPONSES.meteo === "auto") await Promise.race([chargerMeteo(j), new Promise((r) => setTimeout(r, 6000))]);
+    const res = sortieLocale(j, dep, quand, new Set(REACTION?.exclus || []));
+    REACTION = null;
+    if (!res) {
+      afficherIdees(`<p class="liste-aide">Aucun lieu de la carte ne correspond à ces réponses ce jour-là. Une autre envie, un autre moment ou un trajet plus long dans « Plus de réglages » donnera des lieux.</p>`, false);
+      return;
+    }
+    garderIdees(cle, res);
+    afficherIdees(sortieHtml(res), false);
+    return;
+  }
   const { liste, max } = candidatsIdees(j, dep, quand, new Set(REACTION?.exclus || []));
   if (!liste.length) {
     afficherIdees(`<p class="liste-aide">Aucun lieu de la carte ne correspond à ces réponses ce jour-là. Une autre envie, un autre moment ou un trajet plus long dans « Plus de réglages » donnera des lieux.</p>`, false);
@@ -1610,11 +1651,7 @@ async function demanderIdees() {
     REACTION = null;
     afficherIdees(sortieHtml(res), false);
   } catch (e) {
-    if (SANS_CLAUDE.includes(e?.code)) {
-      $("#idees-bouton").hidden = true;
-      afficherIdees(`<p class="liste-aide">Le guide n'est pas disponible sur cet appareil ou ce compte.</p>`, false);
-      return;
-    }
+    if (SANS_CLAUDE.includes(e?.code)) { SAMPLE = null; demanderIdees(true); return; }
     const msg = { cancelled: "La demande a été arrêtée.", rate_limited: "Claude reçoit trop de demandes pour le moment. Il faut réessayer dans quelques minutes.",
       session_expired: "Il faut se reconnecter à Claude.", sans_lieu: "Le guide n'a choisi aucun lieu de la liste. Une nouvelle demande peut aboutir." }[e?.code]
       || "La réponse du guide n'a pas pu être lue. Une nouvelle demande peut aboutir.";
@@ -1622,11 +1659,204 @@ async function demanderIdees() {
   }
 }
 
+// ---------- Le guide sans Claude (08/11/2026) ----------
+// Demandé par Schadrac le 8/11/2026 : « est-ce que tu mets un critère et tu me proposes quelque chose », selon l'humeur du jour et
+// la météo. La copie en ligne ne joint pas Claude : le guide choisit alors lui-même parmi les lieux de la carte. Chaque lieu reçoit
+// des points selon vos goûts, l'envie, l'humeur, la météo, le budget et la distance ; la sortie enchaîne les meilleurs lieux ouverts
+// à l'heure prévue, proches les uns des autres, avec un repas et un verre quand le moment s'y prête. Les heures d'ouverture viennent
+// du champ « ouvert » des fiches quand il existe (guide Michelin et adresses du 8/11), sinon de la sorte du lieu.
+const JOUR_SEULEMENT = /musée|museum|temple|palais|tombe|galerie|jardin|aquarium|forteresse|grotte|sanctuaire|pagode|ermitage|librairie|bouquiniste|marché|village|château|cimetière/i;
+const PLEIN_AIR = /plage|parc|colline|mont |montagne|sentier|chemin|crête|cap |île|belvédère|rocher|cascade|vallée|port |village|rue |ruelle|quartier|place|pont|jardin|tombe|forteresse|rempart/i;
+const COUVERT_MOTS = /musée|museum|grand magasin|galerie|spa|librairie|centre commercial|aquarium|cinéma|observatoire|tour |salle/i;
+const couvertDe = (s) => s.couvert ?? (FAMILLE[s.cat] === "manger" || (FAMILLE[s.cat] === "sortir" && s.theme !== "toit" && s.cat !== "sortie") || JEU(s)
+  || (COUVERT_MOTS.test(`${s.nom} ${s.catTxt || ""}`) && !PLEIN_AIR.test(s.nom)));
+function ambianceDe(s) {
+  if (s.ambiance) return s.ambiance;
+  const t = `${s.nom} ${s.catTxt || ""} ${String(s.texte || "").slice(0, 200)}`;
+  if (JEU(s)) return "anime";
+  if (FAMILLE[s.cat] === "sortir") return /calme|vinyle|jazz|cocktail|whisky|écoute|tranquille|LP/i.test(t) ? "calme" : "anime";
+  if (/marché|rue commerçante|animé|foule|très fréquenté/i.test(t)) return "anime";
+  if (/temple|jardin|musée|ermitage|forêt|calme|tranquille/i.test(t)) return "calme";
+  return "";
+}
+function histoireDe(s) {
+  return !JEU(s) && !["manger", "sortir", "acheter"].includes(FAMILLE[s.cat])
+    && (s.cat === "histoire" || /temple|palais|musée|museum|tombe|forteresse|sanctuaire|pagode|ermitage|histoire|historique|ancien|royal|confucé/i.test(`${s.nom} ${s.catTxt || ""} ${String(s.texte || "").slice(0, 160)}`));
+}
+const minuteTexte = (m) => (m % 60 ? heureTexte(m) : `${Math.floor(m / 60)} h`);
+const premierePhrase = (t) => { const m = String(t || "").match(/^.+?[.!?](?=\s|$)/); return (m ? m[0] : String(t || "")).trim(); };
+// les plages horaires écrites dans les horaires d'une fiche : « 11 h à 20 h », « 11 h 30–21 h 30 », « 18:00–02:00 »
+function plagesTexte(h) {
+  const t = String(h || "");
+  if (/24 ?h(?:eures)? sur 24|ouvert 24 h|toujours ouvert/i.test(t)) return [[0, 1440]];
+  const l = [];
+  for (const m of t.matchAll(/(\d{1,2})(?: ?h ?|:)(\d{2})?\s*(?:à|–|—|-)\s*(\d{1,2})(?: ?h ?|:)(\d{2})?/g)) {
+    const a = +m[1] * 60 + (+m[2] || 0);
+    let b = +m[3] * 60 + (+m[4] || 0);
+    if (b <= a) b += 1440;
+    if (a < 1440 && b - a <= 1440) l.push([a, b]);
+  }
+  return l.length ? l : null;
+}
+// ouvert à cette heure-là, au moins 45 minutes : d'après les heures de la fiche quand elle les donne, sinon d'après la sorte du lieu
+function ouvertA(s, n, t) {
+  const k = fermeLe(s.id, n);
+  if (k === "jour" || (k === "soir" && t >= 17 * 60)) return false;
+  const o = s.ouvert;
+  if (o) { const p = o[jourSemaine(n)] ?? o.tous; return !!p && p.some(([a, b]) => t >= a && t + 45 <= b); }
+  const pl = plagesTexte(pratiqueDe(s).horaires);
+  if (pl) return pl.some(([a, b]) => t >= a && t + 45 <= b);
+  const fam = FAMILLE[s.cat] || "voir", txt = `${s.nom} ${s.catTxt || ""}`;
+  if (fam === "sortir") return t >= 17 * 60 || /café/i.test(txt);
+  if (fam === "manger") return t >= 11 * 60 && t <= 21 * 60;
+  if (s.nuit) return true;
+  if (t >= 18 * 60 && (s.cat === "histoire" || JOUR_SEULEMENT.test(`${txt} ${String(s.texte || "").slice(0, 120)}`))) return false;
+  if (t >= 20 * 60 && fam === "acheter") return false;
+  return true;
+}
+const evenementLe = (s, n, t = 1200) => { const iso = dateIso(n); return EVENEMENTS.some((e) => e.lieu === s.id && e.du <= iso && (!e.au || iso <= e.au)
+  && (t >= 17 * 60 || !/soir|nuit|illumin/i.test(`${e.quand} ${e.titre}`))); };
+function contexteLocal(j, quand) {
+  const R = REPONSES, p = R.meteo === "auto" ? phrasesMeteo(j, quand) : null, f = p?.f;
+  const pluie = R.meteo === "pluie" || (R.meteo === "auto" && !!f && f.pluie >= 50);
+  const froid = !pluie && (R.meteo === "gris" || (R.meteo === "auto" && !!f && f.max <= 8));
+  const beau = !pluie && (R.meteo === "beau" || (R.meteo === "auto" && !!f && f.pluie < 30 && f.max > 8));
+  const humeur = REACTION?.cle === "calme" ? "calme" : REACTION?.cle === "anime" ? "anime" : R.humeur;
+  return { pluie, froid, beau, connu: R.meteo !== "auto" || !!f, humeur, budget: REACTION?.cle === "cher" ? "petit" : R.budget, envie: R.envie };
+}
+// les points d'un lieu pour une étape ; les raisons montrées sous l'étape viennent des mêmes règles
+function noteLocale(s, km, lim, ctx, n, t, role) {
+  const fam = FAMILLE[s.cat] || "voir", prog = REGIONS[REGION].lieux.includes(s), r = [];
+  let v = 0;
+  if (prog) { v += 3; r.push("Dans votre programme"); }
+  if (s.top) v += 3;
+  if (s.distinction) { v += s.distinction === "selection" ? 1.5 : 2; r.push(s.distinction === "etoile" ? "Étoile Michelin" : s.distinction === "bib" ? "Bib Gourmand Michelin" : "Guide Michelin"); }
+  if (DEGUST.lieux[s.id]?.length || s.incontournable) { v += 1.5; r.push("Spécialité de la ville"); }
+  if (s.image || prog) v += 0.5;
+  if (JEU(s)) { v += 2; r.push("Salle d'arcade"); }
+  if (s.theme === "toit") { v += 1.5; r.push("Bar avec vue"); }
+  if (s.theme === "chicha") v += 1;
+  if (s.interet === "fripe") { v += 1.5; r.push("Friperie"); }
+  if (s.interet === "marque") { v += 1; r.push("Kodak ou Nike"); }
+  if (s.interet === "livres") { v += 1; r.push("Livres d'occasion"); }
+  if (histoireDe(s)) v += 0.8;
+  const amb = ambianceDe(s);
+  if (ctx.humeur === "calme") { if (amb === "calme") { v += 2; r.push("Lieu calme"); } else if (amb === "anime") v -= 3.5; }
+  else if (ctx.humeur === "anime") { if (amb === "anime") { v += 2; r.push("Lieu animé"); } else if (amb === "calme") v -= 0.5; }
+  else if (ctx.humeur === "plaisir") { if (s.distinction === "etoile" || (s.budget || 0) >= 3 || s.nuit) v += 2; if (s.top) v += 1; }
+  else if (ctx.humeur === "surprise") { if (!prog && !s.top && !s.image) v += 1.5; if (prog) v -= 1.5; }
+  if (ctx.budget === "petit") { if ((s.budget || 2) >= 3) v -= 4; else if (s.budget === 1) { v += 1; r.push("Petit prix"); } }
+  else if (ctx.budget === "large" && (s.budget || 0) >= 3) v += 1.5;
+  const couvert = couvertDe(s);
+  if (ctx.pluie) { if (couvert) { v += 2.5; r.push("Couvert, utile s'il pleut"); } else v -= 3; }
+  else if (ctx.froid && !couvert) v -= 1;
+  else if (ctx.beau && !couvert && fam === "voir") v += 0.8;
+  if (s.nuit && t >= 17 * 60) { v += 2.5; r.push("À voir le soir"); }
+  if (evenementLe(s, n, t)) { v += 2; r.push("Événement ce jour-là"); }
+  if (role === "repas" && ctx.envie === "manger") v += s.distinction ? 2 : DEGUST.lieux[s.id]?.length ? 1.5 : 0;
+  if (role === "verre" && amb === "calme") v += 1;
+  v -= 3 * km / Math.max(lim, 0.5);
+  return { v, r };
+}
+// les étapes de chaque moment : [rôle, heure en minutes] ; « envie » suit la réponse, « soir » cherche une vue de nuit, une salle de
+// jeux ou un bar, « repas » un restaurant ouvert, « verre » un bar
+const ROLES = {
+  matin: [["envie", 600], ["repas", 750]], aprem: [["envie", 840], ["envie", 990]],
+  soir: [["soir", 1080], ["repas", 1170], ["verre", 1290]], journee: [["envie", 600], ["repas", 750], ["envie", 900], ["repas", 1140]],
+};
+function rolesDe(quand, ctx) {
+  if (quand === "heure") return [[ctx.envie === "manger" ? "repas" : ctx.envie === "musique" ? "verre" : "envie", Math.ceil(surPlace().min / 15) * 15]];
+  return ROLES[quand];
+}
+function convientRole(role, s, ctx) {
+  const fam = FAMILLE[s.cat] || "voir";
+  if (role === "repas") return fam === "manger" && !/pain|ppang|boulangerie|fish cakes|café|dessert|glace/i.test(`${s.catTxt || ""} ${s.nom}`);
+  if (role === "verre") return fam === "sortir" && s.cat !== "sortie" && !/dessert|salon de thé|pâtisserie/i.test(`${s.catTxt || ""} ${premierePhrase(s.texte)}`);
+  const f = POUR_ENVIE[ctx.envie === "manger" ? "flaner" : ctx.envie];
+  if (role === "soir") return fam !== "manger" && (!!s.nuit || JEU(s) || fam === "sortir" || (f ? f(s) : false));
+  if (fam === "manger") return false;
+  if (fam === "sortir" && !["musique", "unique"].includes(ctx.envie || "")) return false;
+  return f ? f(s) : true;
+}
+function quoiLocal(role, s, t) {
+  const debut = role === "repas" ? (t < 16 * 60 ? "Votre déjeuner est prévu dans ce restaurant." : "Votre dîner est prévu dans ce restaurant.")
+    : role === "verre" ? "La soirée se termine avec un verre dans ce bar." : "";
+  return [debut, premierePhrase(s.texte)].filter(Boolean).join(" ");
+}
+function raisonAutre(a, choisi, ctx) {
+  if (ctx.pluie && couvertDe(a.x.s) && !couvertDe(choisi.x.s)) return "Ce lieu couvert vaut mieux s'il se met à pleuvoir.";
+  if (a.x.s.nuit && !choisi.x.s.nuit) return "Ce lieu se prête mieux à la soirée, une fois la nuit tombée.";
+  if (a.km < choisi.km - 0.4) return `Ce lieu plus proche convient si vous êtes fatigués, à ${texteDistance(a.km * 1000)} de votre point de départ.`;
+  if (FAMILLE[a.x.s.cat] === "manger") return premierePhrase(a.x.s.texte);
+  if (ambianceDe(a.x.s) === "calme" && ambianceDe(choisi.x.s) !== "calme") return "Ce lieu plus calme convient pour ralentir un peu.";
+  return premierePhrase(a.x.s.texte) || `Ce lieu offre une autre ambiance, à ${texteDistance(a.km * 1000)} de votre point de départ.`;
+}
+function pourquoiLocal(ctx, etapes) {
+  const l = [];
+  if (ctx.pluie) l.push("La pluie est probable pendant cette sortie, donc le guide a retenu surtout des lieux couverts.");
+  else if (ctx.froid) l.push("Le temps sera frais pendant cette sortie, donc le guide a limité les longues attentes dehors.");
+  else if (ctx.beau) l.push("Le temps prévu permet de profiter des vues et des lieux en plein air.");
+  else if (!ctx.connu) l.push("La météo de ce jour n'est pas encore connue, donc le guide mêle lieux couverts et lieux en plein air.");
+  l.push({ calme: "Votre envie de calme fait passer devant les lieux tranquilles et les trajets courts.",
+    anime: "Votre envie d'animation fait passer devant les lieux vivants et les quartiers qui bougent.",
+    plaisir: "Votre envie de vous faire plaisir fait passer devant les meilleures tables et les plus belles vues.",
+    surprise: "Votre envie d'être surpris écarte les lieux les plus connus de la carte." }[ctx.humeur]
+    || "Les étapes suivent vos goûts pour les salles d'arcade, les bars avec vue, les friperies et l'histoire.");
+  const pts = etapes.map((e) => posLieu(PAR_ID[e.id])), ecarts = pts.slice(1).map((p, i) => metresEntre(pts[i], p));
+  if (ecarts.length) l.push(`Les étapes restent à moins de ${texteDistance(Math.max(...ecarts))} les unes des autres, à vol d'oiseau.`);
+  return l.join(" ");
+}
+function titreLocal(etapes, quand) {
+  const n = etapes.map((e) => PAR_ID[e.id]?.nom).filter(Boolean);
+  if (quand === "heure") return `Une idée pour l'heure qui vient : ${n[0]}.`;
+  const moment = { matin: "Votre matinée", aprem: "Votre après-midi", soir: "Votre soirée", journee: "Votre journée" }[quand];
+  return `${moment} : ${n.join(", puis ")}.`;
+}
+function sortieLocale(j, dep, quand, exclus) {
+  const ctx = contexteLocal(j, quand), n = j.n, R = REGIONS[REGION];
+  let max = REPONSES.trajet !== "auto" ? DISTANCE_REGLAGE[REPONSES.trajet] : quand === "journee" ? 30 : DISTANCE_DUREE[quand];
+  if (REACTION?.cle === "loin") max = Math.max(1.2, Math.min(max, REACTION.max || max) / 2);
+  if (ctx.humeur === "calme") max = Math.min(max, quand === "heure" ? 1.2 : 6);
+  const chaine = quand === "journee" ? 8 : ctx.humeur === "calme" ? 1.5 : 2.5;
+  const deja = new Set([...lieuxDuJour(n).map((e) => e.lieu), ...PLAN.map((e) => e.lieu)]), vus = new Set();
+  const pool = [...R.lieux.filter((s) => s.cat !== "base").map((s) => ({ s, pos: LIEUX[s.pos] })), ...AUTOUR.map((a) => ({ s: a, pos: [a.lat, a.lon] })),
+    ...PRATIQUE.adresses.filter((a) => a.lat != null).map((a) => ({ s: a, pos: [a.lat, a.lon] }))]
+    .filter((x) => x.pos && x.pos[0] != null && !deja.has(x.s.id) && !exclus.has(x.s.id) && PAR_ID[x.s.id] && !(vus.has(x.s.id) || !vus.add(x.s.id)))
+    .filter((x) => kmEntre(dep.pos, x.pos) <= max + chaine * 2);
+  const etapes = [], listes = [], pris = new Set();
+  let prec = dep.pos, sansVerre = false, elargi = false;
+  for (const [role, t] of rolesDe(quand, ctx)) {
+    if (role === "verre" && sansVerre) continue;
+    const ok = pool.filter((x) => !pris.has(x.s.id) && convientRole(role, x.s, ctx) && ouvertA(x.s, n, t));
+    const premier = !etapes.length, lim = premier ? max : chaine;
+    const noter = (l, liste = ok) => liste.map((x) => { const km = kmEntre(prec, x.pos); return { x, km, ...noteLocale(x.s, km, l, ctx, n, t, role) }; })
+      .filter((y) => y.km <= l).sort((a, b) => b.v - a.v);
+    let l = noter(lim);
+    // rien d'ouvert assez près : la première étape cherche plus loin, une étape suivante prend un autre lieu proche avant d'aller loin
+    if (!l.length && premier) for (const f of [2.5, 6]) { l = noter(Math.min(lim * f, 40)); if (l.length) { elargi = true; break; } }
+    if (!l.length && !premier && role === "envie") l = noter(lim, pool.filter((x) => !pris.has(x.s.id) && convientRole(role, x.s, { ...ctx, envie: "" }) && ouvertA(x.s, n, t)));
+    if (!l.length && !premier) l = noter(lim * 2.5);
+    if (!l.length) continue;
+    const c = l[0];
+    pris.add(c.x.s.id); listes.push({ role, l });
+    etapes.push({ id: c.x.s.id, heure: minuteTexte(t), role, quoi: quoiLocal(role, c.x.s, t), conseil: c.x.s.foule || "", raisons: c.r.slice(0, 3) });
+    prec = c.x.pos;
+    if (role === "soir" && FAMILLE[c.x.s.cat] === "sortir") sansVerre = true;
+  }
+  if (!etapes.length) return null;
+  const principal = listes[0], choisi = principal.l[0];
+  const autres = principal.l.filter((y) => !pris.has(y.x.s.id)).slice(0, 2).map((y) => ({ id: y.x.s.id, texte: raisonAutre(y, choisi, ctx) }));
+  const loin = elargi ? ` Rien de convenable n'était ouvert à moins de ${texteDistance(max * 1000)} du point de départ, donc le guide a cherché un peu plus loin.` : "";
+  return { local: true, titre: titreLocal(etapes, quand), pourquoi: pourquoiLocal(ctx, etapes) + loin, etapes, autres, quand: Date.now(),
+    reponses: { ...REPONSES }, depart: dep.nom, pos: dep.pos, max };
+}
+
 $("#idees-bouton").addEventListener("click", () => ouvrirIdees());
 // le bouton n'apparaît que si la page peut interroger Claude (carte ouverte dans Claude)
 (async () => {
   try { SAMPLE = window.claude?.use ? await window.claude.use("sample") : null; } catch { SAMPLE = null; }
-  $("#idees-bouton").hidden = !SAMPLE;
+  // 08/11/2026 : le guide marche aussi sans Claude, le bouton reste donc toujours visible
+  $("#idees-bouton").hidden = false;
 })();
 
 // ---------- Spécialités à goûter : les plats de la ville, leur photo et les adresses de la carte où les goûter ----------
@@ -2137,7 +2367,7 @@ function trouverIdees(n, l, ancres, rayon) {
       const p = f.properties, pos = [f.geometry.coordinates[1], f.geometry.coordinates[0]];
       let près = null;
       for (const a of ancres) { const m = metresEntre(a.pos, pos); if (!près || m < près.m) près = { m, nom: a.nom }; }
-      return { id: p.id, sorte: p.theme || p.fam, m: près.m, pres: près.nom, score: (GOUT_THEME[p.theme] || 0) + (p.gout ? 2 : 0) + (p.niveau === 2 ? 1 : 0) - près.m / 400 };
+      return { id: p.id, sorte: p.theme || p.fam, m: près.m, pres: près.nom, score: (GOUT_THEME[p.theme] || 0) + (p.gout ? 2 : 0) + (p.niveau === 2 ? 1 : 0) + (PAR_ID[p.id]?.top ? 1.5 : 0) - près.m / 400 };
     })
     .filter((x) => x.m <= rayon && PAR_ID[x.id]).sort((a, b) => b.score - a.score)
     .filter((x) => (parSorte[x.sorte] = (parSorte[x.sorte] || 0) + 1) <= 2).slice(0, IDEES_MAX);
@@ -2198,7 +2428,7 @@ function afficherPlanning() {
     ${l.length ? `<ol class="plan-liste">${lignes}</ol><p><button type="button" class="btn" id="plan-cadrer">Montrer ce jour sur la carte</button></p>`
       : `<p class="liste-aide">Aucun lieu n'est encore prévu le ${echapper(titreJour(n).toLowerCase())}. Le bouton « Ajouter au planning » se trouve dans la fiche de chaque lieu.</p>`}
     ${blocIdees(n, l)}
-    ${SAMPLE ? `<p><button type="button" class="btn btn-or" id="plan-idees">Demander au guide pour ce jour</button></p>` : ""}
+    <p><button type="button" class="btn btn-or" id="plan-idees">Demander une sortie au guide pour ce jour</button></p>
     <p class="liste-aide" id="plan-etat" aria-live="polite">${etat}</p>`;
   p.querySelector(".fermer-liste").addEventListener("click", fermerPlanning);
   p.querySelectorAll(".jours button").forEach((b) => b.addEventListener("click", () => { JOUR_PLAN = +b.dataset.n; afficherPlanning(); dessinerPlan(); cadrerJour(JOUR_PLAN); }));
@@ -2385,14 +2615,14 @@ const FERMETURES = {"gyeongbokgung":{"jours":[2],"texte":"Mardi ; pendant le sé
 const jourSemaine = (n) => new Date(2026, 10, n).getDay();
 // « jour » quand le lieu est fermé ce jour-là, « soir » quand il ferme seulement le soir, sinon null
 function fermeLe(id, n) {
-  const f = FERMETURES[id];
+  const f = FERMETURES[id] || PAR_ID[id]?.fermeture;
   if (!f || !n || f.ouvert?.includes(n)) return null;
   if (f.dates?.includes(n) || f.jours?.includes(jourSemaine(n))) return "jour";
   if (f.soirs?.includes(jourSemaine(n))) return "soir";
   return null;
 }
 function phraseFermeture(id, n) {
-  const k = fermeLe(id, n), f = FERMETURES[id];
+  const k = fermeLe(id, n), f = FERMETURES[id] || PAR_ID[id]?.fermeture;
   if (!k) return "";
   const texte = echapper(f.texte.replace(/\.? \|\| /g, " ; ")).replace(/\.$/, "");
   return `Ce lieu est fermé ${k === "soir" ? "le soir " : ""}ce jour-là. ${f.source === "wv" ? "Ses horaires disent" : "Sa fiche dit"} « ${texte} ».`;
@@ -2464,11 +2694,17 @@ function ouvrirJournee(n, garder = false) {
     ${j.region ? `<p><button type="button" class="btn btn-or" data-carte>Voir ce jour sur la carte</button></p>` : ""}
     ${l.length ? `<ol class="plan-liste">${lignes}</ol><p class="liste-aide">Le nom d'une étape ouvre sa fiche, avec son adresse, ses horaires et son trajet.</p>` : `<p class="liste-aide">${vide}</p>`}
     ${evenementsJour(j)}
-    <div class="journee-boutons"><button type="button" class="btn" data-aide>Comment se servir de la carte</button></div>`;
+    <div class="journee-boutons">${j.region ? `<button type="button" class="btn btn-or" data-guide>Que faire ? Le guide du jour</button>` : ""}<button type="button" class="btn" data-aide>Comment se servir de la carte</button></div>`;
   b.querySelector("[data-fermer]").addEventListener("click", fermerJournee);
   b.querySelectorAll(".journee-nav [data-n]").forEach((x) => x.addEventListener("click", () => ouvrirJournee(+x.dataset.n)));
   b.querySelector("[data-carte]")?.addEventListener("click", () => voirJourSurCarte(j));
   b.querySelector("[data-aide]").addEventListener("click", ouvrirAide);
+  b.querySelector("[data-guide]")?.addEventListener("click", async () => {
+    fermerJournee();
+    const r = j.region === REGION || j.regions?.includes(REGION) ? REGION : j.region;
+    if (r !== REGION) await aller(`etape:${r}`);
+    ouvrirIdees(j.n);
+  });
   b.querySelectorAll(".plan-nom[data-lieu]").forEach((x) => x.addEventListener("click", () => ouvrirEtape(x.dataset.lieu, x.dataset.region)));
   if (!garder || f.hidden) montrerJournee();
 }
@@ -2491,6 +2727,7 @@ function journeeAuLancement() {
 const AIDE = [
   ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure, le programme et l'arrêt de métro ou de bus de chacune, puis les illuminations, les fêtes et les marchés de la ville ce jour-là. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
   ["Le jour sur la carte", "Le bouton « Voir ce jour sur la carte » numérote les étapes et les relie par un trait doré depuis votre hôtel. La barre « Jour » au bas de l'écran montre de la même façon chaque jour passé dans la ville. Le panneau qui s'ouvre alors sert à changer l'ordre des étapes ou à en retirer une."],
+  ["Le guide du jour", "Le bouton Guide du jour propose une sortie selon votre envie, votre humeur, le moment, la météo prévue, votre budget et la distance acceptée. Le guide choisit parmi les meilleures adresses de la carte, ouvertes à l'heure prévue, avec un repas et un verre quand le moment s'y prête. Les boutons placés sous la sortie demandent plus près, plus calme, moins cher ou une autre idée."],
   ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix. Sur un téléphone, une fiche ouverte cache les boutons du bas, et la croix de la fiche les fait revenir."],
   ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Les pastilles de couleur apparaissent avec les choix Sélection et Tout. Une pastille comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],
   ["Les autres villes du voyage", "Le nom de la ville écrit en haut de l'écran ouvre la liste des villes du voyage. Le fil « Voyage › Corée › Séoul » placé au-dessus sert à revenir en arrière."],

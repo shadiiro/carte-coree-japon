@@ -281,6 +281,8 @@ body.vue-programme .filtres { display: none !important; }
 .etape-tete .pastille { width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .etape-heure { font-weight: 700; color: var(--gold-texte); font-variant-numeric: tabular-nums; }
 .etape-conseil { font-size: 13px; color: var(--ink); font-style: italic; }
+.idee-raisons { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 2px; }
+.idee-raisons span { font-size: 12px; line-height: 1.3; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--gold-texte); color: var(--gold-texte); font-weight: 600; }
 .autres { list-style: none; margin: 0 0 6px; padding: 0; display: grid; gap: 6px; }
 .reactions { flex-wrap: wrap; }
 .guide-sait { margin: 4px 0 10px; font-size: 13px; line-height: 1.45; color: var(--ink); background: var(--chip); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
@@ -499,7 +501,7 @@ body.vue-programme .filtres { display: none !important; }
   <div class="rangee jours jours-barre" id="jours-barre" role="group" aria-label="Choisir un jour du voyage" hidden></div>
   <div class="rangee">
     <button type="button" id="planning-bouton" class="rangee-bouton"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5M8 14h3M8 17h6"/></svg>Planning</button>
-    <button type="button" id="idees-bouton" class="rangee-bouton idees-bouton" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.8z"/></svg>Guide du jour</button>
+    <button type="button" id="idees-bouton" class="rangee-bouton idees-bouton"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.8z"/></svg>Guide du jour</button>
     <div class="vues" id="vues" role="group" aria-label="Lieux montrés sur la carte">
       <button type="button" data-v="programme" aria-pressed="true">Programme</button>
       <button type="button" data-v="selection" aria-pressed="false">Sélection</button>

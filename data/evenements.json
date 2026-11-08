@@ -187,5 +187,65 @@
   "quand": "Du 25 novembre au 6 décembre, de 18 h à 20 h 30, dernière entrée à 19 h 30, pour 1 000 yens à l'avance ou 1 200 yens sur place.",
   "texte": "Le jardin japonais de l'époque d'Edo ouvre le soir pour montrer ses érables éclairés.",
   "source": "<a href=\"https://matcha-jp.com/jp/27821\" target=\"_blank\" rel=\"noopener\">Matcha, novembre 2026</a>"
+ },
+ {
+  "id": "ev_busan_pont_gwangan",
+  "lieu": "gwangalli",
+  "region": "busan",
+  "nom": "Plage de Gwangalli",
+  "titre": "Le pont Gwangan illuminé",
+  "du": "2026-11-10",
+  "au": "2026-11-14",
+  "quand": "Chaque soir de votre séjour, après le coucher du soleil.",
+  "texte": "Les 13 465 lampes du pont, refaites en octobre 2025, changent de couleur selon la météo du moment et passent des animations lumineuses. Le spectacle de drones de la plage a lieu seulement le samedi à 19 h et 21 h, donc après votre départ du 14.",
+  "source": "<a href=\"https://www.kukinews.com/article/view/kuk202511130020\" target=\"_blank\" rel=\"noopener\">Kuki News, novembre 2025</a>, <a href=\"https://www.busan.go.kr/eng/bsnews01/1723430\" target=\"_blank\" rel=\"noopener\">ville de Busan, mars 2026</a>, <a href=\"https://www.haniseoul.com/ko/travels/korea/busan-night-view\" target=\"_blank\" rel=\"noopener\">HaniSeoul, 2026</a>"
+ },
+ {
+  "id": "ev_busan_tour_feux",
+  "lieu": "wv_busan_yongdusan_park_and_busan_tower",
+  "region": "busan",
+  "nom": "Parc Yongdusan et Busan Tower",
+  "titre": "Les feux d'artifice en images de la Busan Tower",
+  "du": "2026-11-10",
+  "au": "2026-11-14",
+  "quand": "Chaque soir, jusqu'à la fermeture de 22 h.",
+  "texte": "À la nuit tombée, les grandes vitres de l'observatoire montrent des feux d'artifice en images, par-dessus la vraie vue sur le port. La dernière vente de billets a lieu à 21 h 30.",
+  "source": "<a href=\"https://www.trvlogue.com/ko/busan-diamond-tower-nampo-dong\" target=\"_blank\" rel=\"noopener\">Trvlogue, 2026</a>"
+ },
+ {
+  "id": "ev_busan_kkangtong_nuit",
+  "lieu": "sug_busan_ggangtong_market",
+  "region": "busan",
+  "nom": "Marché Kkangtong",
+  "titre": "Le marché de nuit de Kkangtong",
+  "du": "2026-11-10",
+  "au": "2026-11-14",
+  "quand": "Chaque soir à partir de 19 h 30.",
+  "texte": "Une trentaine de stands de cuisines du monde s'installent dans l'allée centrale du marché, le premier marché de nuit permanent de Corée.",
+  "source": "<a href=\"https://www.koreajoongangdaily.com/korea/delicious-snacks-and-entertainment-draw-crowds-at-night/10717167\" target=\"_blank\" rel=\"noopener\">Korea JoongAng Daily</a>, <a href=\"https://mom-mom.net/travel/places/65936a28b48147c080a98264\" target=\"_blank\" rel=\"noopener\">Mom-mom</a>"
+ },
+ {
+  "id": "ev_gyeongju_donggung_nuit",
+  "lieu": "wv_busan_donggung_palace_and_wolji_pond",
+  "region": "busan",
+  "nom": "Palais Donggung et étang Wolji",
+  "titre": "Donggung et Wolji illuminés",
+  "du": "2026-11-11",
+  "au": "2026-11-11",
+  "quand": "Le soir de votre journée à Gyeongju, jusqu'à 22 h.",
+  "texte": "Les pavillons reconstruits s'illuminent à la tombée de la nuit et se reflètent dans l'étang. La dernière entrée est à 21 h 30, pour 3 000 wons. Le pont Woljeonggyo reste éclairé et ouvert gratuitement jusqu'à 22 h, et l'observatoire Cheomseongdae jusqu'à 21 h. Des KTX relient ensuite la gare de Gyeongju à celle de Busan en une demi-heure, jusque tard le soir ; l'horaire du jour reste à vérifier dans l'application Korail.",
+  "source": "<a href=\"https://www.yugacrew.com/crewletter/gyeongju-night-view\" target=\"_blank\" rel=\"noopener\">Yuga Crew, d'après l'office du tourisme coréen, 14 octobre 2026</a>, <a href=\"https://info.koreacharts.com/traintime/10311/10020/contents.html?date=2026-11-07\" target=\"_blank\" rel=\"noopener\">horaire des trains Gyeongju vers Busan, 7 novembre 2026</a>"
+ },
+ {
+  "id": "ev_busan_thebay101",
+  "lieu": "top_busan_thebay101",
+  "region": "busan",
+  "nom": "The Bay 101",
+  "titre": "Les tours de Marine City de nuit",
+  "du": "2026-11-10",
+  "au": "2026-11-14",
+  "quand": "Chaque soir, jusqu'à minuit.",
+  "texte": "Les lumières des gratte-ciel de Marine City se reflètent dans la baie devant The Bay 101, et la terrasse se visite librement.",
+  "source": "<a href=\"https://brunch.co.kr/@qrssa/5174\" target=\"_blank\" rel=\"noopener\">Brunch, 2026</a>"
  }
 ]

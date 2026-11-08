@@ -12,7 +12,7 @@ export const BASES = [
 
 export const EXCURSIONS = [
   { id: "imjingak", nom: "DMZ", quand: "6 nov." },
-  { id: "suwon", nom: "Suwon", quand: "8 nov." },
+  { id: "suwon", nom: "Suwon", quand: "9 nov." },
   { id: "nami", nom: "Île de Nami", quand: "5 nov." },
   { id: "morningcalm", nom: "Jardin Morning Calm", quand: "jeudi 5 novembre" },
   { id: "daereungwon", nom: "Gyeongju", quand: "11 nov." },

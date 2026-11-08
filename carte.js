@@ -545,7 +545,7 @@ function ouvrirFiche(s) {
         ${s.prevu ? `<dt>Pourquoi</dt><dd>${s.prevu}</dd>` : ""}${s.dedans ? `<dt>${echapper(s.dedans.titre)}</dt><dd><ul class="fiche-dedans">${s.dedans.lignes.map(([t, x]) => `<li><b>${echapper(t)}.</b> ${echapper(x)}</li>`).join("")}</ul></dd>` : ""}${evenementsFiche(s)}${s.pourquoi ? `<dt>Pour vous</dt><dd>${echapper(s.pourquoi)}</dd>` : ""}${conseilJour(s)}${aGouter(s)}
         ${s.photoPlat ? `<dt>Photo</dt><dd>Cette photo montre le plat. Elle a été prise dans un autre lieu.</dd>` : ""}
         ${s.cat !== "base" && s.cat !== "hotel" && pos[0] != null ? ligneDistance(pos) : ""}
-        ${depuisHotel(s)}${aPied(s)}${lignesHotel(s)}${s.acces ? `<dt>Trajet</dt><dd>${s.acces}</dd>` : ""}${s.foule ? `<dt>Affluence</dt><dd>${s.foule}</dd>` : ""}${lignesPratiques(p)}${ligneDetaxe(fam)}</dl>
+        ${depuisHotel(s)}${s.arret ? `<dt>Accès</dt><dd>${echapper(s.arret)}</dd>` : ""}${aPied(s)}${lignesHotel(s)}${s.acces ? `<dt>Trajet</dt><dd>${s.acces}</dd>` : ""}${s.foule ? `<dt>Affluence</dt><dd>${s.foule}</dd>` : ""}${lignesPratiques(p)}${ligneDetaxe(fam)}</dl>
       ${!s.acces && !p && s.cat !== "base" && s.cat !== "hotel" ? `<div class="source">Le trajet en transports et l'affluence ne sont pas encore renseignés.</div>` : ""}
       <div class="actions"><a class="btn" target="_blank" rel="noopener" href="${s.hotel ? lienHotel(s) : lienCarte(s)}">${coree() ? "Ouvrir dans Naver Map" : "Itinéraire dans Google Maps"}</a>${s.hotel ? `
         <button type="button" class="btn" id="montrer-chauffeur">Montrer au chauffeur de taxi</button>` : ""}</div>
@@ -2415,6 +2415,23 @@ preparerOutils({
 // à faire, toutes villes confondues, sans passer par le panneau de la carte. Le mode d'emploi s'ouvre depuis cette fenêtre et depuis
 // le bouton rond « ? ».
 let JOUR_FENETRE = null;
+// 08/11/2026, demandé par Schadrac : chaque étape donne son arrêt de métro. Le texte « arret » écrit à la main (planning ou fiche)
+// passe en premier, par exemple pour un arrêt de bus à Suwon. Sinon l'arrêt vient du temps de marche calculé depuis la gare ou la
+// station la plus proche (data/<ville>/marche.json), chargé pour chaque ville du voyage.
+const MARCHE_TOUS = {};
+let MARCHES_DEMANDES = false;
+const chargerMarches = () => Promise.all(Object.keys(ZONES).map((r) => MARCHE_TOUS[r] ? null
+  : fetch(`data/${r}/marche.json`).then((x) => x.json()).then((m) => { MARCHE_TOUS[r] = m; }).catch(() => {})));
+function arretEtape(e) {
+  const manuel = e.arret || (e.region === REGION || !e.region ? PAR_ID[e.lieu]?.arret : null);
+  if (manuel) return `<b>Accès :</b> ${echapper(manuel)}`;
+  const m = (e.region === REGION ? MARCHE : MARCHE_TOUS[e.region])?.[e.lieu];
+  if (!m || m[0] < 0) return "";
+  const [min, metres, gare, natif, metro] = m;
+  const nom = `${echapper(gare)}${natif && natif !== gare ? ` (${echapper(natif)})` : ""}`;
+  const quoi = metro ? `station ${nom}` : `gare ${/^[aeiouâéèêîôûāēīōū]/i.test(gare) ? "d'" : "de "}${nom}`;
+  return `<b>${metro ? "Métro" : "Train"} :</b> ${quoi}, ${metres < 50 ? "juste à côté" : `${min} min à pied`}.`;
+}
 const etapesDuJour = (n) => [...planAuto().filter((a) => a.jour === n && !PLAN.some((e) => e.jour === n && e.lieu === a.lieu)), ...PLAN.filter((e) => e.jour === n)]
   .sort((a, b) => (a.auto === b.auto ? (a.ordre ?? 0) - (b.ordre ?? 0) : a.auto ? -1 : 1));
 function jourDuMoment() {
@@ -2429,13 +2446,14 @@ function montrerJournee() {
   f.querySelector(".boite").scrollTop = 0;
 }
 function ouvrirJournee(n, garder = false) {
+  if (!MARCHES_DEMANDES) (MARCHES_DEMANDES = true) && chargerMarches().then(() => { if (!$("#journee").hidden && JOUR_FENETRE === (jourDe(n) || jourDuMoment()).n) ouvrirJournee(JOUR_FENETRE, true); });
   const j = jourDe(n) || jourDuMoment(), f = $("#journee"), b = f.querySelector(".boite");
   JOUR_FENETRE = j.n;
   const i = JOURS.indexOf(j), prec = JOURS[i - 1], suiv = JOURS[i + 1], d = surPlace();
   const auj = d.an === 2026 && d.mois === 10 && d.jour === j.n, l = etapesDuJour(j.n);
   const lignes = l.map((e, k) => `<li><span class="plan-rang">${k + 1}</span><div class="plan-texte">
       <span>${e.heure ? `<span class="plan-heure">${echapper(e.heure)}</span> ` : ""}<button type="button" class="plan-nom" data-lieu="${echapper(e.lieu)}" data-region="${echapper(e.region || "")}">${echapper(e.nom)}</button></span>
-      ${e.quoi ? `<span class="plan-quoi">${echapper(e.quoi)}</span>` : ""}</div></li>`).join("");
+      ${e.quoi ? `<span class="plan-quoi">${echapper(e.quoi)}</span>` : ""}${arretEtape(e) ? `<span class="plan-arret">${arretEtape(e)}</span>` : ""}</div></li>`).join("");
   const vide = DB && !PLAN_PRET ? "Le planning se charge." : "Aucune étape n'est encore prévue ce jour-là. Le bouton « Ajouter au planning » de chaque fiche sert à en placer une.";
   b.innerHTML = `<div class="journee-tete"><div><p class="journee-sur">${auj ? "Aujourd'hui" : "Votre journée"} · ${echapper(j.ville)}</p>
       <h2 id="journee-titre">${echapper(j.titre || titreJour(j.n))}</h2></div>
@@ -2471,7 +2489,7 @@ function journeeAuLancement() {
   ouvrirJournee();
 }
 const AIDE = [
-  ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure et le programme de chacune, puis les illuminations, les fêtes et les marchés de la ville ce jour-là. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
+  ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure, le programme et l'arrêt de métro ou de bus de chacune, puis les illuminations, les fêtes et les marchés de la ville ce jour-là. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
   ["Le jour sur la carte", "Le bouton « Voir ce jour sur la carte » numérote les étapes et les relie par un trait doré depuis votre hôtel. La barre « Jour » au bas de l'écran montre de la même façon chaque jour passé dans la ville. Le panneau qui s'ouvre alors sert à changer l'ordre des étapes ou à en retirer une."],
   ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix. Sur un téléphone, une fiche ouverte cache les boutons du bas, et la croix de la fiche les fait revenir."],
   ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Les pastilles de couleur apparaissent avec les choix Sélection et Tout. Une pastille comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],

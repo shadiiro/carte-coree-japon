@@ -26,7 +26,7 @@ export const REPERES = [{ id: "fuji", nom: "Mont Fuji" }];
 
 // Trajets : suites de gares (coordonnées OpenStreetMap). jour = jour du trajet ; 0 = jour pas encore fixé.
 export const TRAJETS = [
-  { id: "ktx", jour: 10, type: "train", nom: "KTX Séoul → Busan",
+  { id: "ktx", jour: 10, type: "train", nom: "KTX 031 Séoul → Busan, 11 h 58 → 14 h 42",
     gares: ["seoul", "gwangmyeong", "cheonan_asan", "osong", "daejeon", "gimcheon_gumi", "dongdaegu", "gyeongju_gare", "ulsan", "busan"] },
   { id: "vol", jour: 14, type: "avion", nom: "Avion Busan → Fukuoka", gares: ["busan", "hakata"] },
   { id: "sanyo", jour: 18, type: "train", nom: "Shinkansen Fukuoka → Kobe",
@@ -34,7 +34,7 @@ export const TRAJETS = [
   { id: "tokaido", jour: 21, type: "train", nom: "Shinkansen Kobe → Tokyo",
     gares: ["shin_kobe", "shin_osaka", "kyoto", "maibara", "gifu_hashima", "nagoya", "mikawa_anjo", "toyohashi", "hamamatsu", "kakegawa", "shizuoka", "shin_fuji", "mishima", "atami", "odawara", "shin_yokohama", "shinagawa", "tokyo"] },
   { id: "dmz", jour: 6, type: "sortie", gares: ["seoul", "imjingak"] },
-  { id: "suwon", jour: 8, type: "sortie", gares: ["seoul", "suwon"] },
+  { id: "suwon", jour: 9, type: "sortie", gares: ["seoul", "suwon"] },
   { id: "nami", jour: 5, type: "sortie", gares: ["seoul", "nami", "morningcalm"] },
   { id: "gyeongju", jour: 11, type: "sortie", gares: ["busan", "daereungwon"] },
   { id: "rokko", jour: 21, type: "sortie", gares: ["sannomiya", "rokko"] },
@@ -51,7 +51,7 @@ export const JOURS = [
   // 08/11/2026 : Suwon passe au lundi, car il pleut toute la journée du dimanche ; le dimanche devient une journée en ville à partir de midi
   J(8, "dim", "Séoul", "kr", "seoul", "Il pleut toute la journée, donc vous passez l'après-midi en ville à partir de midi : le palais, le temple Jogyesa, puis les vêtements d'occasion.", { region: "seoul", titre: "Dimanche 8 novembre" }),
   J(9, "lun", "Suwon", "kr", "suwon", "Vous visitez Suwon, votre dernière journée avant le départ pour Busan : la forteresse de Hwaseong et la ville à l'intérieur de ses murs.", { region: "seoul", lieu: "suwon", titre: "Lundi 9 novembre", trajet: "suwon" }),
-  J(10, "mar", "Busan", "kr", "busan", "Le train du matin vous emmène de Séoul à Busan. Votre deuxième hôtel est à Busan.", { region: "busan", titre: "Mardi 10 novembre", trajet: "ktx" }),
+  J(10, "mar", "Busan", "kr", "busan", "Le KTX 031 part de la gare de Séoul à 11 h 58 et arrive à la gare de Busan à 14 h 42. Vos places sont les 10A et 10B de la voiture 6. Votre deuxième hôtel est à Busan.", { region: "busan", titre: "Mardi 10 novembre", trajet: "ktx" }),
   J(11, "mer", "Gyeongju", "kr", "daereungwon", "Vous allez à Gyeongju : les tombes royales, le pont Woljeonggyo, le village hanok et la grotte de Seokguram.", { region: "busan", lieu: "daereungwon", titre: "Mercredi 11 novembre", trajet: "gyeongju" }),
   J(12, "jeu", "Busan", "kr", "busan", "Vous passez la journée à Busan. Le programme de cette journée reste à choisir.", { region: "busan", titre: "Jeudi 12 novembre" }),
   J(13, "ven", "Busan", "kr", "busan", "Vous passez la journée à Busan. Le programme de cette journée reste à choisir.", { region: "busan", titre: "Vendredi 13 novembre" }),

@@ -8292,7 +8292,7 @@
   "lat": 37.2792,
   "lon": 127.0105,
   "texte": "Ce bar à makgeolli traditionnel a une très belle vue sur Suwon. Il sert des galettes coréennes et des alcools de riz de plusieurs régions. C'est une bonne étape le soir, après la promenade sur la forteresse.",
-  "prevu": "Ajouté depuis Wikivoyage pour donner plus de choix autour de vous.",
+  "prevu": "Ce bar n'est plus dans le programme, parce que son ouverture le lundi n'a pas pu être vérifiée.",
   "article": "Suwon",
   "notoriete": 0,
   "photo": false,
@@ -9849,5 +9849,58 @@
   "trajet": {
    "moyen": "La sortie 7 de la station Euljiro 1-ga, sur la ligne 2, donne sur le magasin."
   }
+ },
+ {
+  "id": "web_suwon_simgeum",
+  "nom": "Simgeum",
+  "natif": "심금",
+  "cat": "sortir",
+  "catTxt": "Bar ou café",
+  "lat": 37.2882,
+  "lon": 127.0143,
+  "texte": "Ce bar coréen sert du makgeolli, du soju et de la bière avec des galettes, des ragoûts, des grillades et des fritures. Il se trouve dans un bâtiment noir juste en face de la porte Janganmun de la forteresse.",
+  "prevu": "Ce bar est prévu le lundi à 18 h, juste après le coucher du soleil au pavillon Banghwasuryujeong.",
+  "adresse": "136-1 Buksu-dong, Paldal-gu, Suwon (수원시 팔달구 북수동 136-1)",
+  "horaires": "Du lundi au jeudi de 17 h à 1 h, le vendredi et le samedi jusqu'à 2 h, le dimanche jusqu'à minuit",
+  "source": "Horaires et adresse d'après la fiche publique du bar et des guides de restaurants coréens, vérifiés le 8 novembre 2026.",
+  "notoriete": 0,
+  "photo": false,
+  "proche": false,
+  "evenement": true
+ },
+ {
+  "id": "web_suwon_ssalsuljip",
+  "nom": "Ssalsuljip",
+  "natif": "쌀술집",
+  "cat": "sortir",
+  "catTxt": "Bar ou café",
+  "lat": 37.2853,
+  "lon": 127.0128,
+  "texte": "Ce bar sert du makgeolli et des alcools traditionnels coréens dans les ruelles de Haenggung-dong, près de la porte Hwaseomun. Il a quelques tables dehors, et la position sur la carte est approximative.",
+  "prevu": "Ce bar est prévu le lundi à 19 h 30, pour un deuxième verre avant le retour à Séoul.",
+  "adresse": "15-15 Hwaseomun-ro 41beon-gil, Paldal-gu, Suwon (경기도 수원시 팔달구 화서문로41번길 15-15)",
+  "horaires": "Tous les jours de 16 h 30 à minuit, dernière commande à 23 h",
+  "source": "Horaires et adresse d'après la fiche publique du bar et des guides de restaurants coréens, vérifiés le 8 novembre 2026.",
+  "notoriete": 0,
+  "photo": false,
+  "proche": false,
+  "evenement": true
+ },
+ {
+  "id": "web_seoul_gare_ktx",
+  "nom": "Gare de Séoul",
+  "natif": "서울역",
+  "cat": "faire",
+  "catTxt": "Transport",
+  "lat": 37.5547,
+  "lon": 126.9707,
+  "texte": "La gare de Séoul est la gare principale des KTX vers Busan. La ligne 1 du métro y va directement depuis Jongno 5-ga en quatre stations, sans changement, en une dizaine de minutes.",
+  "prevu": "Votre KTX 031 part d'ici le mardi 10 novembre à 11 h 58, voiture 6, places 10A et 10B. Le numéro du quai s'affiche sur les écrans du hall avant le départ.",
+  "adresse": "405 Hangang-daero, Yongsan-gu (서울 용산구 한강대로 405)",
+  "source": "Billets KTX 031 du 10 novembre 2026 et site de Korail.",
+  "notoriete": 0,
+  "photo": false,
+  "proche": false,
+  "evenement": true
  }
 ]

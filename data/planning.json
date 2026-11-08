@@ -126,20 +126,6 @@
    "quoi": "Ce pavillon domine l'étang Yongyeon, entouré d'arbres en couleurs d'automne. Le soleil se couche à 17 h 28, donc la lumière est la plus belle juste avant."
   },
   {
-   "jour": 9,
-   "lieu": "sug_seoul_pal_dal_san",
-   "region": "seoul",
-   "nom": "Paldalsan",
-   "pos": [
-    37.2792,
-    127.0105
-   ],
-   "ordre": 1004,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "18 h",
-   "quoi": "Ce bar à makgeolli sert des galettes coréennes avec une belle vue sur la ville, pour finir la journée. Le retour se fait en bus jusqu'à la gare de Suwon, puis par la ligne 1 jusqu'à Jongno 5-ga."
-  },
-  {
    "jour": 8,
    "region": "seoul",
    "ordre": 1004,
@@ -152,6 +138,48 @@
     127.099895
    ],
    "quoi": "Le centre commercial se trouve à environ 7 km à l'est de Garosu-gil, au pied de la Lotte World Tower, à la station Jamsil des lignes 2 et 8. Il compte plus de 600 enseignes. Le magasin Nike du 3e étage ouvre jusqu'à 22 h, et le grand magasin Lotte relié au centre a un magasin Nike consacré à la course au sous-sol. Le plus grand magasin Adidas des grands magasins coréens a ouvert au 3e étage en février 2026. La présence d'ASICS et de Kodak dans le centre reste à vérifier sur place."
+  },
+  {
+   "jour": 9,
+   "lieu": "web_suwon_simgeum",
+   "region": "seoul",
+   "nom": "Simgeum",
+   "pos": [
+    37.2882,
+    127.0143
+   ],
+   "ordre": 1004,
+   "ajoute": "2026-11-08T02:50:00.000Z",
+   "heure": "18 h",
+   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à dix minutes à pied du pavillon Banghwasuryujeong. Il sert du makgeolli, du soju et de la bière avec des galettes, des ragoûts et des fritures, et il ouvre le lundi de 17 h à 1 h."
+  },
+  {
+   "jour": 9,
+   "lieu": "web_suwon_ssalsuljip",
+   "region": "seoul",
+   "nom": "Ssalsuljip",
+   "pos": [
+    37.2853,
+    127.0128
+   ],
+   "ordre": 1005,
+   "ajoute": "2026-11-08T02:50:00.000Z",
+   "heure": "19 h 30",
+   "quoi": "Ce bar à makgeolli et à alcools traditionnels se trouve dans les ruelles de Haenggung-dong, près de la porte Hwaseomun, et ouvre tous les jours de 16 h 30 à minuit. Le retour se fait en bus jusqu'à la gare de Suwon, puis par la ligne 1 jusqu'à Jongno 5-ga."
+  },
+  {
+   "jour": 10,
+   "lieu": "web_seoul_gare_ktx",
+   "region": "seoul",
+   "nom": "Gare de Séoul",
+   "pos": [
+    37.5547,
+    126.9707
+   ],
+   "ordre": 1001,
+   "ajoute": "2026-11-08T02:55:00.000Z",
+   "heure": "11 h 58",
+   "quoi": "Le KTX 031 part à 11 h 58 et arrive à Busan à 14 h 42, voiture 6, places 10A et 10B. Le départ de l'hôtel est prévu vers 11 h, par la ligne 1 depuis Jongno 5-ga jusqu'à la gare de Séoul, en direction d'Incheon ou de Cheonan. Le billet se présente directement sur l'application, sans passer par un guichet."
   }
  ]
 }

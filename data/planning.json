@@ -128,31 +128,31 @@
    "region": "seoul"
   },
   {
-   "ajoute": "2026-11-08T02:50:00.000Z",
-   "heure": "17 h 45",
-   "jour": 9,
-   "lieu": "web_suwon_simgeum",
-   "nom": "Simgeum",
-   "ordre": 1004,
-   "pos": [
-    37.2882,
-    127.0143
-   ],
-   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à dix minutes à pied du pavillon Banghwasuryujeong. Les plats de la carte sont des galettes, des ragoûts et des fritures, servis avec du makgeolli ou du soju, et l'ouverture est à 17 h le lundi. Un client parle d'une demi-heure d'attente dans son avis, donc l'inscription dans la file d'attente à distance de l'application CatchTable peut se faire depuis le pavillon vers 17 h. Le départ vers le centre Starfield Suwon est prévu vers 18 h 45, en taxi, pour un trajet d'environ 2 km vers l'ouest.",
-   "region": "seoul"
-  },
-  {
    "ajoute": "2026-11-09T00:58:00.000Z",
-   "heure": "19 h",
+   "heure": "18 h",
    "jour": 9,
    "lieu": "sug_seoul_starfield_suwon",
    "nom": "Starfield Suwon",
-   "ordre": 1005,
+   "ordre": 1004,
    "pos": [
     37.287366,
     126.991208
    ],
-   "quoi": "Ce grand centre commercial du groupe Shinsegae se trouve à environ 2 km à l'ouest de Simgeum, soit une dizaine de minutes en taxi. Le centre est ouvert tous les jours de 10 h à 22 h, et les boutiques retenues pour vos goûts sont Polo Denim de Ralph Lauren au 2F, le grand magasin New Balance au 5F, la boutique de créateurs Obscura, la boutique de chaussures Dude I.Am Shop, la boutique de sélection LCDC et le plus grand magasin Barbour de Corée. Le départ vers l'hôtel est prévu à 21 h en taxi, pour un trajet de 37 km et une arrivée vers 22 h selon la circulation.",
+   "quoi": "Ce grand centre commercial du groupe Shinsegae se trouve à 3,5 km du pavillon par la route, soit une dizaine de minutes en taxi après le coucher du soleil. Le centre est ouvert tous les jours de 10 h à 22 h, et les boutiques retenues pour vos goûts sont Polo Denim de Ralph Lauren au 2F, le grand magasin New Balance au 5F, la boutique de créateurs Obscura, la boutique de chaussures Dude I.Am Shop, la boutique de sélection LCDC et le plus grand magasin Barbour de Corée. Le départ vers Simgeum est prévu à 19 h 45 en taxi, pour un trajet de 2,7 km.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-08T02:50:00.000Z",
+   "heure": "20 h",
+   "jour": 9,
+   "lieu": "web_suwon_simgeum",
+   "nom": "Simgeum",
+   "ordre": 1005,
+   "pos": [
+    37.2882,
+    127.0143
+   ],
+   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à 2,7 km du centre Starfield Suwon par la route. Les plats de la carte sont des galettes, des ragoûts et des fritures, servis avec du makgeolli ou du soju, et le bar est ouvert le lundi de 17 h à 1 h. Un client parle d'une demi-heure d'attente dans son avis, donc l'inscription dans la file d'attente à distance de l'application CatchTable peut se faire depuis le centre vers 19 h 15. Le départ vers l'hôtel est prévu à 21 h en taxi, pour un trajet de 38 km et une arrivée vers 22 h selon la circulation.",
    "region": "seoul"
   },
   {

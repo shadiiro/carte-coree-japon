@@ -7693,19 +7693,50 @@
   "nom": "Starfield Suwon",
   "natif": "스타필드 수원",
   "cat": "acheter",
-  "catTxt": "Boutique",
+  "catTxt": "Centre commercial",
   "lat": 37.287366,
   "lon": 126.991208,
-  "texte": "Ce grand centre commercial du groupe Shinsegae réunit des restaurants, des activités et des boutiques de luxe.",
-  "prevu": "Ajouté depuis Wikivoyage pour donner plus de choix autour de vous.",
+  "texte": "Ce grand centre commercial du groupe Shinsegae a ouvert le 26 janvier 2024 près de la gare de Hwaseo, à environ 2 km à l'ouest de la porte Janganmun. Les boutiques de mode occupent les niveaux 1F à 6F avec des restaurants et des cafés du 1F au 7F, et la bibliothèque Starfield s'étend du 4F au 7F sur une hauteur de 22 m.",
+  "prevu": "Ce centre commercial est prévu le lundi de 19 h à 21 h, après le dîner chez Simgeum, avec un retour en taxi vers l'hôtel à 21 h.",
   "article": "Suwon",
   "notoriete": 0,
   "photo": false,
   "proche": true,
-  "source": "Texte d'après Wikivoyage en anglais, article « Suwon », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller.",
-  "horaires": "10 h à 22 h",
+  "source": "Texte, étages, horaires et accès d'après <a href=\"https://www.suwon.go.kr/sw-www/sw-visitsuwon/sw-visitsuwon-04/sw-visitsuwon-04-05/sw-visitsuwon-04-05-01/sw-visitsuwon-04-05-01-05.jsp\" target=\"_blank\" rel=\"noopener\">la page de la ville de Suwon, mise à jour le 12 mai 2026</a>. Date d'ouverture et hauteur de la bibliothèque : <a href=\"https://middleclass.sg/travel/starfield-suwon/\" target=\"_blank\" rel=\"noopener\">MiddleClass.sg, octobre 2026</a>. Boutiques : <a href=\"https://www.ktriptips.com/eng/shopping/4048482\" target=\"_blank\" rel=\"noopener\">fiche de Polo Denim, avril 2026</a>, <a href=\"https://www.insight.co.kr/news/460675\" target=\"_blank\" rel=\"noopener\">annonce de New Balance, janvier 2024</a>, <a href=\"https://biz.newdaily.co.kr/site/data/html/2024/01/24/2024012400062.amp.html\" target=\"_blank\" rel=\"noopener\">NewDaily, janvier 2024</a>, <a href=\"https://news.tf.co.kr/read/ogmeta/2071002.htm\" target=\"_blank\" rel=\"noopener\">The Fact, janvier 2024</a>, <a href=\"https://dealsite.co.kr/articles/137563\" target=\"_blank\" rel=\"noopener\">Dealsite, mars 2025</a> et <a href=\"https://letter.wepick.kr/post/3431\" target=\"_blank\" rel=\"noopener\">Wepick, 2024</a>. Lus le 9 novembre 2026. Position : Wikivoyage.",
+  "horaires": "Le centre est ouvert tous les jours de l'année de 10 h à 22 h, mais certaines boutiques ont leurs propres horaires. Une ouverture jusqu'à 22 h figure seulement sur la fiche de Polo Denim parmi les boutiques retenues pour vous.",
   "niveau": 3,
-  "priorite": 700
+  "priorite": 700,
+  "adresse": "175 Suseong-ro, Jangan-gu, Suwon (경기도 수원시 장안구 수성로 175)",
+  "arret": "Les sorties 2 et 3 de la gare de Hwaseo (화서역), sur la ligne 1, se trouvent à huit minutes à pied du centre.",
+  "dedans": {
+   "titre": "Les boutiques qui vous intéressent",
+   "lignes": [
+    [
+     "Polo Denim (Ralph Lauren)",
+     "Cette ligne de jeans de Ralph Lauren se trouve au 2F, avec une ouverture de 10 h à 22 h et la détaxe."
+    ],
+    [
+     "New Balance",
+     "Ce très grand magasin de la marque occupe 694 m² au 5F depuis l'ouverture du centre en 2024."
+    ],
+    [
+     "Obscura",
+     "Les vêtements de cette boutique de sélection sont des pièces de marques de créateurs, d'après la presse coréenne de 2024 et de 2025."
+    ],
+    [
+     "Dude I.Am Shop",
+     "Cette boutique de chaussures dépend d'I.AM SHOP, une grande enseigne coréenne de mode contemporaine."
+    ],
+    [
+     "LCDC",
+     "Les articles de cette boutique de sélection venue de Seongsu vont des vêtements aux objets de la maison."
+    ],
+    [
+     "Barbour",
+     "Le plus grand magasin Barbour de Corée a ouvert ici en 2024, d'après la presse coréenne."
+    ]
+   ]
+  }
  },
  {
   "id": "sug_seoul_masan_market",
@@ -9822,7 +9853,7 @@
   "texte": "Ce grand dépôt-vente de Garosu-gil occupe l'ancienne boulangerie Our Bakery. Ses vendeurs sont surtout des célébrités, des directeurs de marque et des stylistes, qui fixent eux-mêmes leurs prix et cherchent avant tout à vendre vite. Les marques vont de Polo Ralph Lauren, Nike, Supreme et Stüssy jusqu'à Kapital, Dior, Chanel et Hermès.",
   "prevu": "C'est l'adresse de Séoul la plus proche du Super Bazaar pour les vêtements d'occasion de grande qualité. Cette boutique est la quatrième étape de votre dimanche, à 17 h 30, avant le Lotte World Mall.",
   "adresse": "39 Gangnam-daero 162-gil, Gangnam-gu (서울 강남구 강남대로162길 39)",
-  "horaires": "Aucune source lue ne donne les horaires de la boutique, donc son compte Instagram @stillnice_official est à vérifier avant le départ.",
+  "horaires": "Les horaires de la boutique ne figurent dans aucune source lue, donc son compte Instagram @stillnice_official est à vérifier avant le départ.",
   "trajet": {
    "moyen": "La ligne 6 va de Dongmyo à Yaksu, puis la ligne 3 va de Yaksu à Sinsa. La sortie 8 de la station Sinsa mène à Garosu-gil."
   },
@@ -9861,16 +9892,17 @@
   "catTxt": "Bar ou café",
   "lat": 37.2882,
   "lon": 127.0143,
-  "texte": "Ce bar coréen sert du makgeolli, du soju et de la bière avec des galettes, des ragoûts, des grillades et des fritures. Il se trouve dans un bâtiment noir juste en face de la porte Janganmun de la forteresse.",
-  "prevu": "Ce bar est prévu le lundi à 17 h 45 pour dîner, juste après le coucher du soleil au pavillon Banghwasuryujeong et avant la soirée d'activités à Gangnam.",
+  "texte": "Les plats de ce bar coréen sont des galettes, des ragoûts, des grillades et des fritures, servis avec du makgeolli, du soju ou de la bière. Le bar se trouve dans un bâtiment noir juste en face de la porte Janganmun de la forteresse.",
+  "prevu": "Ce bar est prévu le lundi à 17 h 45 pour dîner, juste après le coucher du soleil au pavillon Banghwasuryujeong et avant le passage au centre Starfield Suwon.",
   "adresse": "136-1 Buksu-dong, Paldal-gu, Suwon (수원시 팔달구 북수동 136-1)",
-  "horaires": "Du lundi au jeudi de 17 h à 1 h, le vendredi et le samedi jusqu'à 2 h, le dimanche jusqu'à minuit",
-  "source": "Horaires et adresse d'après la fiche publique du bar et des guides de restaurants coréens, vérifiés le 8 novembre 2026.",
+  "horaires": "Le bar est ouvert du lundi au jeudi de 17 h à 1 h, le vendredi et le samedi de 17 h à 2 h, et le dimanche de 17 h à minuit.",
+  "source": "Horaires et avis sur l'attente d'après <a href=\"https://daangn.com/kr/local-profile/%EC%8B%AC%EA%B8%88-iuedq4x3pd9o/\" target=\"_blank\" rel=\"noopener\">la fiche du bar sur Daangn</a>, lue le 9 novembre 2026. Adresse d'après des guides de restaurants coréens, vérifiée le 8 novembre 2026.",
   "notoriete": 0,
   "photo": false,
   "proche": false,
   "evenement": true,
-  "arret": "L'arrêt de bus Janganmun (장안문) se trouve juste en face du bar."
+  "arret": "L'arrêt de bus Janganmun (장안문) se trouve juste en face du bar.",
+  "foule": "Un client parle d'une demi-heure d'attente dans son avis, et il conseille la file d'attente à distance de l'application CatchTable."
  },
  {
   "id": "web_suwon_ssalsuljip",
@@ -9919,14 +9951,14 @@
   "nuit": true,
   "top": true,
   "texte": "Dans cette salle de baseball sur écran de la marque Strike Zone, chaque groupe joue dans une salle privée face à un grand écran et à un lanceur automatique. Les balles sont plus souples que des balles de match, la hauteur du lancer se règle pour chaque joueur et les parties se jouent dans les vrais stades de la ligue coréenne. Tout le matériel est fourni sur place, des battes aux gants et aux balles.",
-  "prevu": "Cette salle est prévue le lundi à 20 h pour une heure de baseball, juste avant le bowling Temple Strike situé en face.",
+  "prevu": "Cette salle reste une idée de soirée sans jour fixé, après son retrait du programme du lundi 9 novembre.",
   "adresse": "10 Gangnam-daero 61-gil, Seocho-gu, sous-sol du bâtiment Center Plaza (서울 서초구 강남대로61길 10, 센터프라자 지하1층)",
   "horaires": "Une offre d'emploi d'août 2026 décrit un service du soir de 18 h 30 à 3 h, du vendredi au dimanche. Les horaires des autres jours ne sont pas publiés en ligne et figurent sur Naver Map.",
   "prix": "La salle coûtait 48 000 wons l'heure sans limite de joueurs en 2019, et le tarif de 2026 n'est pas publié.",
   "trajet": {
    "moyen": "La salle se trouve à environ 300 mètres au nord-ouest de la station Gangnam (lignes 2 et Shinbundang), dans les ruelles de Seocho situées derrière l'avenue Gangnam-daero."
   },
-  "arret": "La ligne Shinbundang relie sans changement la station Gwanggyo Jungang (광교중앙역) de Suwon à la station Gangnam (강남역).",
+  "arret": "La station Gangnam (강남역) des lignes 2 et Shinbundang se trouve à environ 300 mètres de la salle.",
   "source": "Adresse et horaires du soir : <a href=\"https://www.albamon.com/jobs/detail/118218539\" target=\"_blank\" rel=\"noopener\">offre d’emploi sur Albamon, août 2026</a>. Matériel, balles et stades : <a href=\"https://m.ekn.kr/view.php?key=219338\" target=\"_blank\" rel=\"noopener\">Energy Economy, 2016</a>. Prix de 2019 : <a href=\"https://www.fnnews.com/news/201901041434591323\" target=\"_blank\" rel=\"noopener\">Financial News</a>. Lus le 8 novembre 2026. Position : OpenStreetMap, bâtiment Center Plaza.",
   "cat": "faire",
   "theme": "jeu",
@@ -9947,7 +9979,7 @@
   "nuit": true,
   "top": true,
   "texte": "Ce bowling de douze pistes tout près de la station Gangnam passe en ambiance rock le soir, avec néons, musique forte et balles fluorescentes. Un bar à bières et des fléchettes complètent les pistes, et quelques salles de bowling privées existent aussi.",
-  "prevu": "Ce bowling est prévu le lundi à 21 h 15, juste en face de la salle de baseball sur écran Strike Zone.",
+  "prevu": "Ce bowling reste une idée de soirée sans jour fixé, après son retrait du programme du lundi 9 novembre.",
   "adresse": "13 Gangnam-daero 61-gil, Seocho-gu, sous-sol (서울 서초구 강남대로61길 13, 지하1층)",
   "horaires": "Les pistes fonctionnent en bowling classique à partir de 11 h, puis en ambiance rock à partir de 18 h. L'heure de fermeture n'est pas publiée en ligne.",
   "prix": "Une partie à deux coûte environ 10 000 wons d'après un avis client d'août 2026.",
@@ -10113,5 +10145,48 @@
   "photo": false,
   "proche": false,
   "priorite": 45
+ },
+ {
+  "id": "web_seoul_ach_noboundaries",
+  "nom": "No Boundaries Gallery",
+  "natif": "노바운더리즈 갤러리",
+  "cat": "acheter",
+  "catTxt": "Galerie de vêtements d'archive",
+  "lat": 37.5350647,
+  "lon": 127.0005936,
+  "texte": "Les vêtements de cette galerie de Hannam sont des pièces d'archive de grandes maisons de mode, rarement visibles ailleurs. Une exposition consacrée aux jeans Helmut Lang s'y est aussi tenue, d'après Marie Claire Korea.",
+  "prevu": "Cette galerie fait partie des adresses de pièces rares trouvées pour vous le 8 novembre 2026, après votre demande d'adresses comparables à Stillnice.",
+  "adresse": "Rez-de-chaussée, 22 Daesagwan-ro 5-gil, Yongsan-gu (서울 용산구 대사관로5길 22, 1층)",
+  "horaires": "Les horaires de la galerie ne figurent dans aucune source lue, donc ils sont à vérifier sur son compte Instagram @noboundariez_gallery avant le départ.",
+  "trajet": {
+   "moyen": "La ligne 6 va sans changement de la station Dongmyo à la station Hangangjin."
+  },
+  "source": "Texte d'après deux articles de Marie Claire Korea (<a href=\"https://www.marieclairekorea.com/?p=306689\" target=\"_blank\" rel=\"noopener\">premier article</a>, <a href=\"https://www.marieclairekorea.com/?p=520837\" target=\"_blank\" rel=\"noopener\">second article</a>), lus le 8 novembre 2026. Position approchée au milieu de la rue Daesagwan-ro 5-gil, d'après OpenStreetMap.",
+  "photo": false,
+  "niveau": 3,
+  "proche": false,
+  "priorite": 40
+ },
+ {
+  "id": "web_seoul_ach_suiren",
+  "nom": "Suiren Seoul",
+  "natif": "스이렌 서울",
+  "cat": "acheter",
+  "catTxt": "Friperie de créateurs",
+  "lat": 37.5670292,
+  "lon": 126.9918121,
+  "texte": "Cette friperie sans enseigne a ouvert en 2019 dans une ruelle calme d'Euljiro, au 2e étage d'un immeuble noté 3F en Corée. Les pièces de la boutique sont des articles difficiles à obtenir au Japon, pays où le marché de la fripe est pourtant très développé. Les marques citées par Allure Korea en 2021 sont Maison Mihara Yasuhiro, Raf Simons et GmbH, dans un style de mode urbaine d'avant-garde.",
+  "prevu": "Cette friperie fait partie des adresses de pièces rares trouvées pour vous le 8 novembre 2026, après votre demande d'adresses comparables à Stillnice.",
+  "adresse": "2e étage (3F), 19 Chungmu-ro 7-gil, Jung-gu (서울 중구 충무로7길 19, 3층)",
+  "horaires": "Les horaires de la friperie ne figurent dans aucune source lue, donc ils sont à vérifier sur son compte Instagram @suiren.seoul avant le départ.",
+  "arret": "Aucune enseigne ne signale la boutique dans la rue, donc le numéro 19 et le 3F servent de repères.",
+  "trajet": {
+   "moyen": "La ligne 1 va en une station de Jongno 5-ga à Jongno 3-ga."
+  },
+  "source": "Texte et adresse d'après <a href=\"https://www.allurekorea.com/?p=159802\" target=\"_blank\" rel=\"noopener\">Allure Korea, décembre 2021</a>, lu le 9 novembre 2026. Position : OpenStreetMap, numéro 19 de Chungmu-ro 7-gil.",
+  "photo": false,
+  "niveau": 3,
+  "proche": false,
+  "priorite": 40
  }
 ]

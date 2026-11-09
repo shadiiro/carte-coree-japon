@@ -1,6 +1,174 @@
 {
- "copie": "8 novembre 2026",
+ "copie": "9 novembre 2026",
  "lieux": [
+  {
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "12 h 30",
+   "jour": 8,
+   "lieu": "gyeongbokgung",
+   "nom": "Gyeongbokgung",
+   "ordre": 1000,
+   "pos": [
+    37.57975,
+    126.97668
+   ],
+   "quoi": "Le départ de l'hôtel est prévu vers 12 h, par la ligne 1 jusqu'à Jongno 3-ga, puis par la ligne 3 jusqu'à la station Gyeongbokgung. L'entrée est gratuite jusqu'au 15 novembre. En novembre, le palais ferme à 17 h, avec une dernière entrée à 16 h. En cas de forte pluie, le Musée national du palais, juste à côté, expose à l'abri les objets des rois de Joseon, de 9 h 30 à 17 h 30.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "14 h 45",
+   "jour": 8,
+   "lieu": "wv_seoul_jogyesa_temple",
+   "nom": "Temple Jogyesa",
+   "ordre": 1001,
+   "pos": [
+    37.5739,
+    126.9819
+   ],
+   "quoi": "Le temple est à une dizaine de minutes à pied du palais. C'est le temple principal de l'ordre Jogye, le plus grand ordre du bouddhisme coréen. Le restaurant Balwoo Gongyang, en face, est fermé le dimanche.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T15:50:00.000Z",
+   "heure": "16 h",
+   "jour": 8,
+   "lieu": "web_seoul_ach_seoulvintage",
+   "nom": "Seoul Vintage",
+   "ordre": 1002,
+   "pos": [
+    37.57328,
+    127.01733
+   ],
+   "quoi": "La ligne 1 va de Jonggak à Dongmyo en quatre stations, et la sortie 3 donne sur la boutique, reconnaissable à son enseigne blanche. Les vêtements sont rangés par marque et par style, avec beaucoup de polos et de vestes épaisses. Le marché aux puces de Dongmyo commence juste devant, avec plus de stands ouverts le week-end qu'en semaine. La boutique ferme à 19 h.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T15:51:00.000Z",
+   "heure": "17 h 30",
+   "jour": 8,
+   "lieu": "web_seoul_ach_stillnice",
+   "nom": "Stillnice",
+   "ordre": 1003,
+   "pos": [
+    37.5204,
+    127.0208
+   ],
+   "quoi": "La ligne 6 va de Dongmyo à Yaksu, puis la ligne 3 va de Yaksu à Sinsa, et la sortie 8 mène à Garosu-gil. Ce dépôt-vente vend des vêtements de marque et de luxe portés par des célébrités et des stylistes. Ses horaires ne sont pas confirmés, donc son compte Instagram est à vérifier avant le départ.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-08T02:35:00.000Z",
+   "heure": "19 h",
+   "jour": 8,
+   "lieu": "sug_seoul_lotte_world_mall",
+   "nom": "Lotte World Mall",
+   "ordre": 1004,
+   "pos": [
+    37.513493,
+    127.099895
+   ],
+   "quoi": "Le centre commercial se trouve à environ 7 km à l'est de Garosu-gil, au pied de la Lotte World Tower, à la station Jamsil des lignes 2 et 8. Il compte plus de 600 enseignes. Le magasin Nike du 3e étage ouvre jusqu'à 22 h, et le grand magasin Lotte relié au centre a un magasin Nike consacré à la course au sous-sol. Le plus grand magasin Adidas des grands magasins coréens a ouvert au 3e étage en février 2026. La présence d'ASICS et de Kodak dans le centre reste à vérifier sur place.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "10 h 30",
+   "jour": 9,
+   "lieu": "sug_seoul_hwaseong_haenggung",
+   "nom": "Palais Hwaseong Haenggung",
+   "ordre": 1000,
+   "pos": [
+    37.28199,
+    127.013723
+   ],
+   "quoi": "Le départ de l'hôtel est prévu à 9 h, par la ligne 1 depuis Jongno 5-ga, dans un train qui va vers Cheonan, Sinchang ou Byeongjeom et non vers Incheon, jusqu'à la gare de Suwon. Le bus mène ensuite au palais en 10 à 15 minutes. L'entrée coûte 2 000 wons et le palais ouvre de 9 h à 17 h en novembre. Le spectacle des 24 arts martiaux de l'époque Joseon n'a pas lieu le lundi.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "12 h",
+   "jour": 9,
+   "lieu": "sug_seoul_chogajib",
+   "nom": "Namun Tongdak",
+   "ordre": 1001,
+   "pos": [
+    37.280372,
+    127.017153
+   ],
+   "quoi": "Le restaurant ouvre à midi en semaine et ne vend qu'une centaine de poulets par jour, donc il vaut mieux arriver dès l'ouverture.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "13 h 30",
+   "jour": 9,
+   "lieu": "suwon",
+   "nom": "Forteresse de Hwaseong",
+   "ordre": 1002,
+   "pos": [
+    37.27758,
+    127.01676
+   ],
+   "quoi": "Le tour complet des remparts fait 5,7 km et demande environ trois heures. Le plus beau morceau part de la porte Paldalmun et monte au poste de commandement Seojangdae, qui a la plus belle vue sur la ville, puis redescend par la porte Hwaseomun jusqu'à la porte Janganmun. La montée sur le mont Paldal est la seule partie raide, et l'accès aux remparts est gratuit.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-07T06:51:20.000Z",
+   "heure": "16 h 45",
+   "jour": 9,
+   "lieu": "sug_seoul_banghwasuryujeong",
+   "nom": "Pavillon Banghwasuryujeong",
+   "ordre": 1003,
+   "pos": [
+    37.28758,
+    127.01809
+   ],
+   "quoi": "Ce pavillon domine l'étang Yongyeon, entouré d'arbres en couleurs d'automne. Le soleil se couche à 17 h 28, donc la lumière est la plus belle juste avant.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-08T02:50:00.000Z",
+   "heure": "17 h 45",
+   "jour": 9,
+   "lieu": "web_suwon_simgeum",
+   "nom": "Simgeum",
+   "ordre": 1004,
+   "pos": [
+    37.2882,
+    127.0143
+   ],
+   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à dix minutes à pied du pavillon Banghwasuryujeong. Les plats de la carte sont des galettes, des ragoûts et des fritures, servis avec du makgeolli ou du soju, et l'ouverture est à 17 h le lundi. Un client parle d'une demi-heure d'attente dans son avis, donc l'inscription dans la file d'attente à distance de l'application CatchTable peut se faire depuis le pavillon vers 17 h. Le départ vers le centre Starfield Suwon est prévu vers 18 h 45, en taxi, pour un trajet d'environ 2 km vers l'ouest.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-09T00:58:00.000Z",
+   "heure": "19 h",
+   "jour": 9,
+   "lieu": "sug_seoul_starfield_suwon",
+   "nom": "Starfield Suwon",
+   "ordre": 1005,
+   "pos": [
+    37.287366,
+    126.991208
+   ],
+   "quoi": "Ce grand centre commercial du groupe Shinsegae se trouve à environ 2 km à l'ouest de Simgeum, soit une dizaine de minutes en taxi. Le centre est ouvert tous les jours de 10 h à 22 h, et les boutiques retenues pour vos goûts sont Polo Denim de Ralph Lauren au 2F, le grand magasin New Balance au 5F, la boutique de créateurs Obscura, la boutique de chaussures Dude I.Am Shop, la boutique de sélection LCDC et le plus grand magasin Barbour de Corée. Le départ vers l'hôtel est prévu à 21 h en taxi, pour un trajet de 37 km et une arrivée vers 22 h selon la circulation.",
+   "region": "seoul"
+  },
+  {
+   "ajoute": "2026-11-08T02:55:00.000Z",
+   "heure": "11 h 58",
+   "jour": 10,
+   "lieu": "web_seoul_gare_ktx",
+   "nom": "Gare de Séoul",
+   "ordre": 1001,
+   "pos": [
+    37.5547,
+    126.9707
+   ],
+   "quoi": "Le KTX 031 part à 11 h 58 et arrive à Busan à 14 h 42, voiture 6, places 10A et 10B. Le départ de l'hôtel est prévu vers 11 h, par la ligne 1 depuis Jongno 5-ga jusqu'à la gare de Séoul, en direction d'Incheon ou de Cheonan. Le billet se présente directement sur l'application, sans passer par un guichet.",
+   "region": "seoul"
+  },
   {
    "ajoute": "2026-10-22T07:31:54.620Z",
    "jour": 16,
@@ -12,188 +180,6 @@
     130.40128
    ],
    "region": "fukuoka"
-  },
-  {
-   "jour": 8,
-   "lieu": "gyeongbokgung",
-   "region": "seoul",
-   "nom": "Gyeongbokgung",
-   "pos": [
-    37.57975,
-    126.97668
-   ],
-   "ordre": 1000,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "12 h 30",
-   "quoi": "Le départ de l'hôtel est prévu vers 12 h, par la ligne 1 jusqu'à Jongno 3-ga, puis par la ligne 3 jusqu'à la station Gyeongbokgung. L'entrée est gratuite jusqu'au 15 novembre. En novembre, le palais ferme à 17 h, avec une dernière entrée à 16 h. En cas de forte pluie, le Musée national du palais, juste à côté, expose à l'abri les objets des rois de Joseon, de 9 h 30 à 17 h 30."
-  },
-  {
-   "jour": 8,
-   "lieu": "wv_seoul_jogyesa_temple",
-   "region": "seoul",
-   "nom": "Temple Jogyesa",
-   "pos": [
-    37.5739,
-    126.9819
-   ],
-   "ordre": 1001,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "14 h 45",
-   "quoi": "Le temple est à une dizaine de minutes à pied du palais. C'est le temple principal de l'ordre Jogye, le plus grand ordre du bouddhisme coréen. Le restaurant Balwoo Gongyang, en face, est fermé le dimanche."
-  },
-  {
-   "jour": 8,
-   "lieu": "web_seoul_ach_seoulvintage",
-   "region": "seoul",
-   "nom": "Seoul Vintage",
-   "pos": [
-    37.57328,
-    127.01733
-   ],
-   "ordre": 1002,
-   "ajoute": "2026-11-07T15:50:00.000Z",
-   "heure": "16 h",
-   "quoi": "La ligne 1 va de Jonggak à Dongmyo en quatre stations, et la sortie 3 donne sur la boutique, reconnaissable à son enseigne blanche. Les vêtements sont rangés par marque et par style, avec beaucoup de polos et de vestes épaisses. Le marché aux puces de Dongmyo commence juste devant, avec plus de stands ouverts le week-end qu'en semaine. La boutique ferme à 19 h."
-  },
-  {
-   "jour": 8,
-   "lieu": "web_seoul_ach_stillnice",
-   "region": "seoul",
-   "nom": "Stillnice",
-   "pos": [
-    37.5204,
-    127.0208
-   ],
-   "ordre": 1003,
-   "ajoute": "2026-11-07T15:51:00.000Z",
-   "heure": "17 h 30",
-   "quoi": "La ligne 6 va de Dongmyo à Yaksu, puis la ligne 3 va de Yaksu à Sinsa, et la sortie 8 mène à Garosu-gil. Ce dépôt-vente vend des vêtements de marque et de luxe portés par des célébrités et des stylistes. Ses horaires ne sont pas confirmés, donc son compte Instagram est à vérifier avant le départ."
-  },
-  {
-   "jour": 9,
-   "lieu": "sug_seoul_hwaseong_haenggung",
-   "region": "seoul",
-   "nom": "Palais Hwaseong Haenggung",
-   "pos": [
-    37.28199,
-    127.013723
-   ],
-   "ordre": 1000,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "10 h 30",
-   "quoi": "Le départ de l'hôtel est prévu à 9 h, par la ligne 1 depuis Jongno 5-ga, dans un train qui va vers Cheonan, Sinchang ou Byeongjeom et non vers Incheon, jusqu'à la gare de Suwon. Le bus mène ensuite au palais en 10 à 15 minutes. L'entrée coûte 2 000 wons et le palais ouvre de 9 h à 17 h en novembre. Le spectacle des 24 arts martiaux de l'époque Joseon n'a pas lieu le lundi."
-  },
-  {
-   "jour": 9,
-   "lieu": "sug_seoul_chogajib",
-   "region": "seoul",
-   "nom": "Namun Tongdak",
-   "pos": [
-    37.280372,
-    127.017153
-   ],
-   "ordre": 1001,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "12 h",
-   "quoi": "Le restaurant ouvre à midi en semaine et ne vend qu'une centaine de poulets par jour, donc il vaut mieux arriver dès l'ouverture."
-  },
-  {
-   "jour": 9,
-   "lieu": "suwon",
-   "region": "seoul",
-   "nom": "Forteresse de Hwaseong",
-   "pos": [
-    37.27758,
-    127.01676
-   ],
-   "ordre": 1002,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "13 h 30",
-   "quoi": "Le tour complet des remparts fait 5,7 km et demande environ trois heures. Le plus beau morceau part de la porte Paldalmun et monte au poste de commandement Seojangdae, qui a la plus belle vue sur la ville, puis redescend par la porte Hwaseomun jusqu'à la porte Janganmun. La montée sur le mont Paldal est la seule partie raide, et l'accès aux remparts est gratuit."
-  },
-  {
-   "jour": 9,
-   "lieu": "sug_seoul_banghwasuryujeong",
-   "region": "seoul",
-   "nom": "Pavillon Banghwasuryujeong",
-   "pos": [
-    37.28758,
-    127.01809
-   ],
-   "ordre": 1003,
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "16 h 45",
-   "quoi": "Ce pavillon domine l'étang Yongyeon, entouré d'arbres en couleurs d'automne. Le soleil se couche à 17 h 28, donc la lumière est la plus belle juste avant."
-  },
-  {
-   "jour": 8,
-   "region": "seoul",
-   "ordre": 1004,
-   "ajoute": "2026-11-08T02:30:00.000Z",
-   "heure": "19 h",
-   "lieu": "sug_seoul_lotte_world_mall",
-   "nom": "Lotte World Mall",
-   "pos": [
-    37.513493,
-    127.099895
-   ],
-   "quoi": "Le centre commercial se trouve à environ 7 km à l'est de Garosu-gil, au pied de la Lotte World Tower, à la station Jamsil des lignes 2 et 8. Il compte plus de 600 enseignes. Le magasin Nike du 3e étage ouvre jusqu'à 22 h, et le grand magasin Lotte relié au centre a un magasin Nike consacré à la course au sous-sol. Le plus grand magasin Adidas des grands magasins coréens a ouvert au 3e étage en février 2026. La présence d'ASICS et de Kodak dans le centre reste à vérifier sur place."
-  },
-  {
-   "jour": 9,
-   "lieu": "web_suwon_simgeum",
-   "region": "seoul",
-   "nom": "Simgeum",
-   "pos": [
-    37.2882,
-    127.0143
-   ],
-   "ordre": 1004,
-   "ajoute": "2026-11-08T02:50:00.000Z",
-   "heure": "17 h 45",
-   "quoi": "Ce bar coréen se trouve dans un bâtiment noir juste en face de la porte Janganmun, à dix minutes à pied du pavillon Banghwasuryujeong. La carte associe le makgeolli et le soju à des galettes, des ragoûts et des fritures, et le bar ouvre le lundi à 17 h. Le départ vers Gangnam est prévu vers 18 h 50, en taxi jusqu'à la station Gwanggyo Jungang (광교중앙역) en un quart d'heure environ, puis par la ligne Shinbundang en une demi-heure."
-  },
-  {
-   "jour": 10,
-   "lieu": "web_seoul_gare_ktx",
-   "region": "seoul",
-   "nom": "Gare de Séoul",
-   "pos": [
-    37.5547,
-    126.9707
-   ],
-   "ordre": 1001,
-   "ajoute": "2026-11-08T02:55:00.000Z",
-   "heure": "11 h 58",
-   "quoi": "Le KTX 031 part à 11 h 58 et arrive à Busan à 14 h 42, voiture 6, places 10A et 10B. Le départ de l'hôtel est prévu vers 11 h, par la ligne 1 depuis Jongno 5-ga jusqu'à la gare de Séoul, en direction d'Incheon ou de Cheonan. Le billet se présente directement sur l'application, sans passer par un guichet."
-  },
-  {
-   "ajoute": "2026-11-08T10:40:00.000Z",
-   "heure": "20 h",
-   "jour": 9,
-   "lieu": "act_seoul_strikezone_gangnam",
-   "nom": "Strike Zone Gangnam",
-   "ordre": 1005,
-   "pos": [
-    37.49925,
-    127.02547
-   ],
-   "region": "seoul",
-   "quoi": "Cette salle de baseball sur écran se trouve au sous-sol du bâtiment Center Plaza, à quatre minutes à pied de la station Gangnam. La salle privée se loue à l'heure avec tout le matériel, et les balles plus souples que des balles de match conviennent aux débutants. Les horaires du lundi ne sont pas publiés en ligne, donc ils sont à vérifier sur Naver Map avant de quitter Suwon."
-  },
-  {
-   "ajoute": "2026-11-08T10:40:00.000Z",
-   "heure": "21 h 15",
-   "jour": 9,
-   "lieu": "act_seoul_templestrike",
-   "nom": "Temple Strike",
-   "ordre": 1006,
-   "pos": [
-    37.49888,
-    127.02556
-   ],
-   "region": "seoul",
-   "quoi": "Ce bowling se trouve juste en face de la salle Strike Zone, au sous-sol du numéro 13 de la même rue. Les pistes passent en ambiance rock après 18 h avec néons, musique et balles fluorescentes, et une partie à deux coûte environ 10 000 wons. Le retour vers l'hôtel se fait ensuite en taxi, en une demi-heure environ selon la circulation."
   }
  ]
 }

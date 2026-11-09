@@ -4747,12 +4747,12 @@
   "nom": "BOOKOFF SUPER BAZAAR Komagabayashi",
   "natif": "BOOKOFF SUPER BAZAAR アグロガーデン神戸駒ヶ林店",
   "catTxt": "Grand magasin d'occasion",
-  "texte": "Ce grand magasin d'occasion de la chaîne Book-Off mesure 2 174,7 m². Ses rayons comprennent les livres, les mangas, les jeux, les cartes, les figurines, les vêtements et les grandes marques.",
+  "texte": "Ce grand magasin d'occasion de la chaîne Book-Off mesure 2 174,7 m². Les rayons du magasin comprennent les livres, les mangas, les jeux, les cartes, les figurines, les vêtements et les grandes marques.",
   "adresse": "兵庫県神戸市長田区南駒栄町1-7",
-  "horaires": "De 9 h 30 à 20 h.",
+  "horaires": "Le magasin est ouvert de 9 h 30 à 20 h.",
   "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
   "trajet": {
-   "moyen": "Métro Kaigan jusqu'à la station Komagabayashi. Le magasin est juste à la sortie 2."
+   "moyen": "La ligne de métro Kaigan dessert la station Komagabayashi, et le magasin se trouve juste à la sortie 2."
   },
   "source": "Texte d'après <a href=\"https://www.bookoff.co.jp/shop/shop20519.html\" target=\"_blank\" rel=\"noopener\">la page officielle du magasin</a> et <a href=\"https://www.bookoff.co.jp/brand/bsb/\" target=\"_blank\" rel=\"noopener\">la page des magasins BOOKOFF SUPER BAZAAR</a>. Position : l'adresse du magasin, placée par le géocodeur de l'institut géographique du Japon (GSI). Détaxe : <a href=\"https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html\" target=\"_blank\" rel=\"noopener\">page de l'Agence japonaise du tourisme</a>.",
   "theme": "affaire",
@@ -4773,7 +4773,7 @@
   "adresse": "兵庫県明石市大久保町ゆりのき通3-2 イオン明石ショッピングセンター5番街2階",
   "horaires": "De 10 h à 21 h.",
   "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
-  "pourquoi": "La carte ne charge pas les rues de cette ville. Le bouton Google Maps donne l'itinéraire.",
+  "pourquoi": "Les rues de cette ville ne figurent pas sur la carte, donc l'itinéraire s'obtient avec le bouton Google Maps.",
   "trajet": {
    "moyen": "Train JR jusqu'à la gare d'Okubo. Une passerelle relie la gare au centre commercial."
   },
@@ -4792,9 +4792,9 @@
   "nom": "RAGTAG Kobe",
   "natif": "RAGTAG 神戸店",
   "catTxt": "Vêtements de marque d'occasion",
-  "texte": "La chaîne RAGTAG vend des vêtements de créateurs d'occasion. Chaque article est vérifié et entretenu à la main avant la vente, d'après l'entreprise. La boutique de Kobe est au 1er étage du bâtiment Tor Road Square, noté 2F au Japon.",
+  "texte": "Les vêtements de la chaîne RAGTAG sont des pièces de créateurs d'occasion. Chaque article est vérifié et entretenu à la main avant la vente, d'après l'entreprise. La boutique de Kobe est au 1er étage du bâtiment Tor Road Square, noté 2F au Japon.",
   "adresse": "兵庫県神戸市中央区北長狭通3-1-15 トアロードスクエア2F",
-  "horaires": "Tous les jours de 11 h à 20 h sauf au Nouvel An.",
+  "horaires": "La boutique est ouverte tous les jours de 11 h à 20 h, sauf au Nouvel An.",
   "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
   "source": "Texte d'après <a href=\"https://www.ragtag.jp/english/\" target=\"_blank\" rel=\"noopener\">la liste des boutiques RAGTAG</a> et <a href=\"https://prtimes.jp/main/html/rd/p/000000006.000033011.html\" target=\"_blank\" rel=\"noopener\">le communiqué de RAGTAG du 9 septembre 2019</a>. Position : l'adresse du magasin, placée par le géocodeur de l'institut géographique du Japon (GSI). Détaxe : <a href=\"https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html\" target=\"_blank\" rel=\"noopener\">page de l'Agence japonaise du tourisme</a>.",
   "theme": "affaire",
@@ -4813,10 +4813,10 @@
   "catTxt": "Magasins d'usine de marques",
   "texte": "Ce centre de magasins d'usine a rouvert le 26 novembre 2024 après sa reconstruction. Les 145 boutiques du centre comprennent 43 boutiques de mode et 17 boutiques de sport et de plein air.",
   "adresse": "兵庫県神戸市垂水区海岸通12-2",
-  "horaires": "De 10 h à 20 h pour les boutiques.",
+  "horaires": "Les boutiques du centre sont ouvertes de 10 h à 20 h.",
   "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
   "trajet": {
-   "moyen": "Train JR jusqu'à la gare de Tarumi ou train Sanyo jusqu'à la gare de Sanyo-Tarumi.",
+   "moyen": "Le train JR dessert la gare de Tarumi, et le train Sanyo la gare de Sanyo-Tarumi.",
    "duree_min": 9,
    "depuis": "ces deux gares à pied"
   },
@@ -4837,10 +4837,10 @@
   "catTxt": "Magasins d'usine de marques",
   "texte": "Ce centre de magasins d'usine compte environ 210 boutiques. Plus de 40 marques de luxe européennes et américaines y ont une boutique, d'après le centre.",
   "adresse": "兵庫県神戸市北区上津台7-3",
-  "horaires": "De 10 h à 20 h. Le centre ferme un jour par an en février.",
+  "horaires": "Le centre est ouvert de 10 h à 20 h, sauf un jour par an en février.",
   "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
   "trajet": {
-   "moyen": "Bus depuis Sannomiya.",
+   "moyen": "Un bus relie Sannomiya au centre de magasins d'usine.",
    "duree_min": 45,
    "depuis": "Sannomiya"
   },
@@ -5056,7 +5056,7 @@
   "texte": "Ce magasin Uniqlo se trouve dans le centre commercial BRUMER HAT Kobe, dans le quartier de Wakinohama.",
   "prevu": "C'est le magasin Uniqlo le plus proche de votre hôtel de Kobe, à 1,2 km à vol d'oiseau.",
   "adresse": "兵庫県神戸市中央区脇浜海岸通2-2-2",
-  "horaires": "Tous les jours de 10 h à 21 h.",
+  "horaires": "Le magasin est ouvert tous les jours de 10 h à 21 h.",
   "source": "Adresse, horaires, position et type de magasin : <a href=\"https://map.uniqlo.com/jp/ja/\" target=\"_blank\" rel=\"noopener\">site des magasins Uniqlo au Japon</a>, lu le 3 novembre 2026.",
   "lat": 34.69926489,
   "lon": 135.214345,
@@ -5127,5 +5127,53 @@
   "trajet": {
    "moyen": "Les stations de la ligne Midosuji du métro d'Osaka, d'Umeda à Namba, longent l'avenue."
   }
+ },
+ {
+  "cat": "acheter",
+  "theme": "affaire",
+  "photo": false,
+  "proche": false,
+  "niveau": 3,
+  "priorite": 120,
+  "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
+  "id": "web_kobe_aff_oops",
+  "nom": "Oops",
+  "natif": "Oops",
+  "catTxt": "Friperie de créateurs",
+  "lat": 34.676056,
+  "lon": 135.495193,
+  "texte": "Les articles de cette friperie discrète de l'arrondissement de Nishi, à Osaka, vont de sélections du début des années 2000 jusqu'aux pièces de jeunes créateurs japonais. La boutique occupe le 3e étage de l'immeuble 8R, noté 4F au Japon.",
+  "prevu": "Cette friperie fait partie des adresses de pièces rares trouvées pour vous le 8 novembre 2026, après votre demande d'adresses comparables à Stillnice.",
+  "pourquoi": "Les rues de cette ville ne figurent pas sur la carte, donc l'itinéraire s'obtient avec le bouton Google Maps.",
+  "adresse": "大阪府大阪市西区新町1-25-3 8R BLD 4F",
+  "horaires": "La boutique est ouverte de 13 h à 21 h, d'après Time Out Osaka en janvier 2026.",
+  "trajet": {
+   "moyen": "La boutique se trouve à trois minutes à pied de la sortie 2 de la station Nishi-Ohashi, sur la ligne de métro Nagahori Tsurumi-ryokuchi."
+  },
+  "source": "Texte, adresse, horaires et accès d'après <a href=\"https://www.timeout.jp/osaka/ja/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0/oops\" target=\"_blank\" rel=\"noopener\">Time Out Osaka, janvier 2026</a>, lu le 9 novembre 2026. Position : l'adresse du magasin, placée par le géocodeur de l'institut géographique du Japon (GSI). Détaxe : <a href=\"https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html\" target=\"_blank\" rel=\"noopener\">page de l'Agence japonaise du tourisme</a>."
+ },
+ {
+  "cat": "acheter",
+  "theme": "affaire",
+  "photo": false,
+  "proche": false,
+  "niveau": 3,
+  "priorite": 120,
+  "prix": "Dans un magasin qui fait la détaxe, vous payez la taxe à l'achat depuis le 1er novembre 2026. Le remboursement arrive après le contrôle de vos achats à l'aéroport, avant l'enregistrement des bagages. La détaxe demande au moins 5 000 yens d'achats hors taxe dans le même magasin le même jour.",
+  "id": "web_kobe_aff_komehyo_nagoya",
+  "nom": "KOMEHYO Nagoya Honten",
+  "natif": "KOMEHYO 名古屋本店本館",
+  "catTxt": "Grand magasin d'occasion de luxe",
+  "lat": 35.159172,
+  "lon": 136.901901,
+  "texte": "Ce grand magasin d'occasion de sept niveaux est le magasin d'origine de la chaîne KOMEHYO, fondée en 1947 dans le quartier d'Osu à Nagoya. Les articles vont des grandes marques de luxe aux marques de tous les jours, avec des bijoux, des montres, des sacs, des vêtements, des appareils photo et des instruments de musique. La détaxe est possible dans ce magasin, d'après le site touristique du département d'Aichi.",
+  "prevu": "Ce magasin fait partie des adresses de pièces rares trouvées pour vous le 8 novembre 2026, avec un arrêt possible à Nagoya le samedi 21 novembre, sur le trajet en Shinkansen de Kobe à Tokyo.",
+  "pourquoi": "Les rues de cette ville ne figurent pas sur la carte, donc l'itinéraire s'obtient avec le bouton Google Maps.",
+  "adresse": "愛知県名古屋市中区大須3-25-31",
+  "horaires": "Le magasin est ouvert de 10 h 30 à 19 h d'après le guide Rurubu, avec des jours de fermeture irréguliers. Une fermeture à 19 h 30 figure sur le site touristique du département d'Aichi, donc l'heure exacte est à vérifier avant d'y aller.",
+  "trajet": {
+   "moyen": "Le magasin se trouve à cinq minutes à pied de la sortie 2 de la station Osu Kannon, ou de la sortie 8 de la station Kamimaezu, sur le métro de Nagoya."
+  },
+  "source": "Texte, horaires et accès d'après <a href=\"https://rurubu.jp/andmore/spot/80023726\" target=\"_blank\" rel=\"noopener\">le guide Rurubu</a>, <a href=\"https://www.aichinow.pref.aichi.jp/tw/spots/detail/300/\" target=\"_blank\" rel=\"noopener\">le site touristique du département d'Aichi</a> et <a href=\"https://prtimes.jp/main/html/rd/p/000000364.000000884.html\" target=\"_blank\" rel=\"noopener\">un communiqué de KOMEHYO</a>, lus le 9 novembre 2026. Position : l'adresse du magasin, placée par le géocodeur de l'institut géographique du Japon (GSI). Détaxe : <a href=\"https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html\" target=\"_blank\" rel=\"noopener\">page de l'Agence japonaise du tourisme</a>."
  }
 ]

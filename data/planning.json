@@ -73,7 +73,7 @@
   },
   {
    "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "10 h 30",
+   "heure": "15 h 15",
    "jour": 9,
    "lieu": "sug_seoul_hwaseong_haenggung",
    "nom": "Palais Hwaseong Haenggung",
@@ -82,26 +82,12 @@
     37.28199,
     127.013723
    ],
-   "quoi": "Le départ de l'hôtel est prévu à 9 h, par la ligne 1 depuis Jongno 5-ga, dans un train qui va vers Cheonan, Sinchang ou Byeongjeom et non vers Incheon, jusqu'à la gare de Suwon. Le bus mène ensuite au palais en 10 à 15 minutes. L'entrée coûte 2 000 wons et le palais ouvre de 9 h à 17 h en novembre. Le spectacle des 24 arts martiaux de l'époque Joseon n'a pas lieu le lundi.",
+   "quoi": "Le départ du centre commercial de la gare est prévu à 15 h, en taxi jusqu'au palais pour un trajet de 3,4 km. L'entrée coûte 2 000 wons et le palais ferme à 17 h en novembre, donc 45 minutes de visite suffisent avant la montée vers les remparts. Le spectacle des 24 arts martiaux de l'époque Joseon n'a pas lieu le lundi.",
    "region": "seoul"
   },
   {
    "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "12 h",
-   "jour": 9,
-   "lieu": "sug_seoul_chogajib",
-   "nom": "Namun Tongdak",
-   "ordre": 1001,
-   "pos": [
-    37.280372,
-    127.017153
-   ],
-   "quoi": "Le restaurant ouvre à midi en semaine et ne vend qu'une centaine de poulets par jour, donc il vaut mieux arriver dès l'ouverture.",
-   "region": "seoul"
-  },
-  {
-   "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "13 h 30",
+   "heure": "16 h",
    "jour": 9,
    "lieu": "suwon",
    "nom": "Forteresse de Hwaseong",
@@ -110,12 +96,12 @@
     37.27758,
     127.01676
    ],
-   "quoi": "Le tour complet des remparts fait 5,7 km et demande environ trois heures. Le plus beau morceau part de la porte Paldalmun et monte au poste de commandement Seojangdae, qui a la plus belle vue sur la ville, puis redescend par la porte Hwaseomun jusqu'à la porte Janganmun. La montée sur le mont Paldal est la seule partie raide, et l'accès aux remparts est gratuit.",
+   "quoi": "Le chemin monte du palais au poste de commandement Seojangdae sur 744 m, avec la plus belle vue sur la ville, puis suit les remparts par la porte Hwaseomun jusqu'à la porte Janganmun et au pavillon, sur 1,7 km. Les murailles ont été construites de 1794 à 1796 et sont classées par l'UNESCO depuis 1997, et l'accès aux remparts est gratuit.",
    "region": "seoul"
   },
   {
    "ajoute": "2026-11-07T06:51:20.000Z",
-   "heure": "16 h 45",
+   "heure": "17 h",
    "jour": 9,
    "lieu": "sug_seoul_banghwasuryujeong",
    "nom": "Pavillon Banghwasuryujeong",

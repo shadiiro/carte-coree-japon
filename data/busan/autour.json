@@ -7787,5 +7787,378 @@
   "photo": false,
   "niveau": 2,
   "priorite": 50
+ },
+ {
+  "id": "var_busan_runningman",
+  "nom": "Running Man et Dynamic Maze",
+  "natif": "런닝맨 부산점",
+  "cat": "faire",
+  "catTxt": "Jeu de missions en équipe",
+  "sorte": "missions",
+  "lat": 35.1530039,
+  "lon": 129.0596225,
+  "couvert": true,
+  "ambiance": "anime",
+  "texte": "Le principe de l'émission coréenne Running Man est repris dans deux salles du dixième étage de la tour Samjung, à Seomyeon. Les joueurs y enchaînent quinze missions et deux labyrinthes, puis franchissent en équipe le parcours d'obstacles de la salle Dynamic Maze. Des couples adultes y viennent aussi, d'après les avis d'acheteurs publiés par le vendeur de billets Waug.",
+  "adresse": "10e étage de la tour Samjung, 672 Jungang-daero, Busanjin-gu (부산 부산진구 중앙대로 672 삼정타워 10층)",
+  "trajet": {
+   "moyen": "La ligne 1 du métro va de Beomil à Seomyeon en deux stations."
+  },
+  "horaires": "Les deux salles sont ouvertes tous les jours de 11 h à 20 h, avec une dernière entrée à 19 h. La dernière entrée de la formule Running Man de 90 minutes est à 18 h 30.",
+  "ouvert": {
+   "tous": [
+    [
+     660,
+     1185
+    ]
+   ]
+  },
+  "prix": "Le jeu Running Man coûte 19 000 wons pour 60 minutes, la salle Dynamic Maze 16 000 wons, et les deux ensemble 29 000 wons par personne.",
+  "source": "Horaires, prix et adresse d'après <a href=\"https://mom-mom.net/travel/places/67d9347bbbd51ff47e4f3bff\" target=\"_blank\" rel=\"noopener\">le guide Mom-mom</a> et <a href=\"https://www.waug.com/ko/activities/119433\" target=\"_blank\" rel=\"noopener\">le vendeur de billets Waug</a>, lus le 10 novembre 2026. Position : la tour Samjung dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 40
+ },
+ {
+  "id": "var_busan_luge",
+  "nom": "Skyline Luge Busan",
+  "natif": "스카이라인루지 부산",
+  "cat": "faire",
+  "catTxt": "Descente en luge sur roues",
+  "sorte": "sensation",
+  "lat": 35.1941296,
+  "lon": 129.2191333,
+  "couvert": false,
+  "ambiance": "anime",
+  "texte": "Cette piste de luge sur roues descend une colline du quartier d'Osiria, à Gijang. Chaque personne conduit sa propre luge avec un guidon et choisit une des quatre pistes, qui comptent des virages serrés et des tunnels. Le retour en haut de la colline se fait en télésiège. Le temple Haedong Yonggungsa de votre programme et le parc Lotte World sont dans le même quartier.",
+  "adresse": "205 Gijanghaean-ro, Gijang-gun (부산 기장군 기장읍 기장해안로 205)",
+  "horaires": "La piste est ouverte de 10 h à 19 h en semaine, et de 10 h à 20 h le week-end et les jours fériés. La vente des billets s'arrête 30 minutes avant la fermeture. Ces horaires peuvent changer selon la météo, d'après le site officiel.",
+  "ouvert": {
+   "tous": [
+    [
+     600,
+     1155
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1215
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1215
+    ]
+   ]
+  },
+  "prix": "Le prix en wons n'a pas été trouvé sur le site officiel. Les billets de trois à cinq descentes coûtent de 31 à 35 dollars américains chez le revendeur Expedia.",
+  "source": "Texte et horaires d'après <a href=\"https://busan.skylineluge.com/en/luge\" target=\"_blank\" rel=\"noopener\">le site officiel</a> et <a href=\"https://busan.skylineluge.com/en/visiting-us/faqs\" target=\"_blank\" rel=\"noopener\">ses questions fréquentes</a>, lus le 10 novembre 2026. Quartier d'après <a href=\"https://en.busannavi.net/area/45313\" target=\"_blank\" rel=\"noopener\">Busan Navi</a>, prix d'après <a href=\"https://www.expedia.com/zh/things-to-do/south-korea-skyline-luge-korea.a49184241.activity-details\" target=\"_blank\" rel=\"noopener\">Expedia</a>. Position : le bâtiment de la piste dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 41
+ },
+ {
+  "id": "var_busan_arte",
+  "nom": "Arte Museum Busan",
+  "natif": "아르떼뮤지엄 부산",
+  "cat": "voir",
+  "catTxt": "Art numérique immersif",
+  "sorte": "immersif",
+  "lat": 35.0865249,
+  "lon": 129.0759058,
+  "couvert": true,
+  "texte": "Dix-neuf œuvres d'art numérique sur le thème de la nature sont exposées dans ce musée de l'île de Yeongdo, ouvert en juillet 2024. Les œuvres sont des projections d'images et de sons, dans lesquelles les visiteurs entrent et marchent. Ses responsables le présentent comme le plus grand espace d'art numérique immersif du monde.",
+  "adresse": "29 Haeyang-ro 247beon-gil, Yeongdo-gu (부산 영도구 해양로247번길 29)",
+  "trajet": {
+   "moyen": "L'île de Yeongdo n'a pas de métro. Les bus 17 et 186 desservent l'arrêt Arte Museum Busan, d'après la ville de Busan."
+  },
+  "horaires": "Le musée est ouvert tous les jours de 10 h à 20 h, avec une dernière entrée à 19 h.",
+  "ouvert": {
+   "tous": [
+    [
+     600,
+     1185
+    ]
+   ]
+  },
+  "prix": "Le billet adulte coûte 19 000 wons du lundi au vendredi, et 22 000 wons le week-end et les jours fériés.",
+  "source": "Horaires, prix et adresse d'après <a href=\"https://artemuseum.com/BUSAN\" target=\"_blank\" rel=\"noopener\">le site officiel</a> et <a href=\"https://artemuseum.com/faq-busan\" target=\"_blank\" rel=\"noopener\">ses questions fréquentes</a>, lus le 10 novembre 2026. Texte d'après <a href=\"https://en.busannavi.net/play/48904\" target=\"_blank\" rel=\"noopener\">Busan Navi</a>, bus d'après <a href=\"https://www.busan.go.kr/eng/bsfacility01/1651540\" target=\"_blank\" rel=\"noopener\">la ville de Busan</a>. Position : le musée dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 42
+ },
+ {
+  "id": "var_busan_oryukdo",
+  "nom": "Passerelle de verre d'Oryukdo",
+  "natif": "오륙도 스카이워크",
+  "cat": "voir",
+  "catTxt": "Passerelle de verre sur une falaise",
+  "sorte": "passerelle",
+  "lat": 35.1005721,
+  "lon": 129.1247309,
+  "couvert": false,
+  "texte": "Cette passerelle en fer à cheval avance de 15 m au-dessus du vide, en haut d'une falaise de 35 m. Les vagues se voient à travers son sol en verre, et des chaussons sont remis à l'entrée pour protéger ce verre. La vue porte sur les îlots d'Oryukdo, à l'endroit où la mer de l'Est rejoint la mer du Sud.",
+  "adresse": "137 Oryukdo-ro, Nam-gu (부산 남구 오륙도로 137)",
+  "trajet": {
+   "moyen": "Des bus partent de la station Kyungsung University et Pukyong National University, sur la ligne 2, jusqu'à l'arrêt Oryukdo SK Apartment."
+  },
+  "horaires": "La passerelle est ouverte tous les jours de 9 h à 18 h d'octobre à mai, avec une dernière entrée à 17 h 50. L'accès est fermé par vent fort ou par forte pluie.",
+  "ouvert": {
+   "tous": [
+    [
+     540,
+     1080
+    ]
+   ]
+  },
+  "prix": "L'entrée est gratuite.",
+  "source": "Texte, horaires et adresse d'après <a href=\"https://www.ktriptips.com/kor/tourspot/1940208\" target=\"_blank\" rel=\"noopener\">la fiche de l’office du tourisme coréen reprise par K Trip Tips</a>, mise à jour en mars 2026, et <a href=\"https://www.telltrip.com/domestic-travel/busan-oryukdo-park-skywalk/\" target=\"_blank\" rel=\"noopener\">Telltrip</a>, lus le 10 novembre 2026. Trajet d'après <a href=\"https://mom-mom.net/travel/places/65cafebd81eee355e54d015e\" target=\"_blank\" rel=\"noopener\">Mom-mom</a>. Position : la passerelle dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 43
+ },
+ {
+  "id": "var_busan_daritdol",
+  "nom": "Passerelle de Cheongsapo Daritdol",
+  "natif": "청사포 다릿돌전망대",
+  "cat": "voir",
+  "catTxt": "Passerelle au-dessus de la mer",
+  "sorte": "passerelle",
+  "lat": 35.1633528,
+  "lon": 129.1952531,
+  "couvert": false,
+  "texte": "Cette passerelle en forme de U mesure 191 m de long depuis son agrandissement de juillet 2024, à 20 m au-dessus de la mer. Son extrémité a un sol de verre en demi-lune. L'arrêt Cheongsapo du train côtier du Blueline Park est juste à côté, et des restaurants de coquillages grillés bordent le port voisin.",
+  "adresse": "167 Cheongsapo-ro, Haeundae-gu (부산 해운대구 청사포로 167)",
+  "trajet": {
+   "moyen": "Les bus 139 et 181 vont de la station Haeundae à l'arrêt Cheongsapo en 15 à 25 minutes, d'après Telltrip."
+  },
+  "horaires": "La passerelle ouvre à 9 h. La fermeture est à 18 h d'après un guide local, ou à 20 h en hiver d'après le site Telltrip en 2026. L'heure du soir reste donc à vérifier sur place. L'accès est fermé par neige, pluie ou vent fort.",
+  "ouvert": {
+   "tous": [
+    [
+     540,
+     1080
+    ]
+   ]
+  },
+  "prix": "L'entrée est gratuite.",
+  "source": "Texte d'après <a href=\"https://newsseoul.co.kr/news/view/1065571834867655\" target=\"_blank\" rel=\"noopener\">News Seoul, juillet 2024</a>, <a href=\"https://www.telltrip.com/domestic-travel/cheongsapo-daritdol-observatory-skywalk-busan/\" target=\"_blank\" rel=\"noopener\">Telltrip</a> et <a href=\"https://www.busannavi.net/en/?p=19072\" target=\"_blank\" rel=\"noopener\">Busan Navi</a>, lus le 10 novembre 2026. Position : le bureau d'accueil de la passerelle dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 44
+ },
+ {
+  "id": "var_busan_haenyeo",
+  "nom": "Village des plongeuses de Yeongdo",
+  "natif": "영도해녀문화전시관",
+  "cat": "faire",
+  "catTxt": "Fruits de mer des plongeuses",
+  "sorte": "plongeuses",
+  "lat": 35.0670368,
+  "lon": 129.0660222,
+  "couvert": false,
+  "ambiance": "calme",
+  "texte": "Les plongeuses de Yeongdo, appelées haenyeo, pêchent à la main sans bouteille d'air, selon une tradition inscrite au patrimoine immatériel de l'UNESCO. Elles vendent leur pêche au rez-de-chaussée de ce bâtiment, par exemple des ascidies, des concombres de mer et des coquillages. Les clients mangent leur plateau dehors, sur des nattes posées au bord de l'eau. L'étage est une salle d'exposition gratuite sur leur métier. Les vendeuses parlent seulement coréen, d'après le récit d'une visiteuse.",
+  "adresse": "2-36 Jungninam-ro, Yeongdo-gu (부산 영도구 중리남로 2-36)",
+  "trajet": {
+   "moyen": "L'île de Yeongdo n'a pas de métro, donc le trajet se fait en bus ou en taxi."
+  },
+  "horaires": "La salle d'exposition est ouverte de 9 h à 18 h et fermée le lundi. Le comptoir des plongeuses est annoncé ouvert toute l'année, sans heures publiées. Les plongeuses reviennent de la mer vers midi d'après Harper's Bazaar, donc une venue entre midi et 16 h est plus sûre.",
+  "ouvert": {
+   "tous": [
+    [
+     690,
+     1020
+    ]
+   ]
+  },
+  "prix": "Un plateau coûte de 10 000 à 20 000 wons selon le coquillage, d'après l'office du tourisme coréen. L'exposition est gratuite.",
+  "source": "Texte, horaires et prix d'après <a href=\"https://www.whatmytrip.com/en/culture/3047349\" target=\"_blank\" rel=\"noopener\">la fiche de l’office du tourisme coréen reprise par What My Trip</a>, <a href=\"https://www.harpersbazaar.co.kr/article/67548\" target=\"_blank\" rel=\"noopener\">Harper’s Bazaar Korea</a> et <a href=\"https://www.lemon8-app.com/@lwwwsoh/7224357437522952706?region=sg\" target=\"_blank\" rel=\"noopener\">le récit d’une visiteuse</a>, lus le 10 novembre 2026. Position : la salle d'exposition dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 45
+ },
+ {
+  "id": "var_busan_cinema",
+  "nom": "Musée du cinéma de Busan",
+  "natif": "부산영화체험박물관",
+  "cat": "voir",
+  "catTxt": "Musée interactif du cinéma",
+  "sorte": "interactif",
+  "lat": 35.1012145,
+  "lon": 129.0341319,
+  "couvert": true,
+  "texte": "Les visiteurs de ce musée suivent un parcours d'ateliers sur l'histoire du cinéma, ses trucages et sa fabrication. Le deuxième étage abrite le Trick Eye Museum, une galerie de peintures en trompe-l'œil animées par la réalité augmentée. Le musée se trouve à une centaine de mètres du parc Yongdusan et de la Busan Tower.",
+  "adresse": "12 Daecheong-ro 126beon-gil, Jung-gu (부산 중구 대청로126번길 12)",
+  "horaires": "Le musée est ouvert de 10 h à 18 h, avec une dernière entrée à 17 h. Il est fermé le lundi.",
+  "ouvert": {
+   "tous": [
+    [
+     600,
+     1065
+    ]
+   ]
+  },
+  "fermeture": {
+   "jours": [
+    1
+   ],
+   "texte": "Le musée est fermé le lundi",
+   "source": "fiche"
+  },
+  "prix": "L'entrée coûte 10 000 wons par adulte, ou 12 000 wons avec le Trick Eye Museum.",
+  "source": "Texte, horaires et prix d'après <a href=\"https://xn--ok0b236bp0a.com/place/27170\" target=\"_blank\" rel=\"noopener\">un guide local qui reprend l’office du tourisme coréen</a>, <a href=\"https://mom-mom.net/travel/places/65b84b24b3baa6ca16eaea21\" target=\"_blank\" rel=\"noopener\">Mom-mom</a> et <a href=\"https://newsseoul.co.kr/news/view/1065569406733076\" target=\"_blank\" rel=\"noopener\">News Seoul</a>, lus le 10 novembre 2026. Position approchée : la rue du musée dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 46
+ },
+ {
+  "id": "var_busan_patinoire",
+  "nom": "Patinoire de Shinsegae Centum City",
+  "natif": "신세계 센텀시티 아이스링크",
+  "cat": "faire",
+  "catTxt": "Patinoire couverte",
+  "sorte": "patinoire",
+  "lat": 35.1687608,
+  "lon": 129.1296435,
+  "couvert": true,
+  "ambiance": "anime",
+  "texte": "Cette patinoire couverte se trouve dans le grand magasin Shinsegae Centum City et peut accueillir jusqu'à 500 personnes. La patinoire reçoit la lumière du jour, puis des éclairages colorés le soir. Le spa Spaland de votre carte est dans le même bâtiment.",
+  "adresse": "35 Centum Nam-daero, Haeundae-gu (부산 해운대구 센텀남대로 35)",
+  "trajet": {
+   "moyen": "La ligne 2 du métro dessert la station Centum City, reliée au grand magasin."
+  },
+  "horaires": "La patinoire est ouverte de 11 h à 20 h en semaine et jusqu'à 20 h 30 le week-end, avec une entrée possible jusqu'à 19 h. Elle ferme un jour par mois, le même jour que le grand magasin.",
+  "ouvert": {
+   "tous": [
+    [
+     660,
+     1185
+    ]
+   ]
+  },
+  "prix": "Le prix de l'entrée n'a pas été trouvé dans les sources lues.",
+  "source": "Texte et horaires d'après <a href=\"https://xn--ok0b236bp0a.com/place/4050\" target=\"_blank\" rel=\"noopener\">un guide local qui reprend l’office du tourisme coréen</a>, lu le 10 novembre 2026. Position : le grand magasin dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 47
+ },
+ {
+  "id": "var_busan_lotteworld",
+  "nom": "Lotte World Adventure Busan",
+  "natif": "롯데월드 어드벤처 부산",
+  "cat": "faire",
+  "catTxt": "Parc d'attractions",
+  "sorte": "parc",
+  "lat": 35.1968362,
+  "lon": 129.2141226,
+  "couvert": false,
+  "ambiance": "anime",
+  "budget": 3,
+  "texte": "Ce parc d'attractions en plein air a ouvert le 31 mars 2022 dans le quartier d'Osiria, à Gijang. Le parc compte six zones à thème, avec des manèges à sensations, des parades et des spectacles. La piste de luge Skyline et le temple Haedong Yonggungsa de votre programme sont dans le même quartier.",
+  "adresse": "42 Dongbusangwangwang-ro, Gijang-gun (부산 기장군 기장읍 동부산관광로 42)",
+  "horaires": "Le parc est ouvert de 10 h à 20 h en semaine et de 10 h à 21 h le week-end, d'après l'office du tourisme coréen. Les horaires du jour sont à vérifier sur le site officiel du parc.",
+  "ouvert": {
+   "tous": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "prix": "Le billet adulte coûte 49 000 wons pour la journée, ou 38 000 wons pour une entrée après 15 h.",
+  "source": "Texte, horaires et prix d'après <a href=\"https://www.yugacrew.com/crewletter/busan-theme-parks\" target=\"_blank\" rel=\"noopener\">Yuga Crew, qui a relevé la fiche de l’office du tourisme coréen le 14 octobre 2026</a>, et <a href=\"https://glasswallet.com/blog/busan-lotte-world-ticket-cost-guide\" target=\"_blank\" rel=\"noopener\">Glass Wallet, juillet 2026</a>, lus le 10 novembre 2026. Date d'ouverture d'après <a href=\"https://www.fnnews.com/news/202203171840225416\" target=\"_blank\" rel=\"noopener\">Financial News, mars 2022</a>. Position : le parc dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 48
+ },
+ {
+  "id": "var_busan_tyrolienne",
+  "nom": "Tyrolienne de Taejongdae",
+  "natif": "태종대 오션플라잉 테마파크",
+  "cat": "faire",
+  "catTxt": "Tyrolienne au-dessus de la mer",
+  "sorte": "sensation",
+  "lat": 35.0605383,
+  "lon": 129.0773697,
+  "couvert": false,
+  "ambiance": "anime",
+  "texte": "Cette tyrolienne de 653 m part du mont Jungnisan, passe au-dessus de la plage de Gamji et arrive près du parc de Taejongdae. La tyrolienne compte quatre câbles côte à côte, pour un dénivelé de 61,5 m. L'installation a rouvert le 6 octobre 2026 avec un nouvel exploitant, après quatre mois d'arrêt.",
+  "adresse": "55 Taejong-ro 836beon-gil, Yeongdo-gu (부산 영도구 태종로836번길 55)",
+  "trajet": {
+   "moyen": "L'île de Yeongdo n'a pas de métro, donc le trajet se fait en bus ou en taxi."
+  },
+  "horaires": "La tyrolienne est ouverte de 9 h 30 à 17 h 20, avec une pause de 11 h 30 à 12 h 30. Ces horaires ont été relevés le 14 octobre 2026 par le site Yuga Crew, et la météo peut arrêter les départs.",
+  "ouvert": {
+   "tous": [
+    [
+     570,
+     690
+    ],
+    [
+     750,
+     1040
+    ]
+   ]
+  },
+  "prix": "Le prix était de 30 000 wons avant l'arrêt de juin 2026. Le nouvel exploitant a annoncé vouloir le baisser, donc le prix actuel reste à vérifier sur place.",
+  "source": "Texte d'après <a href=\"https://www.inews24.com/view/2011096\" target=\"_blank\" rel=\"noopener\">iNews24</a> et <a href=\"https://news.knn.co.kr/news/article/192882\" target=\"_blank\" rel=\"noopener\">la télévision KNN, 6 octobre 2026</a>. Horaires d'après <a href=\"https://www.yugacrew.com/crewletter/busan-theme-parks\" target=\"_blank\" rel=\"noopener\">Yuga Crew</a>, prix d'après <a href=\"https://www.ktriptips.com/kor/tourspot/3375297\" target=\"_blank\" rel=\"noopener\">K Trip Tips, avril 2026</a>, lus le 10 novembre 2026. Position approchée : la plage de Gamji, survolée par la tyrolienne, dans OpenStreetMap.",
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026, après votre demande de sorties plus variées et plus surprenantes.",
+  "surprise": true,
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 49
  }
 ]

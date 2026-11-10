@@ -374,7 +374,7 @@ function aPied(s) {
   return `<dt>À pied</dt><dd>${t}</dd>`;
 }
 // les conditions du serveur de calcul demandent sa mention et un lien pour corriger la carte (routing.openstreetmap.de, lu le 16/10/2026)
-const SOURCE_MARCHE = ` Temps de marche : calculé entre le 16 octobre et le 9 novembre 2026 sur les rues d'OpenStreetMap par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, à raison d'une minute pour 80 m. <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Signaler une erreur de la carte</a>.`;
+const SOURCE_MARCHE = ` Temps de marche : calculé entre le 16 octobre et le 10 novembre 2026 sur les rues d'OpenStreetMap par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, à raison d'une minute pour 80 m. <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Signaler une erreur de la carte</a>.`;
 // jour de visite des excursions du programme : le jour du voyage quand il est fixé (contenu.js, JOURS), sinon « Un jour à placer »
 const JOUR_DU_LIEU = Object.fromEntries(EXCURSIONS.map((x) => {
   const j = JOURS.find((d) => d.focus === x.id);
@@ -931,7 +931,7 @@ function ouvrirLegende(partie) {
   const fam = (f, nom) => `<li><span class="trait" style="background:${COULEUR_FAMILLE[f]};width:14px;height:14px;border-radius:50%"></span>${nom}</li>`;
   l.innerHTML = `<div class="liste-tete"><h2>Lire la carte</h2><button type="button" class="fermer-liste" aria-label="Fermer la légende">×</button></div>
     <p>La fiche d'un lieu du programme ou de la vue Sélection donne le temps de marche depuis la gare ou la station de métro la plus proche. Quand le lieu est à moins de 3 km de votre hôtel, elle donne aussi le temps de marche depuis l'hôtel.</p>
-    <p>Le bouton Guide du jour pose trois questions : votre envie, votre humeur et le moment de la sortie. Une case accepte un mot libre pour le guide. Le guide tient compte du programme, du planning, de la veille et du changement de ville. Il propose une sortie complète avec ses heures, ses étapes et deux autres possibilités. Des boutons permettent ensuite de demander une sortie moins loin, plus calme, plus animée, moins chère ou différente. La météo prévue s'affiche quand le jour est à moins de 16 jours : elle vient d'Open-Meteo, lu par le connecteur Exa de claude.ai.</p>
+    <p>Le bouton Guide du jour pose trois questions : votre envie, votre humeur et le moment de la sortie. Une case accepte un mot libre pour le guide. Le guide tient compte du programme, du planning, de la veille et du changement de ville. Il propose une sortie complète avec ses heures, ses étapes et deux autres possibilités. Depuis le 10 novembre, deux étapes d'une même sortie sont toujours de sortes différentes, les sortes de sorties absentes de votre voyage passent devant, et un lieu déjà proposé dans la ville n'est pas reproposé. Des boutons permettent ensuite de demander une sortie moins loin, plus calme, plus animée, moins chère ou différente. La météo prévue s'affiche quand le jour est à moins de 16 jours : elle vient d'Open-Meteo, lu par le connecteur Exa de claude.ai.</p>
     <p>Le planning signale un lieu fermé le jour où il est prévu, en orange, avec la phrase de sa fiche. Les idées du jour ne proposent aucun lieu fermé ce jour-là. Un lieu dont la fiche ne cite aucun jour de fermeture ne déclenche aucune alerte, donc il peut quand même être fermé.</p>
     <p>Le bouton Planning range des lieux par jour. Les lieux du jour choisi portent un numéro doré sur la carte, reliés dans l'ordre par un trait doré. Le planning est le même pour toutes les personnes qui ouvrent la carte dans claude.ai avec le droit de la modifier.</p>
     <h3 id="legende-detaxe">Acheter détaxé</h3>
@@ -984,7 +984,7 @@ function ouvrirSources() {
     <li>Météo : prévision d'<a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, lue par le connecteur Exa de la personne qui regarde la carte. Elle couvre les 16 jours qui suivent.</li>
     <li>Jours de fermeture : fiches préparées par ChatGPT et horaires de Wikivoyage, relus un par un le 16 octobre 2026. Le lundi 23 novembre est férié au Japon d'après le <a href="https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html" target="_blank" rel="noopener">Cabinet Office japonais</a>.</li>
     <li>Hôtels : adresses envoyées par Schadrac le 16 octobre 2026. Le <a href="https://msearch.gsi.go.jp/" target="_blank" rel="noopener">service d'adresses de l'Institut géographique du Japon</a> place les hôtels de Fukuoka, de Kobe et de Tokyo. L'hôtel de Gimpo est placé par OpenStreetMap. Les hôtels de Séoul et de Busan sont placés d'après les numéros de leur rue, à environ 100 m près. La fiche de chaque hôtel dit d'où vient sa position. Phrases pour le chauffeur : guides de conversation coréen et japonais de <a href="https://en.wikivoyage.org/wiki/Korean_phrasebook" target="_blank" rel="noopener">Wikivoyage</a>, licence CC BY-SA.</li>
-    <li>Temps de marche : trajet sur les rues et les chemins d'OpenStreetMap, calculé entre le 16 octobre et le 9 novembre 2026 par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, depuis la gare ou la station la plus proche. Une minute compte pour 80 m de rue, comme dans les annonces immobilières au Japon. Le temps ne compte ni l'attente aux feux, ni les escaliers, ni la marche dans la gare. La gare est placée sur son point OpenStreetMap, qui peut être au milieu d'une grande gare. Une erreur de la carte se signale sur <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">OpenStreetMap</a>.</li>
+    <li>Temps de marche : trajet sur les rues et les chemins d'OpenStreetMap, calculé entre le 16 octobre et le 10 novembre 2026 par le serveur <a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">OSRM de FOSSGIS</a>, depuis la gare ou la station la plus proche. Une minute compte pour 80 m de rue, comme dans les annonces immobilières au Japon. Le temps ne compte ni l'attente aux feux, ni les escaliers, ni la marche dans la gare. La gare est placée sur son point OpenStreetMap, qui peut être au milieu d'une grande gare. Une erreur de la carte se signale sur <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">OpenStreetMap</a>.</li>
     <li>Dessin de la carte : <a href="https://maplibre.org" target="_blank" rel="noopener">MapLibre GL JS</a> 5.24. Lettres : police Noto Sans (licence OFL).</li></ul>
     <p><button type="button" class="btn" id="fermer-sources">Fermer</button></p>`;
   d.hidden = false;
@@ -1154,7 +1154,8 @@ map.on("error", (e) => { if (!String(e.error?.message).includes("hors de la rég
 // La page interroge Claude avec la capacité « sample », sur le compte Claude de la personne qui regarde la carte (demandé le 15/10/2026).
 // Claude ne lit pas le web : il reçoit le programme du jour, vos goûts et une liste de lieux proches tirée de la carte,
 // et il répond par trois identifiants de cette liste. Une réponse est gardée dans ce navigateur, par ville et par jour.
-const GOUTS = "Ils aiment les jeux vidéo et les salles d'arcade, les bars sur un toit, les bars calmes et la chicha. Ils aiment aussi l'histoire, les temples, les friperies de qualité, les marques comme Kodak, Nike et ASICS, et les marchés de livres et d'objets anciens. Ils n'aiment pas trop les boîtes de nuit. Ils voyagent sans voiture, en métro, en bus et en train.";
+// 10/11/2026 : « il propose plein de mini-jeux », « on a envie d'être surpris » : les salles d'arcade ne passent plus en premier
+const GOUTS = "Ils aiment les jeux vidéo, les bars sur un toit, les bars calmes et la chicha. Ils aiment aussi l'histoire, les temples, les friperies de qualité, les marques comme Kodak, Nike et ASICS, et les marchés de livres et d'objets anciens. Ils n'aiment pas trop les boîtes de nuit. Ils voyagent sans voiture, en métro, en bus et en train. Le 10 novembre, ils ont demandé des sorties plus variées et plus surprenantes, avec moins de salles de jeux et moins de sorties déjà faites pendant le voyage.";
 const SANS_CLAUDE = ["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "capability_removed"];
 let SAMPLE = null, JOUR_IDEES = null, CTL_IDEES = null;
 // un jour de changement de ville compte pour les deux villes : le 21 pour Kobe et Tokyo, le 26 pour Tokyo et Séoul
@@ -1197,8 +1198,9 @@ function coucherSoleil(lat, lon, n) {
   const utc = (jset + 0.5 - J1970) * 864e5;
   return Math.round(((utc / 6e4 + 9 * 60) % 1440 + 1440) % 1440);
 }
-const ENVIES_GUIDE = [["vue", "Voir quelque chose d'impressionnant"], ["flaner", "Flâner dans un quartier"], ["manger", "Bien manger une spécialité"],
-  ["jouer", "Vous amuser : arcade, bowling, sport"], ["musique", "Musique ou bar calme"], ["histoire", "Histoire, temples et musées"],
+const ENVIES_GUIDE = [["vue", "Voir quelque chose d'impressionnant"], ["sensation", "Sensations : luge, tyrolienne, téléphérique"], ["flaner", "Flâner dans un quartier"],
+  ["manger", "Bien manger une spécialité"], ["jouer", "Jouer : missions, patinoire, arcade"], ["creer", "Fabriquer un objet à deux"], ["detente", "Bain chaud, spa ou bateau"],
+  ["musique", "Musique ou bar calme"], ["histoire", "Histoire, temples et musées"],
   ["shopping", "Friperies et boutiques"], ["ralentir", "Ralentir dans un jardin"], ["unique", "Une chose qu'on ne fait qu'ici"]];
 const HUMEURS = [["anime", "En forme, envie d'animation"], ["calme", "Un peu fatigués, envie de calme"], ["plaisir", "Envie de vous faire plaisir"], ["surprise", "Envie d'être surpris"]];
 const QUANDS = [["heure", "Une heure, maintenant"], ["matin", "Le matin"], ["aprem", "L'après-midi"], ["soir", "La soirée"], ["journee", "Toute la journée"]];
@@ -1215,12 +1217,78 @@ const HEURES = { heure: "à partir de maintenant, pour une heure environ", matin
 const ETAPES = { heure: "une seule étape", matin: "deux ou trois étapes", aprem: "deux ou trois étapes", soir: "deux ou trois étapes", journee: "trois ou quatre étapes" };
 // trois salles d'arcade de ChatGPT sont rangées en « Sortie du soir » : leur nom les rend aux jeux (vu le 16/10/2026)
 const JEU = (s) => s.theme === "jeu" || /arcade|gigo/i.test(s.nom || "");
+// ---------- La variété des sorties (10/11/2026) ----------
+// Schadrac, arrivé à Busan le 10/11 : « c'est pas du tout varié », « il propose plein de mini-jeux », « on a envie d'être surpris »,
+// « que des choses qu'on a déjà faites ». Trois causes dans le guide sans Claude : une salle d'arcade gagnait 2 points à chaque
+// étape ; l'humeur « surprise » préférait les lieux sans photo, donc les salles de jeux d'OpenStreetMap ; les mêmes réponses
+// redonnaient toujours la même sortie. Chaque lieu a maintenant une sorte (luge, bain, friperie, temple…). Le guide ne met pas deux
+// étapes de la même sorte dans une sortie, fait passer devant les sortes absentes du planning des jours passés, et ne repropose pas
+// un lieu déjà proposé dans la ville. Une salle de jeux passe en premier seulement quand l'envie est de jouer.
+// La sorte vient du champ « sorte » de la fiche quand il existe (outils/varier_busan.py), sinon du nom et de la catégorie du lieu.
+function sorteDe(s) {
+  if (s.sorte) return s.sorte;
+  const fam = FAMILLE[s.cat] || "voir", t = `${s.nom} ${s.catTxt || ""}`, tt = `${t} ${String(s.texte || "").slice(0, 160)}`;
+  if (JEU(s)) return "arcade";
+  if (fam === "manger") return "repas";
+  if (fam === "sortir") return s.cat === "sortie" ? "quartier" : s.theme === "toit" ? "toit" : "bar";
+  if (fam === "acheter") return s.interet === "fripe" || /friperie|vintage/i.test(t) ? "friperie" : /marché/i.test(t) ? "marche"
+    : /grand magasin|centre commercial|mall|outlet|starfield/i.test(tt) ? "magasin" : "boutique";
+  // le nom du lieu passe avant son texte : un temple dont le texte cite un téléphérique reste un temple
+  if (/téléphérique|funiculaire|ropeway/i.test(t)) return "telepherique";
+  if (/temple|sanctuaire|ermitage|pagode/i.test(t)) return "temple";
+  if (/palais|forteresse|château|tombe|tumulus|rempart|grotte|pétroglyphe/i.test(t)) return "monument";
+  if (/musée|museum|galerie/i.test(t)) return "musee";
+  if (/plage/i.test(s.nom)) return "plage";
+  if (/atelier|fabrication/i.test(t)) return "atelier";
+  if (/bateau|croisière|yacht|ferry|sorties? en mer/i.test(t)) return "bateau";
+  if (/\bspa\b|\bbains?\b|sauna|thermal|onsen/i.test(tt)) return "bain";
+  if (/trains? touristiques?|sky capsule/i.test(tt)) return "telepherique";
+  if (/escalade|surf|vélo|bowling|patinoire|karting|stand de tir/i.test(tt)) return "sport";
+  if (/parc d'attractions|parc à thème/i.test(tt)) return "parc";
+  if (/observatoire|\btour\b|tower|belvédère|\bvue\b/i.test(t)) return "vue";
+  if (/marché/i.test(t)) return "marche";
+  if (/village|quartier|\brue\b|ruelle|marches/i.test(t)) return "quartier";
+  if (fam === "marcher" || /\bmont\b|randonnée|sentier|crête|\bparc\b|jardin|forêt|vallée|\bcap\b|colline|île|cascade|lac\b|réserve/i.test(t)) return "nature";
+  return fam === "faire" ? "activite" : "visite";
+}
+// les sortes peu communes passent devant ; les sortes vagues ne comptent ni comme déjà faites ni comme nouvelles
+const SORTES_RARES = new Set(["sensation", "passerelle", "immersif", "missions", "patinoire", "plongeuses", "interactif", "parc", "atelier", "bain", "bateau", "telepherique", "sport"]);
+const SORTES_VAGUES = new Set(["visite", "activite", "repas", "bar", "nature", "quartier"]);
+const SORTES_CONNUES = ["arcade", "friperie", "temple", "monument", "magasin", "boutique", "musee", "marche"];
+const SORTE_TXT = { arcade: "salle de jeux", friperie: "friperie", boutique: "boutique", magasin: "grand magasin", marche: "marché", bain: "bain ou spa", bateau: "bateau",
+  telepherique: "téléphérique ou train touristique", atelier: "atelier", sport: "sport", temple: "temple", monument: "monument ancien", musee: "musée", plage: "plage",
+  vue: "point de vue", quartier: "quartier", nature: "nature", sensation: "sensation forte", passerelle: "passerelle de verre", immersif: "art numérique",
+  missions: "jeu de missions", patinoire: "patinoire", plongeuses: "fruits de mer des plongeuses", interactif: "musée interactif", parc: "parc d'attractions",
+  toit: "bar avec vue", bar: "bar", repas: "restaurant", visite: "visite", activite: "activité" };
+const rareDe = (s) => SORTES_RARES.has(sorteDe(s)) || !!s.surprise;
+const lieuDuProgramme = (id) => { for (const R of Object.values(REGIONS)) { const s = R.lieux.find((x) => x.id === id); if (s) return s; } return null; };
+// les sortes des lieux du planning et du programme jusqu'à ce jour, toutes villes confondues : sorte → nombre de lieux
+function sortesFaites(n) {
+  const m = new Map();
+  for (const e of [...planAuto(), ...PLAN]) {
+    if (e.jour > n) continue;
+    const s = PAR_ID[e.lieu] || lieuDuProgramme(e.lieu) || { nom: e.nom || "", cat: /_ach_/.test(e.lieu) || /mall|starfield|vintage|store|magasin|marché|outlet/i.test(e.nom || "") ? "acheter" : "voir", catTxt: "" };
+    const k = sorteDe(s);
+    if (!SORTES_VAGUES.has(k)) m.set(k, (m.get(k) || 0) + 1);
+  }
+  return m;
+}
+// les lieux déjà proposés par le guide dans cette ville, les plus récents d'abord, gardés dans ce navigateur
+const cleVus = () => `guide:vus:${REGION}`;
+function lireVus() { try { return JSON.parse(localStorage.getItem(cleVus()) || "[]"); } catch { return []; } }
+function garderVus(ids) { try { localStorage.setItem(cleVus(), JSON.stringify([...new Set([...ids, ...lireVus()])].slice(0, 40))); } catch { /* sans stockage, le guide peut reproposer un lieu */ } }
+// pour les essais sur l'ordinateur de développement seulement
+if (location.hostname === "localhost") window.__guide = { sortes: () => [...REGIONS[REGION].lieux, ...AUTOUR, ...PRATIQUE.adresses].map((s) => [s.id, s.nom, sorteDe(s)]), faites: (n) => [...sortesFaites(n)] };
+const SORTES_ENVIE = { sensation: ["sensation", "passerelle", "telepherique", "parc"], jouer: ["missions", "patinoire", "sport", "parc", "interactif"], creer: ["atelier"], detente: ["bain", "bateau"] };
 // les lieux possibles pour chaque envie ; Claude choisit ensuite les plus justes d'après leur texte
 const POUR_ENVIE = {
   vue: (s) => (["voir", "histoire", "ville", "sortie", "mer", "marcher", "marche"].includes(s.cat) && !JEU(s)) || s.theme === "toit",
   flaner: (s) => ["ville", "sortie", "marcher", "marche", "histoire", "voir", "acheter"].includes(s.cat) && !JEU(s),
   manger: (s) => FAMILLE[s.cat] === "manger",
-  jouer: (s) => FAMILLE[s.cat] === "faire" || JEU(s),
+  sensation: (s) => SORTES_ENVIE.sensation.includes(sorteDe(s)),
+  jouer: (s) => JEU(s) || SORTES_ENVIE.jouer.includes(sorteDe(s)),
+  creer: (s) => SORTES_ENVIE.creer.includes(sorteDe(s)),
+  detente: (s) => SORTES_ENVIE.detente.includes(sorteDe(s)),
   musique: (s) => !JEU(s) && ((FAMILLE[s.cat] === "sortir" && s.cat !== "sortie") || ["toit", "chicha", "cabaret"].includes(s.theme)),
   ralentir: (s) => ["marcher", "marche", "mer", "histoire", "voir"].includes(s.cat) && !JEU(s),
   histoire: (s) => histoireDe(s),
@@ -1231,7 +1299,10 @@ const CONSIGNE_ENVIE = {
   vue: "Ils veulent voir quelque chose d'impressionnant : une vue, un monument ou un paysage.",
   flaner: "Ils veulent flâner dans un quartier, à pied, avec des arrêts qui leur plaisent.",
   manger: "Ils veulent bien manger, de préférence une spécialité de la ville.",
-  jouer: "Ils veulent s'amuser : salle d'arcade, bowling ou activité sportive.",
+  sensation: "Ils veulent des sensations : luge, tyrolienne, téléphérique, passerelle de verre ou parc d'attractions.",
+  jouer: "Ils veulent jouer : jeu de missions, patinoire, activité sportive ou salle d'arcade.",
+  creer: "Ils veulent fabriquer un objet à deux dans un atelier.",
+  detente: "Ils veulent se détendre : bain chaud, spa ou promenade en bateau.",
   musique: "Ils veulent de la musique ou un bar calme.",
   ralentir: "Ils veulent ralentir, dans un jardin ou un lieu calme.",
   histoire: "Ils veulent de l'histoire : temples, palais, musées et lieux anciens.",
@@ -1242,7 +1313,7 @@ const CONSIGNE_HUMEUR = {
   anime: "Ils sont en forme et veulent de l'animation.",
   calme: "Ils sont un peu fatigués et veulent du calme. Choisis des lieux proches les uns des autres, avec peu de marche et peu de monde. Évite les lieux dont la fiche dit qu'ils sont très fréquentés.",
   plaisir: "Ils veulent se faire plaisir. Choisis des lieux qui marqueront leur journée, même s'ils coûtent plus cher.",
-  surprise: "Ils veulent être surpris. Choisis des lieux auxquels ils n'auraient pas pensé, loin des plus connus.",
+  surprise: "Ils veulent être surpris. Choisis des sortes de sorties qu'ils n'ont pas encore faites pendant ce voyage, et aucune salle de jeux.",
 };
 const REP_DEFAUT = { envie: "", humeur: "", quand: "", meteo: "auto", budget: "normal", trajet: "auto" };
 function lireReponses() { try { return { ...REP_DEFAUT, ...JSON.parse(localStorage.getItem("guide:reponses") || "{}") }; } catch { return { ...REP_DEFAUT }; } }
@@ -1403,6 +1474,7 @@ function contexteDuJour(j) {
 function candidatsIdees(j, dep, quand, exclus) {
   const R = REGIONS[REGION], soir = quand === "soir";
   let max = REPONSES.trajet !== "auto" ? DISTANCE_REGLAGE[REPONSES.trajet] : DISTANCE_DUREE[quand];
+  if (REPONSES.envie === "sensation" && REPONSES.trajet === "auto" && quand !== "heure") max = Math.max(max, 18);
   if (REACTION?.cle === "loin") max = Math.max(1.2, Math.min(max, REACTION.max) / 2);
   const prevus = new Set(lieuxDuJour(j.n).map((e) => e.lieu)), vus = new Set();
   const tous = [...R.lieux.filter((s) => s.cat !== "base").map((s) => ({ s, pos: LIEUX[s.pos] })), ...AUTOUR.map((a) => ({ s: a, pos: [a.lat, a.lon] })),
@@ -1413,7 +1485,7 @@ function candidatsIdees(j, dep, quand, exclus) {
   const envie = POUR_ENVIE[REPONSES.envie] || POUR_ENVIE.unique;
   const parFam = {}, liste = [], pris = new Set();
   const prendre = (x) => { if (!pris.has(x.s.id)) { pris.add(x.s.id); liste.push(x); } };
-  for (const x of tous.filter((y) => envie(y.s))) {
+  for (const x of tous.filter((y) => envie(y.s)).sort((a, b) => (rareDe(b.s) - rareDe(a.s)) || a.km - b.km)) {
     const f = FAMILLE[x.s.cat] || "voir";
     parFam[f] = (parFam[f] || 0) + 1;
     if (REPONSES.envie || parFam[f] <= 15) prendre(x);
@@ -1428,7 +1500,8 @@ const court = (t, n) => String(t).replace(/\s+/g, " ").slice(0, n);
 function ligneIdee(x, j) {
   const s = x.s, p = pratiqueDe(s), m = MARCHE[s.id], plats = (DEGUST.lieux[s.id] || []).map((k) => DEGUST.noms[k]).filter(Boolean);
   const foule = s.foule || p.affluence;
-  return [s.id, s.nom + (s.natif ? ` (${s.natif})` : ""), s.catTxt || "", `à ${x.km.toFixed(1)} km`,
+  const so = sorteDe(s);
+  return [s.id, s.nom + (s.natif ? ` (${s.natif})` : ""), [s.catTxt || "", SORTES_VAGUES.has(so) ? "" : `sorte : ${SORTE_TXT[so] || so}`].filter(Boolean).join(", "), `à ${x.km.toFixed(1)} km`,
     m && m[0] > 0 ? `${m[0]} min à pied de ${m[4] ? "la station" : "la gare"} ${m[2]}` : "",
     court(s.texte || "", 170), plats.length ? `spécialités : ${plats.join(", ")}` : "", p.horaires ? `horaires : ${court(p.horaires, 140)}` : "",
     p.prix ? `prix : ${court(p.prix, 80)}` : "", foule ? `affluence : ${court(foule, 80)}` : "", p.reservation ? `réservation : ${court(p.reservation, 80)}` : "",
@@ -1473,10 +1546,14 @@ Ce qu'ils t'ont répondu :
 ${lignesMeteo(j, quand)}
 - Budget : ${R.budget === "petit" ? "petit. Préfère les lieux gratuits ou peu chers d'après les prix de la liste." : R.budget === "large" ? "sans compter." : "normal."}
 ${MOT_GUIDE.trim() ? `- Leur mot pour toi : « ${MOT_GUIDE.trim().slice(0, 300).replace(/[.!?…]+$/, "")} ». Tiens-en compte en priorité.\n` : ""}${reaction}
+Ce qu'ils ont déjà fait :
+- Sortes de sorties déjà faites pendant le voyage : ${[...sortesFaites(j.n).keys()].map((k) => SORTE_TXT[k] || k).join(", ") || "aucune connue"}.
+${lireVus().length ? `- Lieux que tu leur as déjà proposés dans cette ville, à ne pas reproposer : ${lireVus().map((id) => PAR_ID[id]?.nom).filter(Boolean).slice(0, 20).join(", ")}.\n` : ""}
 Ce que tu dois faire :
 - Compose une seule sortie de ${ETAPES[quand]}, dans l'ordre de la visite, ${HEURES[quand]}.
 - Choisis seulement des lieux de la liste ci-dessous, avec leur identifiant exact.
 - Ne place pas un lieu à une heure où ses horaires le disent fermé. Pour une vue, place-la avant le coucher du soleil ou juste au moment où il se couche.
+- Varie les sortes de lieux : jamais deux étapes de la même sorte, hors repas. Préfère les sortes qu'ils n'ont pas encore faites pendant le voyage. Ne propose une salle de jeux que si leur envie est de jouer, et une seule au plus.
 - Préfère des étapes proches les unes des autres. Une sortie de plusieurs heures peut inclure un repas dans un restaurant de la liste.
 - Ajoute deux autres possibilités de la liste, chacune avec une phrase qui dit quand la préférer.
 - N'invente aucun fait sur un lieu. Appuie-toi seulement sur le texte de la liste. Le conseil d'une étape vient de sa fiche : horaires, prix, réservation ou affluence. Sans information dans la fiche, le conseil reste vide.
@@ -1527,11 +1604,17 @@ function groupeChoix(cle, texte, liste, val, aide = "") {
     <div class="jours" role="group" aria-label="${echapper(texte)}">${liste.map(([v, t]) =>
       `<button type="button" data-q="${cle}" data-v="${echapper(v)}" aria-pressed="${val === v}">${echapper(t)}</button>`).join("")}</div></div>`;
 }
+function enviesDeLaVille() {
+  const tous = [...REGIONS[REGION].lieux.filter((s) => s.cat !== "base"), ...AUTOUR, ...PRATIQUE.adresses];
+  return ENVIES_GUIDE.filter(([k]) => k === "unique" || tous.some((s) => POUR_ENVIE[k](s)));
+}
 function questionsHtml(j) {
   const quands = estAujourdhui(j) ? QUANDS : QUANDS.filter((c) => c[0] !== "heure");
+  const envies = enviesDeLaVille();
+  if (REPONSES.envie && !envies.some(([k]) => k === REPONSES.envie)) { REPONSES.envie = ""; garderReponses(); }
   const sait = contexteDuJour(j);
   return `${sait.length ? `<p class="guide-sait"><strong>Votre guide sait déjà ceci.</strong> ${sait.map(echapper).join(" ")}</p>` : ""}
-    ${groupeChoix("envie", "De quoi avez-vous envie ?", ENVIES_GUIDE, REPONSES.envie, "Sans réponse, le guide choisit.")}
+    ${groupeChoix("envie", "De quoi avez-vous envie ?", envies, REPONSES.envie, "Sans réponse, le guide choisit.")}
     ${groupeChoix("humeur", "Comment vous sentez-vous ?", HUMEURS, REPONSES.humeur)}
     ${groupeChoix("quand", "Quand sortez-vous et pour combien de temps ?", quands, quandDuJour(j))}
     <div class="question"><label class="question-texte" for="mot-guide">Avez-vous un mot pour votre guide ?</label>
@@ -1626,6 +1709,7 @@ async function demanderIdees(local = !SAMPLE) {
       return;
     }
     garderIdees(cle, res);
+    garderVus(res.etapes.map((e) => e.id));
     afficherIdees(sortieHtml(res), false);
     return;
   }
@@ -1648,6 +1732,7 @@ async function demanderIdees(local = !SAMPLE) {
     const res = { titre: String(r.titre || ""), pourquoi: String(r.pourquoi || ""), etapes, autres, quand: Date.now(), reponses: { ...REPONSES },
       depart: dep.nom, pos: dep.pos, max };
     garderIdees(cle, res);
+    garderVus(etapes.map((e) => e.id));
     REACTION = null;
     afficherIdees(sortieHtml(res), false);
   } catch (e) {
@@ -1733,7 +1818,17 @@ function noteLocale(s, km, lim, ctx, n, t, role) {
   if (s.distinction) { v += s.distinction === "selection" ? 1.5 : 2; r.push(s.distinction === "etoile" ? "Étoile Michelin" : s.distinction === "bib" ? "Bib Gourmand Michelin" : "Guide Michelin"); }
   if (DEGUST.lieux[s.id]?.length || s.incontournable) { v += 1.5; r.push("Spécialité de la ville"); }
   if (s.image || prog) v += 0.5;
-  if (JEU(s)) { v += 2; r.push("Salle d'arcade"); }
+  // 10/11/2026 : une salle de jeux gagne des points seulement quand l'envie est de jouer, et en perd sinon
+  const so = sorteDe(s), rare = rareDe(s);
+  if (JEU(s)) { if (ctx.envie === "jouer") { v += 1; r.push("Salle d'arcade"); } else v -= 2; }
+  if (role !== "repas" && role !== "verre") {
+    if (rare) v += 1.5;
+    const deja = ctx.faites?.get(so) || 0;
+    if (deja) v -= Math.min(deja, 2) * 1.2;
+    else if (!SORTES_VAGUES.has(so) && so !== "arcade") { v += 1.5; r.unshift("Nouveau pendant ce voyage"); }
+    if (ctx.prises?.has(so)) v -= 5;
+  }
+  if (ctx.vus?.has(s.id)) v -= 3;
   if (s.theme === "toit") { v += 1.5; r.push("Bar avec vue"); }
   if (s.theme === "chicha") v += 1;
   if (s.interet === "fripe") { v += 1.5; r.push("Friperie"); }
@@ -1744,7 +1839,7 @@ function noteLocale(s, km, lim, ctx, n, t, role) {
   if (ctx.humeur === "calme") { if (amb === "calme") { v += 2; r.push("Lieu calme"); } else if (amb === "anime") v -= 3.5; }
   else if (ctx.humeur === "anime") { if (amb === "anime") { v += 2; r.push("Lieu animé"); } else if (amb === "calme") v -= 0.5; }
   else if (ctx.humeur === "plaisir") { if (s.distinction === "etoile" || (s.budget || 0) >= 3 || s.nuit) v += 2; if (s.top) v += 1; }
-  else if (ctx.humeur === "surprise") { if (!prog && !s.top && !s.image) v += 1.5; if (prog) v -= 1.5; }
+  else if (ctx.humeur === "surprise") { if (rare) { v += 2.5; r.push("Sortie peu commune"); } else if (SORTES_CONNUES.includes(so)) v -= 1.5; if (prog) v -= 1.5; }
   if (ctx.budget === "petit") { if ((s.budget || 2) >= 3) v -= 4; else if (s.budget === 1) { v += 1; r.push("Petit prix"); } }
   else if (ctx.budget === "large" && (s.budget || 0) >= 3) v += 1.5;
   const couvert = couvertDe(s);
@@ -1773,7 +1868,7 @@ function convientRole(role, s, ctx) {
   if (role === "repas") return fam === "manger" && !/pain|ppang|boulangerie|fish cakes|café|dessert|glace/i.test(`${s.catTxt || ""} ${s.nom}`);
   if (role === "verre") return fam === "sortir" && s.cat !== "sortie" && !/dessert|salon de thé|pâtisserie/i.test(`${s.catTxt || ""} ${premierePhrase(s.texte)}`);
   const f = POUR_ENVIE[ctx.envie === "manger" ? "flaner" : ctx.envie];
-  if (role === "soir") return fam !== "manger" && (!!s.nuit || JEU(s) || fam === "sortir" || (f ? f(s) : false));
+  if (role === "soir") return fam !== "manger" && (!!s.nuit || JEU(s) || fam === "sortir" || (f ? f(s) : false) || (rareDe(s) && !!s.ouvert));
   if (fam === "manger") return false;
   if (fam === "sortir" && !["musique", "unique"].includes(ctx.envie || "")) return false;
   return f ? f(s) : true;
@@ -1786,6 +1881,8 @@ function quoiLocal(role, s, t) {
 function raisonAutre(a, choisi, ctx) {
   if (ctx.pluie && couvertDe(a.x.s) && !couvertDe(choisi.x.s)) return "Ce lieu couvert vaut mieux s'il se met à pleuvoir.";
   if (a.x.s.nuit && !choisi.x.s.nuit) return "Ce lieu se prête mieux à la soirée, une fois la nuit tombée.";
+  // une sortie peu commune se présente par la première phrase de sa fiche, plus parlante qu'une raison de distance ou de calme
+  if (rareDe(a.x.s) && premierePhrase(a.x.s.texte)) return premierePhrase(a.x.s.texte);
   if (a.km < choisi.km - 0.4) return `Ce lieu plus proche convient si vous êtes fatigués, à ${texteDistance(a.km * 1000)} de votre point de départ.`;
   if (FAMILLE[a.x.s.cat] === "manger") return premierePhrase(a.x.s.texte);
   if (ambianceDe(a.x.s) === "calme" && ambianceDe(choisi.x.s) !== "calme") return "Ce lieu plus calme convient pour ralentir un peu.";
@@ -1800,8 +1897,8 @@ function pourquoiLocal(ctx, etapes) {
   l.push({ calme: "Votre envie de calme fait passer devant les lieux tranquilles et les trajets courts.",
     anime: "Votre envie d'animation fait passer devant les lieux vivants et les quartiers qui bougent.",
     plaisir: "Votre envie de vous faire plaisir fait passer devant les meilleures tables et les plus belles vues.",
-    surprise: "Votre envie d'être surpris écarte les lieux les plus connus de la carte." }[ctx.humeur]
-    || "Les étapes suivent vos goûts pour les salles d'arcade, les bars avec vue, les friperies et l'histoire.");
+    surprise: "Votre envie d'être surpris fait passer devant les sorties peu communes et les sortes de sorties absentes de votre voyage jusqu'ici." }[ctx.humeur]
+    || "Chaque étape est d'une sorte différente, et les sortes de sorties absentes de votre voyage jusqu'ici passent devant.");
   const pts = etapes.map((e) => posLieu(PAR_ID[e.id])), ecarts = pts.slice(1).map((p, i) => metresEntre(pts[i], p));
   if (ecarts.length) l.push(`Les étapes restent à moins de ${texteDistance(Math.max(...ecarts))} les unes des autres, à vol d'oiseau.`);
   return l.join(" ");
@@ -1815,8 +1912,10 @@ function titreLocal(etapes, quand) {
 function sortieLocale(j, dep, quand, exclus) {
   const ctx = contexteLocal(j, quand), n = j.n, R = REGIONS[REGION];
   let max = REPONSES.trajet !== "auto" ? DISTANCE_REGLAGE[REPONSES.trajet] : quand === "journee" ? 30 : DISTANCE_DUREE[quand];
+  if (REPONSES.envie === "sensation" && REPONSES.trajet === "auto" && quand !== "heure") max = Math.max(max, 18);
   if (REACTION?.cle === "loin") max = Math.max(1.2, Math.min(max, REACTION.max || max) / 2);
   if (ctx.humeur === "calme") max = Math.min(max, quand === "heure" ? 1.2 : 6);
+  ctx.faites = sortesFaites(n); ctx.vus = new Set(lireVus()); ctx.prises = new Set();
   const chaine = quand === "journee" ? 8 : ctx.humeur === "calme" ? 1.5 : 2.5;
   const deja = new Set([...lieuxDuJour(n).map((e) => e.lieu), ...PLAN.map((e) => e.lieu)]), vus = new Set();
   const pool = [...R.lieux.filter((s) => s.cat !== "base").map((s) => ({ s, pos: LIEUX[s.pos] })), ...AUTOUR.map((a) => ({ s: a, pos: [a.lat, a.lon] })),
@@ -1841,11 +1940,20 @@ function sortieLocale(j, dep, quand, exclus) {
     pris.add(c.x.s.id); listes.push({ role, l });
     etapes.push({ id: c.x.s.id, heure: minuteTexte(t), role, quoi: quoiLocal(role, c.x.s, t), conseil: c.x.s.foule || "", raisons: c.r.slice(0, 3) });
     prec = c.x.pos;
+    if (role !== "repas" && role !== "verre") ctx.prises.add(sorteDe(c.x.s));
     if (role === "soir" && FAMILLE[c.x.s.cat] === "sortir") sansVerre = true;
   }
   if (!etapes.length) return null;
   const principal = listes[0], choisi = principal.l[0];
-  const autres = principal.l.filter((y) => !pris.has(y.x.s.id)).slice(0, 2).map((y) => ({ id: y.x.s.id, texte: raisonAutre(y, choisi, ctx) }));
+  // les deux autres possibilités sont d'une autre sorte que l'étape choisie, et de deux sortes différentes entre elles
+  const autresSortes = new Set([sorteDe(choisi.x.s)]), autresL = [];
+  for (const y of principal.l) {
+    const k = sorteDe(y.x.s);
+    if (pris.has(y.x.s.id) || (autresSortes.has(k) && principal.role !== "repas")) continue;
+    autresSortes.add(k); autresL.push(y);
+    if (autresL.length === 2) break;
+  }
+  const autres = autresL.map((y) => ({ id: y.x.s.id, texte: raisonAutre(y, choisi, ctx) }));
   const loin = elargi ? ` Rien de convenable n'était ouvert à moins de ${texteDistance(max * 1000)} du point de départ, donc le guide a cherché un peu plus loin.` : "";
   return { local: true, titre: titreLocal(etapes, quand), pourquoi: pourquoiLocal(ctx, etapes) + loin, etapes, autres, quand: Date.now(),
     reponses: { ...REPONSES }, depart: dep.nom, pos: dep.pos, max };
@@ -2727,7 +2835,7 @@ function journeeAuLancement() {
 const AIDE = [
   ["Votre journée", "La fenêtre de la journée s'ouvre seule au premier lancement de chaque jour. Elle contient les étapes du jour dans l'ordre, avec l'heure, le programme et l'arrêt de métro ou de bus de chacune, puis les illuminations, les fêtes et les marchés de la ville ce jour-là. Le bouton Planning situé en bas de l'écran la rouvre à tout moment, et les flèches passent d'un jour à l'autre."],
   ["Le jour sur la carte", "Le bouton « Voir ce jour sur la carte » numérote les étapes et les relie par un trait doré depuis votre hôtel. La barre « Jour » au bas de l'écran montre de la même façon chaque jour passé dans la ville. Le panneau qui s'ouvre alors sert à changer l'ordre des étapes ou à en retirer une."],
-  ["Le guide du jour", "Le bouton Guide du jour propose une sortie selon votre envie, votre humeur, le moment, la météo prévue, votre budget et la distance acceptée. Le guide choisit parmi les meilleures adresses de la carte, ouvertes à l'heure prévue, avec un repas et un verre quand le moment s'y prête. Les boutons placés sous la sortie demandent plus près, plus calme, moins cher ou une autre idée."],
+  ["Le guide du jour", "Le bouton Guide du jour propose une sortie selon votre envie, votre humeur, le moment, la météo prévue, votre budget et la distance acceptée. Le guide choisit parmi les meilleures adresses de la carte, ouvertes à l'heure prévue, avec un repas et un verre quand le moment s'y prête. Deux étapes d'une même sortie sont de sortes différentes, et une nouvelle demande donne d'autres lieux. Les boutons placés sous la sortie demandent plus près, plus calme, moins cher ou une autre idée."],
   ["La fiche d'un lieu", "Le nom d'une étape ou un point touché sur la carte ouvre la fiche du lieu. La fiche contient la photo, l'adresse, les horaires, le trajet et les sources du lieu. Le bouton « Ajouter au planning » de la fiche sert à placer le lieu dans le jour de votre choix. Sur un téléphone, une fiche ouverte cache les boutons du bas, et la croix de la fiche les fait revenir."],
   ["Les lieux affichés", "Le choix Programme affiche seulement les lieux prévus et vos hôtels. Le choix Sélection ajoute les adresses conseillées, et le choix Tout affiche chaque lieu de la carte. Les pastilles de couleur apparaissent avec les choix Sélection et Tout. Une pastille comme Visites, Restaurants ou Boutiques sert à garder une seule sorte de lieux à l'écran."],
   ["Les autres villes du voyage", "Le nom de la ville écrit en haut de l'écran ouvre la liste des villes du voyage. Le fil « Voyage › Corée › Séoul » placé au-dessus sert à revenir en arrière."],

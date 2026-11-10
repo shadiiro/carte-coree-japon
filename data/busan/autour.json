@@ -2150,15 +2150,15 @@
   "natif": "롯데백화점 부산본점",
   "cat": "acheter",
   "catTxt": "Boutique",
-  "lat": 35.1575703,
-  "lon": 129.0461333,
-  "texte": "Ce grand magasin très luxueux a des fontaines et des statues à l'entrée du sous-sol. Le sous-sol a une bonne aire de restauration, une épicerie fine et un supermarché.",
+  "lat": 35.1566321,
+  "lon": 129.0559961,
+  "texte": "Ce grand magasin très luxueux a des fontaines et des statues à l'entrée du sous-sol. Le sous-sol a une bonne aire de restauration, une épicerie fine et un supermarché. Le sous-sol accueille depuis le 30 octobre 2026 l'espace Fandom Space, sur 1 785 m². Cet espace réunit la boutique Animate, les capsules Gashapon de Bandai, les loteries Ichiban Kuji, les figurines de Best Hobby et un coin de jeux Nintendo.",
   "prevu": "Ajouté depuis Wikivoyage pour donner plus de choix autour de vous.",
   "article": "Busan/Central",
   "notoriete": 0,
   "photo": false,
   "proche": true,
-  "source": "Texte d'après Wikivoyage en anglais, article « Busan/Central », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Magasins Kodak Apparel relevés le 8 novembre 2026.",
+  "source": "Texte d'après Wikivoyage en anglais, article « Busan/Central », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Magasins Kodak Apparel relevés le 8 novembre 2026. Espace Fandom Space d'après <a href=\"https://www.inews24.com/view/2020398\" target=\"_blank\" rel=\"noopener\">iNews24</a> et <a href=\"https://www.insight.co.kr/news/579491\" target=\"_blank\" rel=\"noopener\">Insight</a>, octobre 2026. Horaires d'après <a href=\"https://www.lotteshopping.com/store/main?cstr=0005\" target=\"_blank\" rel=\"noopener\">le site officiel</a> et Google Maps, relevés le 10 novembre 2026. Position corrigée le 10 novembre 2026 : le grand magasin dans OpenStreetMap.",
   "niveau": 3,
   "priorite": 700,
   "top": true,
@@ -2172,6 +2172,55 @@
      "5e étage, téléphone 051-810-3582."
     ]
    ]
+  },
+  "sorte": "pop",
+  "ouvert": {
+   "1": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     630,
+     1230
+    ]
+   ],
+   "6": [
+    [
+     630,
+     1230
+    ]
+   ],
+   "0": [
+    [
+     630,
+     1230
+    ]
+   ]
+  },
+  "horaires": "Le magasin est ouvert de 10 h 30 à 20 h du lundi au jeudi, et jusqu'à 20 h 30 du vendredi au dimanche d'après Google Maps.",
+  "trajet": {
+   "moyen": "La ligne 1 du métro va de Beomil à Seomyeon en deux stations."
   }
  },
  {
@@ -2182,13 +2231,13 @@
   "catTxt": "Boutique",
   "lat": 35.098515,
   "lon": 129.037198,
-  "texte": "Ce grand magasin a une cascade intérieure et un belvédère sur le toit, avec vue sur le port et les ponts. C'est le plus grand magasin de Busan.",
+  "texte": "Ce grand magasin a une cascade intérieure et un belvédère sur le toit, avec vue sur le port et les ponts. C'est le plus grand magasin de Busan. La fontaine musicale de la partie Aqua Mall donne un spectacle de dix minutes chaque heure. Un visiteur l'a signalée en travaux sur Google Maps, sans date, donc ce spectacle reste à vérifier sur place. Le jardin du toit est gratuit, avec trois points de vue sur le port et sur le parc Yongdusan.",
   "prevu": "Ajouté depuis Wikivoyage pour donner plus de choix autour de vous.",
   "article": "Busan/Central",
   "notoriete": 0,
   "photo": false,
   "proche": true,
-  "source": "Texte d'après Wikivoyage en anglais, article « Busan/Central », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Magasins Kodak Apparel relevés le 8 novembre 2026. Nike d'après le <a href=\"https://www.nike.com/ar/retail/s/nike-lotte-gwangbok\" target=\"_blank\" rel=\"noopener\">site de Nike</a>.",
+  "source": "Texte d'après Wikivoyage en anglais, article « Busan/Central », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Magasins Kodak Apparel relevés le 8 novembre 2026. Nike d'après le <a href=\"https://www.nike.com/ar/retail/s/nike-lotte-gwangbok\" target=\"_blank\" rel=\"noopener\">site de Nike</a>. Horaires d'après <a href=\"https://www.lotteshopping.com/store/main?cstrCd=0333\" target=\"_blank\" rel=\"noopener\">le site officiel</a>, relevés le 10 novembre 2026. Fontaine et toit d'après <a href=\"https://www.koreabridge.net/post/if-you-head-top-floor-lotte-department-store-fishstick\" target=\"_blank\" rel=\"noopener\">Koreabridge</a> et <a href=\"https://news.jkn.co.kr/post/513892\" target=\"_blank\" rel=\"noopener\">le journal Jaekyung, 2010</a>.",
   "theme": "toit",
   "niveau": 3,
   "priorite": 700,
@@ -2205,6 +2254,10 @@
     [
      "Nike",
      "5e étage, de 10 h 30 à 20 h du lundi au jeudi et jusqu'à 20 h 30 du vendredi au dimanche."
+    ],
+    [
+     "Uniqlo",
+     "2e étage de la partie Aqua Mall, dans une boutique refaite en mai 2026 sur 1 100 m², ouverte jusqu'à 21 h."
     ]
    ]
   },
@@ -2251,7 +2304,8 @@
      1230
     ]
    ]
-  }
+  },
+  "horaires": "Le magasin est ouvert de 10 h 30 à 20 h du lundi au jeudi, et jusqu'à 20 h 30 du vendredi au dimanche. La partie Aqua Mall reste ouverte jusqu'à 21 h."
  },
  {
   "id": "sug_busan_leegane_tteokbokki",
@@ -8160,5 +8214,127 @@
   "photo": false,
   "niveau": 2,
   "priorite": 49
+ },
+ {
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026 au soir, après votre demande d'un quartier de salles d'arcade et de boutiques comme Akihabara.",
+  "id": "var_busan_samjung",
+  "nom": "Samjung Tower",
+  "natif": "삼정타워",
+  "cat": "acheter",
+  "catTxt": "Tour de boutiques, de mangas et de jeux",
+  "sorte": "pop",
+  "lat": 35.1530039,
+  "lon": 129.0596225,
+  "couvert": true,
+  "ambiance": "anime",
+  "texte": "Cette tour de seize étages de Seomyeon réunit des boutiques de mode et plusieurs enseignes pour amateurs de mangas et de maquettes. La boutique Animate et son café à thème occupent le 11e étage. Les enseignes The Gundam Base et Aniplus sont aussi dans la tour, comme le jeu Running Man de votre carte.",
+  "adresse": "672 Jungang-daero, Busanjin-gu (부산 부산진구 중앙대로 672)",
+  "trajet": {
+   "moyen": "La ligne 1 du métro va de Beomil à Seomyeon en deux stations."
+  },
+  "horaires": "La tour est ouverte de 11 h à 22 h du dimanche au jeudi, et de 11 h à 22 h 30 le vendredi et le samedi.",
+  "ouvert": {
+   "tous": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1350
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1350
+    ]
+   ]
+  },
+  "dedans": [
+   {
+    "titre": "Les enseignes de mangas et de jeux",
+    "lignes": [
+     [
+      "Animate",
+      "La boutique de mangas et de produits dérivés est au 11e étage."
+     ],
+     [
+      "Animate Café",
+      "Le café à thème est au 11e étage, à côté de la boutique."
+     ],
+     [
+      "The Gundam Base",
+      "La boutique vend les maquettes Gundam, à un étage non relevé."
+     ],
+     [
+      "Aniplus",
+      "La boutique et le café d'animation sont à un étage non relevé."
+     ],
+     [
+      "Running Man",
+      "Le jeu de missions est au 10e étage, jusqu'à 20 h."
+     ]
+    ]
+   }
+  ],
+  "source": "Enseignes d'après <a href=\"https://tnnews.co.kr/?p=193541\" target=\"_blank\" rel=\"noopener\">TN News, mars 2026</a>. Horaires et nombre d'étages d'après <a href=\"https://thewiki.kr/w/슷\" target=\"_blank\" rel=\"noopener\">The Wiki</a>. Étage d'Animate d'après <a href=\"https://www.albamon.com/jobs/detail/118173008\" target=\"_blank\" rel=\"noopener\">une offre d’emploi de la boutique, août 2026</a>, et café d'après <a href=\"https://popga.co.kr/popup/6484\" target=\"_blank\" rel=\"noopener\">Popga</a>, lus le 10 novembre 2026. Position : la tour dans OpenStreetMap.",
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 30
+ },
+ {
+  "prevu": "Ce lieu a été ajouté le 10 novembre 2026 au soir, après votre demande d'un quartier de salles d'arcade et de boutiques comme Akihabara.",
+  "id": "var_busan_sambo",
+  "nom": "Sambo Game Land",
+  "natif": "삼보게임랜드",
+  "cat": "faire",
+  "theme": "jeu",
+  "catTxt": "Grande salle d'arcade",
+  "lat": 35.1551435,
+  "lon": 129.0603612,
+  "couvert": true,
+  "ambiance": "anime",
+  "texte": "Cette salle d'arcade occupe le rez-de-chaussée du bâtiment Judies Taehwa, au centre de Seomyeon. Le site Game Meca décrivait en 2012 la salle Sambo de Seomyeon comme la plus grande salle d'arcade de Corée, avec beaucoup de jeux de rythme et de jeux de combat. La salle est à 250 m environ de la tour Samjung et du bar à chicha Weekend.",
+  "adresse": "Rez-de-chaussée du bâtiment Judies Taehwa, 61 Seojeon-ro 10beon-gil, Busanjin-gu (부산 부산진구 서전로10번길 61, 쥬디스태화 신관 1층)",
+  "trajet": {
+   "moyen": "La ligne 1 du métro va de Beomil à Seomyeon en deux stations."
+  },
+  "horaires": "La salle est ouverte de 11 h à 2 h d'après Google Maps, relevé le 10 novembre 2026.",
+  "source": "Texte d'après <a href=\"https://www.gamemeca.com/view.php?gid=125173\" target=\"_blank\" rel=\"noopener\">Game Meca, août 2012</a>, lu le 10 novembre 2026. Adresse et horaires d'après Google Maps, relevés le 10 novembre 2026. Position : le bâtiment Judies Taehwa dans OpenStreetMap.",
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 31
+ },
+ {
+  "prevu": "Ce bar a été ajouté le 10 novembre 2026 au soir, après votre demande de chichas réputées à Busan.",
+  "id": "var_busan_weekend",
+  "nom": "Weekend",
+  "natif": "위켄드 서면",
+  "cat": "sortir",
+  "theme": "chicha",
+  "catTxt": "Bar à chicha",
+  "lat": 35.153276,
+  "lon": 129.0619335,
+  "couvert": true,
+  "ambiance": "calme",
+  "texte": "Ce bar à chicha de Seomyeon se trouve à l'étage, avec une terrasse. C'est le seul établissement classé comme bar à chicha par Google Maps parmi les adresses de Busan relevées le 10 novembre 2026. Des cocktails figurent aussi à la carte. Aucune chicha de Busan avec des jeux sur place n'a été trouvée, mais la salle d'arcade Sambo Game Land est à 250 m environ.",
+  "adresse": "2e étage, 50-1 Jungang-daero 680beon-gil, Busanjin-gu (부산 부산진구 중앙대로680번길 50-1, 2층)",
+  "trajet": {
+   "moyen": "La ligne 1 du métro va de Beomil à Seomyeon en deux stations."
+  },
+  "horaires": "Le bar est ouvert de 18 h à 2 h du lundi au vendredi, et de 16 h à 2 h le week-end, d'après Google Maps le 10 novembre 2026.",
+  "source": "Adresse, horaires et description d'après Google Maps, relevés le 10 novembre 2026. Position approchée : la rue du bar dans OpenStreetMap.",
+  "top": true,
+  "proche": false,
+  "photo": false,
+  "niveau": 2,
+  "priorite": 32
  }
 ]

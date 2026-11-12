@@ -2100,7 +2100,7 @@ function conseilJour(s) {
 const SORTIES = {
   seoul: [{ id: "dmz", nom: "DMZ", membres: ["imjingak"] }, { id: "suwon", nom: "Suwon", membres: ["suwon"] },
     { id: "minsokchon", nom: "Village folklorique", membres: ["minsokchon"] }, { id: "nami", nom: "Nami et Morning Calm", membres: ["nami", "morningcalm"] }],
-  busan: [{ id: "gyeongju", nom: "Gyeongju", membres: ["daereungwon", "woljeonggyo", "seokguram", "gyochon"] },
+  busan: [{ id: "gyeongju", nom: "Gyeongju", membres: ["daereungwon", "gyochon", "woljeonggyo", "seokguram"] },
     { id: "haedong", nom: "Haedong Yonggungsa", membres: ["haedong"] }],
   fukuoka: [{ id: "dazaifu", nom: "Dazaifu", membres: ["dazaifu"] }, { id: "nanzoin", nom: "Nanzoin", membres: ["nanzoin"] },
     { id: "homan", nom: "Mont Hōman", membres: ["homan"] }, { id: "shikanoshima", nom: "Shikanoshima", membres: ["shikanoshima"] },

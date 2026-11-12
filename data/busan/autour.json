@@ -25,7 +25,7 @@
  {
   "id": "wv_busan_cheomseongdae_observatory",
   "nom": "Observatoire Cheomseongdae",
-  "natif": "",
+  "natif": "첨성대",
   "cat": "voir",
   "catTxt": "À voir",
   "lat": 35.835116,
@@ -47,12 +47,13 @@
   "nuit": true,
   "couvert": false,
   "horaires": "Ouvert jusqu'à 21 h en hiver, gratuit",
-  "source": "Horaires d'après <a href=\"https://www.yugacrew.com/crewletter/gyeongju-night-view\" target=\"_blank\" rel=\"noopener\">Yuga Crew</a>, lu le 8 novembre 2026."
+  "source": "Horaires d'après <a href=\"https://www.yugacrew.com/crewletter/gyeongju-night-view\" target=\"_blank\" rel=\"noopener\">Yuga Crew</a>, lu le 8 novembre 2026.",
+  "adresse": "839-1 Inwang-dong, Gyeongju (경북 경주시 인왕동 839-1)"
  },
  {
   "id": "wv_busan_national_museum_of_gyeongju",
   "nom": "Musée national de Gyeongju",
-  "natif": "",
+  "natif": "국립경주박물관",
   "cat": "voir",
   "catTxt": "À voir",
   "lat": 35.8291,
@@ -70,12 +71,23 @@
   "notoriete": 17,
   "photo": true,
   "niveau": 2,
-  "priorite": 615
+  "priorite": 615,
+  "adresse": "186 Iljeong-ro, Gyeongju (경북 경주시 일정로 186)",
+  "horaires": "Les salles sont ouvertes de 10 h à 18 h en semaine, d'après le dépliant du musée du 30 octobre 2026.",
+  "ouvert": {
+   "tous": [
+    [
+     600,
+     1080
+    ]
+   ]
+  },
+  "source": "Horaires d'après le dépliant du musée relevé par <a href=\"https://www.yugacrew.com/crewletter/gyeongju-childrens-museum\" target=\"_blank\" rel=\"noopener\">Yuga Crew</a> le 7 novembre 2026."
  },
  {
   "id": "wv_busan_donggung_palace_and_wolji_pond",
   "nom": "Palais Donggung et étang Wolji",
-  "natif": "",
+  "natif": "동궁과 월지",
   "cat": "voir",
   "catTxt": "À voir",
   "lat": 35.834482,
@@ -107,7 +119,8 @@
      1320
     ]
    ]
-  }
+  },
+  "adresse": "102 Wonhwa-ro, Gyeongju (경북 경주시 원화로 102)"
  },
  {
   "id": "wv_busan_united_nations_memorial_cemetery_unmck",

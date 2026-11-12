@@ -98,13 +98,13 @@ export const BUSAN = [
     "Prévu le jeudi 12 novembre à 11 h 40, en première étape, à dix minutes à pied du terminal des bus.", ["en", "Daereungwon"]),
   L("gyochon", "gyochon", "Village de Gyochon", "교촌마을", "histoire", "Village traditionnel", "gyochon",
     "Un village traditionnel de Gyeongju, avec la maison historique de la famille Choe.",
-    "Prévu le jeudi 12 novembre à 14 h 30, entre l'observatoire Cheomseongdae et le pont Woljeonggyo.", ["en", "Gyochon Traditional Village"]),
+    "Prévu le jeudi 12 novembre à 14 h 30, après l'observatoire Cheomseongdae.", ["en", "Gyochon Traditional Village"]),
   L("woljeonggyo", "woljeonggyo", "Pont Woljeonggyo", "월정교", "histoire", "Pont", "woljeonggyo",
     "Un pont couvert construit en 760, disparu sous la dynastie Joseon, puis reconstruit et rouvert en avril 2018.",
-    "Prévu le jeudi 12 novembre à 15 h 15, juste après le village de Gyochon.", ["en", "Woljeonggyo"], { nuit: true }),
+    "Prévu le jeudi 12 novembre vers 18 h 15, en dernière étape et de nuit, après l'étang Wolji.", ["en", "Woljeonggyo"], { nuit: true }),
   L("seokguram", "seokguram", "Grotte de Seokguram", "석굴암", "histoire", "Grotte", "seokguram",
     "Un ermitage à 750 m d'altitude sur le mont Toham, à quatre kilomètres du temple Bulguksa. Il est inscrit au patrimoine mondial de l'UNESCO depuis 1995.",
-    "Prévu le jeudi 12 novembre seulement à la place du musée, car la grotte demande deux bus depuis le centre.", ["fr", "Grotte de Seokguram"],
+    "Cette grotte de votre liste n'a pas tenu dans la journée de Gyeongju, car elle demande deux bus depuis le centre.", ["fr", "Grotte de Seokguram"],
     { alerte: "Le dernier bus 12 du retour part de la grotte à 17 h, d'après un relevé d'octobre 2026." }),
 ];
 

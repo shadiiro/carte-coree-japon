@@ -168,7 +168,7 @@
   "catTxt": "À voir",
   "lat": 33.592972,
   "lon": 130.410472,
-  "texte": "Ce sanctuaire date du VIIIe siècle. Le festival annuel Gion Yamakasa part d'ici.",
+  "texte": "Ce sanctuaire fondé en 757 protège le vieux quartier de Hakata et lance chaque été le festival Gion Yamakasa. Un char géant de ce festival y est exposé toute l'année. La cour reste éclairée et calme le soir, après la fermeture des bâtiments.",
   "prevu": "Ajouté depuis Wikivoyage pour donner plus de choix autour de vous.",
   "article": "Fukuoka",
   "image": "data/photos/wv/wv_fukuoka_kushida_shrine.jpg",
@@ -181,7 +181,54 @@
   "notoriete": 6,
   "photo": true,
   "niveau": 2,
-  "priorite": 670
+  "priorite": 670,
+  "horaires": "Tous les jours : 9 h à 17 h.",
+  "ouvert": {
+   "1": [
+    [
+     540,
+     1020
+    ]
+   ],
+   "2": [
+    [
+     540,
+     1020
+    ]
+   ],
+   "3": [
+    [
+     540,
+     1020
+    ]
+   ],
+   "4": [
+    [
+     540,
+     1020
+    ]
+   ],
+   "5": [
+    [
+     540,
+     1020
+    ]
+   ],
+   "6": [
+    [
+     540,
+     1020
+    ]
+   ],
+   "0": [
+    [
+     540,
+     1020
+    ]
+   ]
+  },
+  "source": "Horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJV2pTquqRQTURpI1FhH5siaE\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026.",
+  "sorte": "temple"
  },
  {
   "id": "wv_fukuoka_kabuki_theatre",
@@ -1571,18 +1618,64 @@
   "catTxt": "Boutique",
   "lat": 33.591111,
   "lon": 130.410556,
-  "texte": "Ce centre commercial à l'architecture originale a des boutiques de vêtements, des restaurants et un théâtre. Ses boutiques de personnages comptent une boutique du studio Ghibli. Un spectacle de fontaines a lieu toutes les heures au centre du bâtiment. Son Ramen Stadium réunit plusieurs restaurants de ramen, de qualité moyenne selon Wikivoyage.",
+  "texte": "Ce centre commercial aux façades rouges courbes est construit autour d'un canal intérieur. Un spectacle de fontaines en musique a lieu toutes les demi-heures, et une projection d'images sur les façades le remplace après la nuit tombée. Le Ramen Stadium du 5e étage réunit plusieurs maisons de ramen venues de tout le Japon, et une boutique du studio Ghibli fait partie des boutiques de personnages.",
   "prevu": "Ajouté depuis Wikivoyage pour donner plus de choix autour de vous.",
   "article": "Fukuoka",
   "notoriete": 0,
   "photo": false,
   "proche": true,
-  "source": "Texte d'après Wikivoyage en anglais, article « Fukuoka », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller.",
+  "source": "Texte d'après Wikivoyage en anglais, article « Fukuoka », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJYcOBiZWRQTUR0Rl0ehe67eA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Spectacles d'après les visiteurs cités par Google Maps.",
   "specs": [
    "ramen_hakata"
   ],
   "niveau": 3,
-  "priorite": 700
+  "priorite": 700,
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "sorte": "magasin"
  },
  {
   "id": "sug_fukuoka_nakasu_kawabata_shopping_arcade",
@@ -1874,8 +1967,8 @@
   "notoriete": 0,
   "photo": true,
   "proche": false,
-  "source": "Texte d'après Wikivoyage en anglais, article « Fukuoka », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller.",
-  "horaires": "11 h à 3 h",
+  "source": "Texte d'après Wikivoyage en anglais, article « Fukuoka », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJaVDnv46RQTURWuJE01tjUGk\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026.",
+  "horaires": "Tous les jours sauf le mercredi : 11 h à 3 h.",
   "prix": "1 000 à 2 000 yens",
   "miniData": "data:image/jpeg;base64,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",
   "platPhoto": "ramen_hakata",
@@ -1890,7 +1983,52 @@
    "ramen_hakata"
   ],
   "niveau": 2,
-  "priorite": 150
+  "priorite": 150,
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1620
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1620
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1620
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1620
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1620
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1620
+    ]
+   ]
+  },
+  "fermeture": {
+   "jours": [
+    3
+   ],
+   "texte": "Fermé le mercredi",
+   "source": "fiche"
+  }
  },
  {
   "id": "sug_fukuoka_usagiyorikame",
@@ -2340,15 +2478,59 @@
   "cat": "sortir",
   "catTxt": "Bar à chicha",
   "texte": "Ce café bar de nuit du quartier de Daimyo propose des chichas. Il reste ouvert jusqu'à 5 h du matin.",
-  "horaires": "15 h à 5 h en semaine, 13 h à 5 h le week-end",
+  "horaires": "Tous les jours : 15 h à 5 h.",
   "adresse": "Daimyo Bar, 1-12-39 Daimyo, Chuo-ku",
-  "source": "Texte d'après la fiche de l'annuaire <a href=\"https://hamoni.jp/shop/bLFTxdc7Xry2NO8rBPJt\" target=\"_blank\" rel=\"noopener\">Hamoni</a>, pas encore vérifiée sur un site officiel. Position : l'adresse dans le géocodeur officiel GSI.",
+  "source": "Texte d'après la fiche de l'annuaire <a href=\"https://hamoni.jp/shop/bLFTxdc7Xry2NO8rBPJt\" target=\"_blank\" rel=\"noopener\">Hamoni</a>, pas encore vérifiée sur un site officiel. Position : l'adresse dans le géocodeur officiel GSI. Horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJkTSSKBORQTURw_R4dIygk7s\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026.",
   "lat": 33.588028,
   "lon": 130.394226,
   "photo": false,
   "proche": false,
   "niveau": 3,
-  "priorite": 120
+  "priorite": 120,
+  "ouvert": {
+   "1": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "2": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "3": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "4": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "5": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "6": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "0": [
+    [
+     900,
+     1740
+    ]
+   ]
+  }
  },
  {
   "id": "web_fukuoka_aff_bsb_tenjin",
@@ -2568,15 +2750,60 @@
   "catTxt": "Événement",
   "lat": 33.60318,
   "lon": 130.40128,
-  "texte": "Cette salle accueille chaque mois de novembre le tournoi de sumo de Kyushu, l'un des six grands tournois de l'année.",
+  "texte": "Cette salle accueille le tournoi de sumo de Kyushu, du 8 au 22 novembre 2026, à quelques minutes à pied de votre logement. Les combats des lutteurs de première division se tiennent en fin d'après-midi, après 15 h. Les billets vendus d'avance sont épuisés, et la revente officielle au prix d'origine du site de l'association japonaise de sumo reste le moyen le plus sûr d'en trouver.",
   "prevu": "Ce lieu accueille un événement pendant votre séjour, détaillé plus bas.",
   "adresse": "2-2 Chikkōhonmachi, Hakata-ku (福岡市博多区築港本町2-2)",
-  "source": "Texte d'après <a href=\"https://www.pref.fukuoka.lg.jp/press-release/yokozuna081027.html\" target=\"_blank\" rel=\"noopener\">préfecture de Fukuoka</a>, <a href=\"https://tinpanblog.com/?p=74125\" target=\"_blank\" rel=\"noopener\">guide du tournoi, octobre 2026</a>. Lus le 8 novembre 2026. Position : OpenStreetMap.",
+  "source": "Texte d'après <a href=\"https://www.pref.fukuoka.lg.jp/press-release/yokozuna081027.html\" target=\"_blank\" rel=\"noopener\">préfecture de Fukuoka</a>, <a href=\"https://tinpanblog.com/?p=74125\" target=\"_blank\" rel=\"noopener\">guide du tournoi, octobre 2026</a>. Billets d'après le <a href=\"https://tinpanblog.com/?p=74125\" target=\"_blank\" rel=\"noopener\">guide du tournoi</a>, heures de diffusion d'après <a href=\"https://terukosan.com/?p=20261008113064539\" target=\"_blank\" rel=\"noopener\">Terukosan</a>, lus le 14 novembre 2026. Position : OpenStreetMap.",
   "photo": false,
   "niveau": 2,
   "proche": false,
   "priorite": 60,
-  "evenement": true
+  "evenement": true,
+  "horaires": "Du 8 au 22 novembre, combats de première division vers 15 h à 18 h.",
+  "ouvert": {
+   "0": [
+    [
+     900,
+     1080
+    ]
+   ],
+   "1": [
+    [
+     900,
+     1080
+    ]
+   ],
+   "2": [
+    [
+     900,
+     1080
+    ]
+   ],
+   "3": [
+    [
+     900,
+     1080
+    ]
+   ],
+   "4": [
+    [
+     900,
+     1080
+    ]
+   ],
+   "5": [
+    [
+     900,
+     1080
+    ]
+   ],
+   "6": [
+    [
+     900,
+     1080
+    ]
+   ]
+  }
  },
  {
   "id": "ev_fukuoka_hakata_ekimae",
@@ -2637,5 +2864,2031 @@
   "proche": false,
   "priorite": 60,
   "evenement": true
+ },
+ {
+  "id": "top_fukuoka_yoshizuka",
+  "nom": "Yoshizuka Unagiya",
+  "natif": "吉塚うなぎ屋",
+  "cat": "manger",
+  "catTxt": "Anguille grillée",
+  "lat": 33.5926068,
+  "lon": 130.4089564,
+  "texte": "Cette maison de l'anguille grillée est la plus connue de Fukuoka et se trouve au bord de la rivière de Nakasu. L'anguille y est servie laquée sur du riz, et une borne au premier étage donne un numéro d'attente. La file dépasse souvent une demi-heure aux heures des repas.",
+  "adresse": "2-8-27 Nakasu, Hakata-ku (福岡市博多区中洲2-8-27)",
+  "horaires": "Tous les jours sauf le mercredi : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJEdRrGJWRQTUR1EMJZc6h5v0\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 10,
+  "top": true,
+  "couvert": true,
+  "budget": 2,
+  "fermeture": {
+   "jours": [
+    3
+   ],
+   "texte": "Fermé le mercredi",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_kikukawa",
+  "nom": "Unagi Yondaime Kikukawa",
+  "natif": "うなぎ 四代目菊川 中洲春吉店",
+  "cat": "manger",
+  "catTxt": "Anguille grillée",
+  "lat": 33.5901602,
+  "lon": 130.4074173,
+  "texte": "Ce restaurant d'anguille sert la recette de Nagoya en trois façons et une anguille entière grillée sans sauce. Le grilleur travaille derrière une grande vitre, et la salle donne sur la rivière. Les tables avec vue sont gardées pour les réservations.",
+  "adresse": "3-3-9 Haruyoshi, Chuo-ku (福岡市中央区春吉3-3-9)",
+  "horaires": "Tous les jours : 11 h à 15 h et 17 h à 22 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ],
+   "2": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ],
+   "3": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ],
+   "4": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ],
+   "6": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ],
+   "0": [
+    [
+     660,
+     900
+    ],
+    [
+     1020,
+     1320
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJw2DR91WRQTUR-yTE5yhDFqU\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 12,
+  "top": true,
+  "couvert": true,
+  "budget": 3
+ },
+ {
+  "id": "top_fukuoka_rakutenchi",
+  "nom": "Motsunabe Rakutenchi Tenjin",
+  "natif": "博多もつ鍋 楽天地 天神本店",
+  "cat": "manger",
+  "catTxt": "Motsunabe",
+  "lat": 33.5919086,
+  "lon": 130.4026133,
+  "texte": "Cette chaîne est la plus connue pour le motsunabe, la marmite de tripes de bœuf aux choux et à la ciboulette qui est le plat de Fukuoka. La marmite arrive couverte d'une montagne de légumes, et les nouilles servent à finir le bouillon. Les prix restent doux, et le personnel parle souvent anglais.",
+  "adresse": "ACROS Fukuoka, 2e sous-sol, 1-1-1 Tenjin, Chuo-ku (福岡市中央区天神1-1-1)",
+  "horaires": "Tous les jours : 11 h à 22 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1320
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1320
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ___8H46RQTURLusiwCoEPo0\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 14,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_ichifuji",
+  "nom": "Motsunabe Ichifuji",
+  "natif": "もつ鍋 一藤 天神西通り",
+  "cat": "manger",
+  "catTxt": "Motsunabe",
+  "lat": 33.589144,
+  "lon": 130.3958306,
+  "texte": "Ce restaurant de motsunabe de Daimyo est réputé pour son bouillon au miso, épais et doux. Les tables partent vite le soir en novembre, donc une réservation est utile.",
+  "adresse": "Plusgate Tenjin, 2e étage, 2-6-4 Daimyo, Chuo-ku (福岡市中央区大名2-6-4)",
+  "horaires": "Lundi au jeudi : 17 h à 23 h. Vendredi et samedi : 17 h à 23 h 30. Dimanche : 17 h à 23 h.",
+  "ouvert": {
+   "1": [
+    [
+     1020,
+     1380
+    ]
+   ],
+   "2": [
+    [
+     1020,
+     1380
+    ]
+   ],
+   "3": [
+    [
+     1020,
+     1380
+    ]
+   ],
+   "4": [
+    [
+     1020,
+     1380
+    ]
+   ],
+   "5": [
+    [
+     1020,
+     1410
+    ]
+   ],
+   "6": [
+    [
+     1020,
+     1410
+    ]
+   ],
+   "0": [
+    [
+     1020,
+     1380
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJMY-U-oWRQTURfg362xd6ocY\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 16,
+  "top": true,
+  "couvert": true,
+  "budget": 2,
+  "reservation": "La réservation est conseillée le soir."
+ },
+ {
+  "id": "top_fukuoka_iriwa",
+  "nom": "Yakiniku Iriwa",
+  "natif": "焼肉いりわ",
+  "cat": "manger",
+  "catTxt": "Yakiniku de wagyu",
+  "lat": 33.5907427,
+  "lon": 130.4061821,
+  "texte": "Ce restaurant de viande grillée de Nishinakasu fait partie des mieux notés de la ville sur Google Maps. Le bœuf mariné et le yukhoe, un tartare de bœuf, reviennent dans les avis, et le chef parle anglais. Les prix restent raisonnables pour du wagyu.",
+  "adresse": "Delta West, 2F-J, 3-1 Nishinakasu, Chuo-ku (福岡市中央区西中洲3-1)",
+  "horaires": "Tous les jours sauf le dimanche : 16 h à minuit.",
+  "ouvert": {
+   "1": [
+    [
+     960,
+     1440
+    ]
+   ],
+   "2": [
+    [
+     960,
+     1440
+    ]
+   ],
+   "3": [
+    [
+     960,
+     1440
+    ]
+   ],
+   "4": [
+    [
+     960,
+     1440
+    ]
+   ],
+   "5": [
+    [
+     960,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     960,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ79fUWuGRQTURjEROTiMDaBQ\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 11,
+  "top": true,
+  "couvert": true,
+  "budget": 2,
+  "fermeture": {
+   "jours": [
+    0
+   ],
+   "texte": "Fermé le dimanche",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_gyusennin",
+  "nom": "Yakiniku Gyusennin",
+  "natif": "焼肉 牛仙人",
+  "cat": "manger",
+  "catTxt": "Yakiniku de wagyu",
+  "lat": 33.5882819,
+  "lon": 130.4075087,
+  "texte": "Cette adresse de viande grillée se cache dans une petite ruelle de Haruyoshi et sert du wagyu A5 de Kagoshima. Les formules mêlent langue, faux-filet et bavette, et la salle se remplit surtout de clients japonais et coréens. Les places se réservent plusieurs jours avant.",
+  "adresse": "Regalita Tenjin III, 1er étage, 3-16-9 Haruyoshi, Chuo-ku (福岡市中央区春吉3-16-9)",
+  "horaires": "Tous les jours sauf le lundi : 18 h à 23 h.",
+  "ouvert": {
+   "2": [
+    [
+     1080,
+     1380
+    ]
+   ],
+   "3": [
+    [
+     1080,
+     1380
+    ]
+   ],
+   "4": [
+    [
+     1080,
+     1380
+    ]
+   ],
+   "5": [
+    [
+     1080,
+     1380
+    ]
+   ],
+   "6": [
+    [
+     1080,
+     1380
+    ]
+   ],
+   "0": [
+    [
+     1080,
+     1380
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJk4X47JaRQTURhVLKtw-nB-0\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 13,
+  "top": true,
+  "couvert": true,
+  "budget": 3,
+  "reservation": "Réservation indispensable, souvent plusieurs jours avant.",
+  "fermeture": {
+   "jours": [
+    1
+   ],
+   "texte": "Fermé le lundi",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_bouya",
+  "nom": "Wagyu Itto Yakiniku Bouya",
+  "natif": "和牛一頭焼肉 坊や ワンビル店",
+  "cat": "manger",
+  "catTxt": "Yakiniku de wagyu",
+  "lat": 33.5913011,
+  "lon": 130.3993155,
+  "texte": "Ce restaurant de viande grillée au sous-sol du nouvel immeuble One Fukuoka est ouvert sans pause de 11 h à 23 h. La carte en anglais explique chaque morceau, et la formule de quatre viandes est la plus commandée. La salle reste presque sans fumée grâce aux hottes au-dessus des grills.",
+  "adresse": "One Fukuoka Bldg, 1er sous-sol, 1-11-1 Tenjin, Chuo-ku (福岡市中央区天神1-11-1)",
+  "horaires": "Tous les jours : 11 h à 23 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1380
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1380
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1380
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1380
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1380
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1380
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1380
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJk_92eaCRQTURkLwn39Nqxh4\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 18,
+  "top": true,
+  "couvert": true,
+  "budget": 2
+ },
+ {
+  "id": "top_fukuoka_hirao",
+  "nom": "Tempura Hirao Tenjin",
+  "natif": "天ぷら ひらお 天神アクロス福岡店",
+  "cat": "manger",
+  "catTxt": "Tempura",
+  "lat": 33.5910506,
+  "lon": 130.402272,
+  "texte": "Cette chaîne locale de tempura frit chaque pièce devant le client et la pose aussitôt sur sa grille. Le ticket s'achète à une machine avant la file, qui avance vite. Les crevettes, le poisson blanc et le tempura de mentaiko sont les plus cités.",
+  "adresse": "ACROS Fukuoka, 2e sous-sol, 1-1-1 Tenjin, Chuo-ku (福岡市中央区天神1-1-1)",
+  "horaires": "Tous les jours : 10 h 30 à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     630,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     630,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJY3Su9WuRQTUR3yv32fIOW-4\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 20,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_toriden",
+  "nom": "Hakata Mizutaki Toriden",
+  "natif": "博多水炊き とり田",
+  "cat": "manger",
+  "catTxt": "Mizutaki",
+  "lat": 33.5960356,
+  "lon": 130.4058933,
+  "texte": "Cette maison sert le mizutaki, la marmite de poulet au bouillon blanc qui est l'autre grand plat de Hakata. Une serveuse cuit tout à table, puis le bouillon devient une soupe de riz à la fin du repas. La maison se trouve tout près de votre logement.",
+  "adresse": "10-5 Shimokawabatamachi, Hakata-ku (福岡市博多区下川端町10-5)",
+  "horaires": "Lundi au vendredi : 11 h 30 à 16 h et 17 h à 23 h. Samedi et dimanche : 11 h 30 à 23 h.",
+  "ouvert": {
+   "1": [
+    [
+     690,
+     960
+    ],
+    [
+     1020,
+     1380
+    ]
+   ],
+   "2": [
+    [
+     690,
+     960
+    ],
+    [
+     1020,
+     1380
+    ]
+   ],
+   "3": [
+    [
+     690,
+     960
+    ],
+    [
+     1020,
+     1380
+    ]
+   ],
+   "4": [
+    [
+     690,
+     960
+    ],
+    [
+     1020,
+     1380
+    ]
+   ],
+   "5": [
+    [
+     690,
+     960
+    ],
+    [
+     1020,
+     1380
+    ]
+   ],
+   "6": [
+    [
+     690,
+     1380
+    ]
+   ],
+   "0": [
+    [
+     690,
+     1380
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJs0-UX-uRQTURkYi-DvhX3S0\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 15,
+  "top": true,
+  "couvert": true,
+  "budget": 2
+ },
+ {
+  "id": "top_fukuoka_hyotan",
+  "nom": "Hyotan Sushi",
+  "natif": "ひょうたん寿司",
+  "cat": "manger",
+  "catTxt": "Sushi",
+  "lat": 33.5896339,
+  "lon": 130.3986846,
+  "texte": "Ce comptoir de sushi de Tenjin est l'un des plus courus de la ville pour son menu du midi à petit prix. Les chefs préparent les pièces devant le comptoir. La file est la plus courte avant midi ou après 13 h.",
+  "adresse": "2-10-20 Tenjin, Chuo-ku (福岡市中央区天神2-10-20)",
+  "horaires": "Lundi au vendredi : 11 h 30 à 15 h et 17 h à 20 h 30. Samedi : 11 h 30 à 15 h et 17 h à 21 h. Dimanche : 11 h 30 à 15 h et 17 h à 20 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1230
+    ]
+   ],
+   "2": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1230
+    ]
+   ],
+   "3": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1230
+    ]
+   ],
+   "4": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1230
+    ]
+   ],
+   "5": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1230
+    ]
+   ],
+   "6": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     690,
+     900
+    ],
+    [
+     1020,
+     1230
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJp8rFoo-RQTURXgrlDgjG8ho\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 19,
+  "top": true,
+  "couvert": true,
+  "budget": 2
+ },
+ {
+  "id": "top_fukuoka_daruma",
+  "nom": "Hakata Daruma",
+  "natif": "博多だるま",
+  "cat": "manger",
+  "catTxt": "Ramen tonkotsu",
+  "lat": 33.5852484,
+  "lon": 130.4060135,
+  "texte": "Cette vieille échoppe de ramen sert un bouillon d'os de porc très épais, à l'odeur forte dès la rue. Les habitués de Fukuoka la citent parmi les ramen les plus typiques de la ville. Google Maps affiche cette semaine des horaires plus larges, de 7 h à 4 h 30.",
+  "adresse": "1-8-25 Watanabedori, Chuo-ku (福岡市中央区渡辺通1-8-25)",
+  "horaires": "Tous les jours : 11 h 30 à 2 h.",
+  "ouvert": {
+   "1": [
+    [
+     690,
+     1560
+    ]
+   ],
+   "2": [
+    [
+     690,
+     1560
+    ]
+   ],
+   "3": [
+    [
+     690,
+     1560
+    ]
+   ],
+   "4": [
+    [
+     690,
+     1560
+    ]
+   ],
+   "5": [
+    [
+     690,
+     1560
+    ]
+   ],
+   "6": [
+    [
+     690,
+     1560
+    ]
+   ],
+   "0": [
+    [
+     690,
+     1560
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJq6o1-ZmRQTURHSvESDjZtE8\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 22,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_issou",
+  "nom": "Hakata Issou",
+  "natif": "博多一双 博多駅東本店",
+  "cat": "manger",
+  "catTxt": "Ramen tonkotsu",
+  "lat": 33.586378,
+  "lon": 130.4251,
+  "texte": "Cette maison de ramen derrière la gare de Hakata sert le bouillon de porc le plus crémeux de la ville selon beaucoup de visiteurs. Le ticket s'achète à la machine de l'entrée. La file est longue aux heures des repas, mais elle avance vite.",
+  "adresse": "3-1-6 Hakataekihigashi, Hakata-ku (福岡市博多区博多駅東3-1-6)",
+  "horaires": "Tous les jours : 11 h à minuit.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1440
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1440
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1440
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1440
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1440
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJAQDdFLaRQTURIXKdwYPcIdA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 24,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_kanetora",
+  "nom": "Ramen Kanetora",
+  "natif": "兼虎",
+  "cat": "manger",
+  "catTxt": "Tsukemen",
+  "lat": 33.5872002,
+  "lon": 130.401203,
+  "texte": "Cette adresse sert des tsukemen, des nouilles épaisses à tremper dans une sauce de porc et de poisson séché. La version au mentaiko est la spécialité de la maison. Toute la file doit être présente pour commander, même sous la pluie.",
+  "adresse": "Fukushu Bldg, 4-9-18 Watanabedori, Chuo-ku (福岡市中央区渡辺通4-9-18)",
+  "horaires": "Tous les jours : 9 h 40 à 22 h.",
+  "ouvert": {
+   "1": [
+    [
+     580,
+     1320
+    ]
+   ],
+   "2": [
+    [
+     580,
+     1320
+    ]
+   ],
+   "3": [
+    [
+     580,
+     1320
+    ]
+   ],
+   "4": [
+    [
+     580,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     580,
+     1320
+    ]
+   ],
+   "6": [
+    [
+     580,
+     1320
+    ]
+   ],
+   "0": [
+    [
+     580,
+     1320
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJD7BFpICRQTUR5BeGhZW5axY\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 26,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_hareruya",
+  "nom": "Yakitori Hareruya",
+  "natif": "やきとり はれるや",
+  "cat": "manger",
+  "catTxt": "Yakitori",
+  "lat": 33.5878022,
+  "lon": 130.412232,
+  "texte": "Cette petite maison de brochettes de poulet est tenue par deux cuisiniers, entre Canal City et la gare de Hakata. Le porc au miso et le cartilage de poulet sont les plus cités, et les prix restent très bas. Les places partent vite, donc mieux vaut venir à l'ouverture.",
+  "adresse": "2-15-1 Sumiyoshi, Hakata-ku (福岡市博多区住吉2-15-1)",
+  "horaires": "Tous les jours : 17 h 30 à minuit.",
+  "ouvert": {
+   "1": [
+    [
+     1050,
+     1440
+    ]
+   ],
+   "2": [
+    [
+     1050,
+     1440
+    ]
+   ],
+   "3": [
+    [
+     1050,
+     1440
+    ]
+   ],
+   "4": [
+    [
+     1050,
+     1440
+    ]
+   ],
+   "5": [
+    [
+     1050,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     1050,
+     1440
+    ]
+   ],
+   "0": [
+    [
+     1050,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJW4QwQkWRQTURAykOpcNEJ0o\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 28,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_kikuya",
+  "nom": "Kikuya",
+  "natif": "",
+  "cat": "manger",
+  "catTxt": "Bœuf d'Imari",
+  "lat": 33.5913155,
+  "lon": 130.4091411,
+  "texte": "Cette maison de Nakasu sert le bœuf d'Imari, une race de la région de Saga, en sukiyaki ou grillé sur la plaque. Le menu de sukiyaki du midi coûte environ 2 000 yens, ce qui en fait le moyen le moins cher d'y goûter. Les serveuses portent le kimono et cuisent la viande devant vous.",
+  "adresse": "1-3-15 Nakasu, Hakata-ku (福岡市博多区中洲1-3-15)",
+  "horaires": "Tous les jours : 11 h 30 à 14 h et 17 h 30 à 23 h.",
+  "ouvert": {
+   "1": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ],
+   "2": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ],
+   "3": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ],
+   "4": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ],
+   "5": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ],
+   "6": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ],
+   "0": [
+    [
+     690,
+     840
+    ],
+    [
+     1050,
+     1380
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJG-dVppWRQTUROTpPnf2dwG4\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 21,
+  "top": true,
+  "couvert": true,
+  "budget": 3
+ },
+ {
+  "id": "top_fukuoka_tsunatsuna",
+  "nom": "Yatai Tsunatsuna",
+  "natif": "屋台 つなつな",
+  "cat": "manger",
+  "catTxt": "Stand de rue",
+  "lat": 33.5949042,
+  "lon": 130.4033874,
+  "texte": "Ce stand de rue se trouve à l'écart de la foule de Nakasu, à quelques minutes de votre logement. Le ragoût de tripes de wagyu et les gyoza en bouillon sont ses spécialités, avec une carte en anglais. La soirée y est bruyante et joyeuse, avec des voisins de table qui fument.",
+  "adresse": "1-1 Nakasunakashimamachi, Hakata-ku (福岡市博多区中洲中島町1-1)",
+  "horaires": "Tous les jours : 18 h 30 à 1 h.",
+  "ouvert": {
+   "1": [
+    [
+     1110,
+     1500
+    ]
+   ],
+   "2": [
+    [
+     1110,
+     1500
+    ]
+   ],
+   "3": [
+    [
+     1110,
+     1500
+    ]
+   ],
+   "4": [
+    [
+     1110,
+     1500
+    ]
+   ],
+   "5": [
+    [
+     1110,
+     1500
+    ]
+   ],
+   "6": [
+    [
+     1110,
+     1500
+    ]
+   ],
+   "0": [
+    [
+     1110,
+     1500
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJV4Kp62uRQTURj9uGkkDDUIg\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 17,
+  "top": true,
+  "couvert": true,
+  "budget": 1
+ },
+ {
+  "id": "top_fukuoka_mamichan",
+  "nom": "Yatai Mamichan",
+  "natif": "屋台 まみちゃん",
+  "cat": "manger",
+  "catTxt": "Stand de rue",
+  "lat": 33.5920555,
+  "lon": 130.3977427,
+  "texte": "Ce stand de rue de Tenjin est connu pour son cuisinier qui fait sauter les nouilles au wok à toute vitesse. Les yaki ramen et l'omelette au mentaiko sont les plats les plus cités. Une boisson par personne est demandée, et la file commence avant 18 h.",
+  "adresse": "2-13-1 Tenjin, côté avenue Showa-dori, Chuo-ku (福岡市中央区天神2-13-1)",
+  "horaires": "Tous les jours sauf le dimanche : 18 h à 23 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     1080,
+     1410
+    ]
+   ],
+   "2": [
+    [
+     1080,
+     1410
+    ]
+   ],
+   "3": [
+    [
+     1080,
+     1410
+    ]
+   ],
+   "4": [
+    [
+     1080,
+     1410
+    ]
+   ],
+   "5": [
+    [
+     1080,
+     1410
+    ]
+   ],
+   "6": [
+    [
+     1080,
+     1410
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJo-IIvI-RQTUR04hr5CDJZNo\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 23,
+  "top": true,
+  "couvert": true,
+  "budget": 1,
+  "fermeture": {
+   "jours": [
+    0
+   ],
+   "texte": "Fermé le dimanche",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_spocha",
+  "nom": "Round1 Spo-Cha Hakata-Hanmichibashi",
+  "natif": "ラウンドワンスタジアム 博多・半道橋店",
+  "cat": "faire",
+  "catTxt": "Spo-Cha, sports et jeux à volonté",
+  "lat": 33.5840019,
+  "lon": 130.4383624,
+  "texte": "Ce grand centre Round1 abrite le Spo-Cha, un forfait au temps qui donne accès à des dizaines de sports et de jeux. Le basket, le volley, le badminton, le tir à l'arc, les cages de baseball et les salles d'arcade sont sur plusieurs étages. Une inscription dans l'application Round1 est demandée avant l'entrée.",
+  "adresse": "2-2-8 Hanmichibashi, Hakata-ku (福岡市博多区半道橋2-2-8)",
+  "horaires": "Lundi au jeudi : 10 h à 6 h. Vendredi : 10 h à minuit. Samedi et dimanche : 24 heures sur 24.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1800
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1800
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1800
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1800
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "0": [
+    [
+     0,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJDfk0UDaQQTURTce8r0Cc-kE\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 8,
+  "top": true,
+  "couvert": true,
+  "theme": "jeu",
+  "sorte": "sport"
+ },
+ {
+  "id": "top_fukuoka_round1_tenjin",
+  "nom": "Round1 Fukuoka Tenjin",
+  "natif": "ラウンドワン 福岡天神店",
+  "cat": "faire",
+  "catTxt": "Bowling, karaoké et jeux",
+  "lat": 33.5895975,
+  "lon": 130.396837,
+  "texte": "Ce Round1 du centre de Tenjin réunit un bowling, des karaokés, des fléchettes et une cage de baseball sur le toit. Les machines à pinces occupent deux étages, avec des parties à 100 et 200 yens. Il ne remplace pas le Spo-Cha de Hanmichibashi, qui a beaucoup plus de sports.",
+  "adresse": "2-6-12 Tenjin, Chuo-ku (福岡市中央区天神2-6-12)",
+  "horaires": "Tous les jours : 24 heures sur 24.",
+  "ouvert": {
+   "1": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "2": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "3": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "4": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "5": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "0": [
+    [
+     0,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJJ0cAXo-RQTURMWP7u2hVZbA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 30,
+  "top": true,
+  "couvert": true,
+  "theme": "jeu"
+ },
+ {
+  "id": "top_fukuoka_mandarake",
+  "nom": "Mandarake Fukuoka",
+  "natif": "まんだらけ 福岡店",
+  "cat": "acheter",
+  "catTxt": "Mangas et objets de collection",
+  "lat": 33.5901747,
+  "lon": 130.3937289,
+  "texte": "Cette boutique de la chaîne Mandarake est la grande adresse d'occasion des mangas et des jouets anciens de Fukuoka. Ses deux étages mêlent figurines, Gundam, cartes à collectionner et peluches rares. Les prix des pièces anciennes sont élevés, mais la visite vaut un musée de la culture manga.",
+  "adresse": "Grand Bldg, 2-9-5 Daimyo, Chuo-ku (福岡市中央区大名2-9-5)",
+  "horaires": "Tous les jours : 12 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     720,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     720,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     720,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     720,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     720,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     720,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     720,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJAQBAJoaRQTURO3HsHm6qY3A\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 9,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_animate_parco",
+  "nom": "Animate Fukuoka Parco",
+  "natif": "アニメイト福岡パルコ",
+  "cat": "acheter",
+  "catTxt": "Boutique anime et manga",
+  "lat": 33.5909156,
+  "lon": 130.3987274,
+  "texte": "Cette boutique de la chaîne Animate vend des mangas neufs et des objets des séries du moment. Des machines à gashapon, les capsules à surprise, bordent le couloir devant l'entrée. La file des caisses peut être longue le week-end.",
+  "adresse": "Fukuoka Parco, 8e étage, 2-11-1 Tenjin, Chuo-ku (福岡市中央区天神2-11-1)",
+  "horaires": "Tous les jours : 10 h à 20 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1230
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1230
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1230
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1230
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1230
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1230
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1230
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJtTHWz4iRQTURJjWhyDSwJXk\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 25,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_animate_rashikku",
+  "nom": "Animate Rashikku Fukuoka Tenjin",
+  "natif": "アニメイト ラシック福岡天神",
+  "cat": "acheter",
+  "catTxt": "Boutique anime et manga",
+  "lat": 33.5886887,
+  "lon": 130.3999665,
+  "texte": "Cette nouvelle boutique Animate occupe un grand plateau au 8e étage du grand magasin Rashikku. Elle a plus de place et de stands à thème que celle du Parco voisin. Les objets des créateurs de vidéos virtuels Hololive et Nijisanji y sont nombreux.",
+  "adresse": "Rashikku, 8e étage, 2-1-1 Tenjin, Chuo-ku (福岡市中央区天神2-1-1)",
+  "horaires": "Tous les jours : 10 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJE781BMuRQTURz1HcIBxWCQA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 27,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_pokemon",
+  "nom": "Pokémon Center Fukuoka",
+  "natif": "ポケモンセンターフクオカ",
+  "cat": "acheter",
+  "catTxt": "Boutique Pokémon",
+  "lat": 33.5890033,
+  "lon": 130.4192564,
+  "texte": "Cette boutique officielle Pokémon est dans le grand magasin Marui, collé à la gare de Hakata. Des statues de Latios et Latias se dressent à l'entrée, car Fukuoka a inspiré la région de Hoenn des jeux. Le Pikachu au bol de ramen est l'un des objets vendus seulement ici.",
+  "adresse": "Hakata Marui, 2e étage, 9-1 Hakataekichuogai, Hakata-ku (福岡市博多区博多駅中央街9-1)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ74LQjMeRQTURouWqGzzDgF8\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 29,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_gundam",
+  "nom": "Gundam grandeur nature de LaLaport",
+  "natif": "実物大 νガンダム立像（ららぽーと福岡）",
+  "cat": "voir",
+  "catTxt": "Statue géante et boutique Gundam",
+  "lat": 33.5657052,
+  "lon": 130.4412874,
+  "texte": "Cette statue du Nu Gundam mesure environ 25 mètres et se dresse devant le centre commercial LaLaport, au sud de la gare de Hakata. La tête et les bras bougent avec une musique, et un spectacle de lumières a lieu après la tombée de la nuit. La boutique Gundam Side-F du 4e étage vend des maquettes réservées à ce lieu, de 10 h à 21 h.",
+  "adresse": "LaLaport Fukuoka, 6-23-1 Naka, Hakata-ku (福岡市博多区那珂6-23-1)",
+  "horaires": "Tous les jours : 24 heures sur 24.",
+  "ouvert": {
+   "1": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "2": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "3": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "4": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "5": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "0": [
+    [
+     0,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ4_0WFuiRQTURxlN32OlD-ck\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 7,
+  "top": true,
+  "couvert": false,
+  "sorte": "pop",
+  "dedans": [
+   {
+    "titre": "Dans le centre LaLaport",
+    "lignes": [
+     [
+      "Gundam Side-F",
+      "Boutique officielle de maquettes Gundam au 4e étage, avec une petite salle de jeux Gundam à côté, ouverte de 10 h à 21 h."
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "top_fukuoka_boss_ezo",
+  "nom": "BOSS E・ZO FUKUOKA",
+  "natif": "BOSS E・ZO FUKUOKA",
+  "cat": "faire",
+  "catTxt": "Centre de loisirs et teamLab",
+  "lat": 33.5949436,
+  "lon": 130.363646,
+  "texte": "Ce bâtiment de loisirs est collé au stade de baseball de Fukuoka, au bord de la mer à Momochi. Il réunit l'exposition teamLab Forest, une salle de réalité virtuelle et un grand toboggan qui descend du 8e étage au rez-de-chaussée. Des attractions à sensations se trouvent aussi sur le toit, avec un billet par activité.",
+  "adresse": "2-2-6 Jigyohama, Chuo-ku (福岡市中央区地行浜2-2-6)",
+  "horaires": "Lundi au vendredi : 11 h à 20 h. Samedi et dimanche : 10 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJwdDAakKTQTURjtpW3lHTCug\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller. Google Maps indique des horaires élargis ce week-end, jusqu'à 23 h le samedi 14 et le dimanche 15 novembre.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 6,
+  "top": true,
+  "couvert": true,
+  "sorte": "immersif",
+  "dedans": [
+   {
+    "titre": "Les activités",
+    "lignes": [
+     [
+      "teamLab Forest",
+      "Exposition d'images numériques où les visiteurs attrapent des animaux avec l'application."
+     ],
+     [
+      "Toboggan géant",
+      "Descente du 8e étage au rez-de-chaussée dans un tube."
+     ],
+     [
+      "Toit",
+      "Attractions à sensations avec vue sur la mer et sur la tour de Fukuoka."
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "top_fukuoka_cstand",
+  "nom": "C.STAND Daimyo",
+  "natif": "C.STAND 大名",
+  "cat": "sortir",
+  "catTxt": "Bar à chicha",
+  "lat": 33.5880725,
+  "lon": 130.3957825,
+  "texte": "Ce bar à chicha de la chaîne C.STAND occupe un grand étage calme à Daimyo, ouvert de 13 h à 6 h du matin. Les parfums sont très nombreux, et le litchi à la menthe est souvent conseillé. Il fait partie des bars à chicha les mieux notés de la ville sur Google Maps.",
+  "adresse": "Cesio Daimyo, 6e étage, 1-12-8 Daimyo, Chuo-ku (福岡市中央区大名1-12-8)",
+  "horaires": "Tous les jours : 13 h à 6 h.",
+  "ouvert": {
+   "1": [
+    [
+     780,
+     1800
+    ]
+   ],
+   "2": [
+    [
+     780,
+     1800
+    ]
+   ],
+   "3": [
+    [
+     780,
+     1800
+    ]
+   ],
+   "4": [
+    [
+     780,
+     1800
+    ]
+   ],
+   "5": [
+    [
+     780,
+     1800
+    ]
+   ],
+   "6": [
+    [
+     780,
+     1800
+    ]
+   ],
+   "0": [
+    [
+     780,
+     1800
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJPxxyEgCRQTUReNATANtRFoE\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 31,
+  "top": true,
+  "couvert": true,
+  "theme": "chicha"
+ },
+ {
+  "id": "top_fukuoka_kuyuri",
+  "nom": "Kuyuri Tenjin Daimyo",
+  "natif": "シーシャ&カフェバー リラックスラウンジ 燻 KUYURI 天神大名店",
+  "cat": "sortir",
+  "catTxt": "Bar à chicha",
+  "lat": 33.5877183,
+  "lon": 130.3953578,
+  "texte": "Ce salon à chicha de Daimyo a une entrée décorée et une salle soignée, qui se prête bien aux photos. Les narguilés ont été fabriqués par un artisan russe, et une part de gâteau accompagne chaque chicha. La salle reste calme même quand elle est pleine.",
+  "adresse": "Navy Daimyo, 5e étage, 1-14-27 Daimyo, Chuo-ku (福岡市中央区大名1-14-27)",
+  "horaires": "Tous les jours : 15 h à 5 h.",
+  "ouvert": {
+   "1": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "2": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "3": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "4": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "5": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "6": [
+    [
+     900,
+     1740
+    ]
+   ],
+   "0": [
+    [
+     900,
+     1740
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJAbmK-JaRQTURQUvHUowatB4\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 32,
+  "top": true,
+  "couvert": true,
+  "theme": "chicha"
+ },
+ {
+  "id": "top_fukuoka_marrakech",
+  "nom": "Shisha Lounge Marrakech",
+  "natif": "SHISHA LOUNGE MARRAKECH",
+  "cat": "sortir",
+  "catTxt": "Bar à chicha",
+  "lat": 33.58955,
+  "lon": 130.3969233,
+  "texte": "Ce salon à chicha de Tenjin ouvre seulement à 20 h et reste ouvert jusqu'à 4 h du matin. La salle est décorée avec soin, sous une lumière douce et avec une bonne musique. Les boissons restent à prix doux.",
+  "adresse": "Gem Castle Southern-dori, rez-de-chaussée, 2-6-32 Tenjin, Chuo-ku (福岡市中央区天神2-6-32)",
+  "horaires": "Tous les jours : 20 h à 4 h.",
+  "ouvert": {
+   "1": [
+    [
+     1200,
+     1680
+    ]
+   ],
+   "2": [
+    [
+     1200,
+     1680
+    ]
+   ],
+   "3": [
+    [
+     1200,
+     1680
+    ]
+   ],
+   "4": [
+    [
+     1200,
+     1680
+    ]
+   ],
+   "5": [
+    [
+     1200,
+     1680
+    ]
+   ],
+   "6": [
+    [
+     1200,
+     1680
+    ]
+   ],
+   "0": [
+    [
+     1200,
+     1680
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJxRc8hPeRQTURxivlkC3eULw\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 33,
+  "top": true,
+  "couvert": true,
+  "theme": "chicha"
+ },
+ {
+  "id": "top_fukuoka_chills",
+  "nom": "Shisha Lounge Chills",
+  "natif": "SHISHA LOUNGE CHILLS",
+  "cat": "sortir",
+  "catTxt": "Bar à chicha",
+  "lat": 33.585064,
+  "lon": 130.3954961,
+  "texte": "Ce salon à chicha de Kego, au sud de Tenjin, est souvent cité comme le meilleur de Fukuoka pour la qualité du tabac. Le personnel compose des mélanges sur mesure. Le quartier est plus calme que Daimyo.",
+  "adresse": "KN Bldg, 2e étage, 1-15-53 Kego, Chuo-ku (福岡市中央区警固1-15-53)",
+  "horaires": "Tous les jours : 18 h à 3 h.",
+  "ouvert": {
+   "1": [
+    [
+     1080,
+     1620
+    ]
+   ],
+   "2": [
+    [
+     1080,
+     1620
+    ]
+   ],
+   "3": [
+    [
+     1080,
+     1620
+    ]
+   ],
+   "4": [
+    [
+     1080,
+     1620
+    ]
+   ],
+   "5": [
+    [
+     1080,
+     1620
+    ]
+   ],
+   "6": [
+    [
+     1080,
+     1620
+    ]
+   ],
+   "0": [
+    [
+     1080,
+     1620
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJpQgA3raRQTURLFC3j2cCQgM\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 34,
+  "top": true,
+  "couvert": true,
+  "theme": "chicha"
  }
 ]

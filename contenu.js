@@ -81,7 +81,7 @@ export const JOURS = [
 // Région de Fukuoka : lieux, textes repris de la conversation avec ChatGPT, sauf mention contraire.
 export const FUKUOKA = [
   { id: "hakata", nom: "Hakata", natif: "博多", cat: "base", photo: "kushida", catTxt: "Votre base",
-    texte: "Votre hôtel est à Fukuoka, mais son adresse n'apparaît pas dans la conversation. Le vieux quartier de Hakata relie à pied les temples Shōfuku-ji et Tōchō-ji et le sanctuaire Kushida-jinja.",
+    texte: "Votre logement est l'appartement Portside Avenue Hakata, au 12-3 Tsumashōji (福岡市博多区対馬小路12-3), entre Hakata et Tenjin, près du port. L'entrée se fait seule avec un code, sans personne à l'accueil d'après les avis. Le vieux quartier de Hakata relie à pied les temples Shōfuku-ji et Tōchō-ji et le sanctuaire Kushida-jinja.",
     acces: "Tous les trajets ci-dessous partent de la gare de Hakata.", foule: "Animé le soir, calme dans le vieux quartier." },
   { id: "kokusai_center", nom: "Sumo, tournoi de Kyushu", natif: "九州場所", cat: "sortie", photo: "kokusai_center", catTxt: "Sortie",
     texte: "Le tournoi de sumo de Kyushu a lieu au Fukuoka Kokusai Center du 8 au 22 novembre 2026, donc pendant vos trois jours à Fukuoka.",

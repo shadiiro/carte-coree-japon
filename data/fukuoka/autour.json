@@ -5597,5 +5597,456 @@
   "couvert": true,
   "theme": "jeu",
   "sorte": "sport"
+ },
+ {
+  "id": "top_fukuoka_culture_arts",
+  "nom": "Culture Arts",
+  "natif": "カルチャーアーツ",
+  "cat": "acheter",
+  "catTxt": "Jeux vidéo rétro, boutique cachée",
+  "lat": 33.5932722,
+  "lon": 130.395327,
+  "texte": "Cette minuscule boutique de jeux vidéo rétro se cache au 3e étage d'un immeuble brun du nord de Tenjin, avec une petite enseigne facile à rater. Consoles et jeux anciens, en boîte ou sans boîte, remplissent les rayons du sol au plafond. Les allées sont très étroites, donc mieux vaut laisser les sacs à l'entrée, et la détaxe n'y est pas proposée.",
+  "adresse": "Scole Daini Tenjin, 3e étage, salle 306, 3-6-24 Tenjin, Chuo-ku (福岡市中央区天神3-6-24 スコーレ第2天神 3階 306)",
+  "horaires": "Tous les jours sauf le lundi et le jeudi : 12 h à 19 h.",
+  "ouvert": {
+   "2": [
+    [
+     720,
+     1140
+    ]
+   ],
+   "3": [
+    [
+     720,
+     1140
+    ]
+   ],
+   "5": [
+    [
+     720,
+     1140
+    ]
+   ],
+   "6": [
+    [
+     720,
+     1140
+    ]
+   ],
+   "0": [
+    [
+     720,
+     1140
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJHxo0s-6RQTURj6GMgQXB7xc\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 5,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop",
+  "fermeture": {
+   "jours": [
+    1,
+    4
+   ],
+   "texte": "Fermé le lundi et le jeudi",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_surugaya_toreka",
+  "nom": "Surugaya Shintencho, cartes",
+  "natif": "駿河屋 新天町店 トレカ館",
+  "cat": "acheter",
+  "catTxt": "Cartes rares d'occasion",
+  "lat": 33.5902166,
+  "lon": 130.3978275,
+  "texte": "Cette boutique de cartes de la chaîne Surugaya se trouve dans la galerie couverte de Shintencho, au cœur de Tenjin. Les visiteurs y trouvent des cartes anciennes introuvables ailleurs, à des prix corrects d'après les avis.",
+  "adresse": "2-8-215 Tenjin, Chuo-ku (福岡市中央区天神2-8-215)",
+  "horaires": "Lundi au jeudi : 14 h à 20 h 30. Vendredi au dimanche : 12 h à 20 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     840,
+     1230
+    ]
+   ],
+   "2": [
+    [
+     840,
+     1230
+    ]
+   ],
+   "3": [
+    [
+     840,
+     1230
+    ]
+   ],
+   "4": [
+    [
+     840,
+     1230
+    ]
+   ],
+   "5": [
+    [
+     720,
+     1230
+    ]
+   ],
+   "6": [
+    [
+     720,
+     1230
+    ]
+   ],
+   "0": [
+    [
+     720,
+     1230
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ8_hFa6CRQTURaglw0iOhfWc\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 8,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_surugaya_marui",
+  "nom": "Surugaya Hakata Marui",
+  "natif": "駿河屋 博多マルイ店",
+  "cat": "acheter",
+  "catTxt": "Figurines, maquettes et jeux d'occasion",
+  "lat": 33.5889365,
+  "lon": 130.4195313,
+  "texte": "Cette boutique Surugaya occupe le 6e étage du grand magasin Marui, quatre étages au-dessus du Pokémon Center. Elle vend des figurines, des maquettes Gundam, des jeux vidéo et des jeux de société d'occasion, dont des maquettes difficiles à trouver.",
+  "adresse": "Hakata Marui, 6e étage, 9-1 Hakataekichuogai, Hakata-ku (福岡市博多区博多駅中央街9-1 博多マルイ 6階)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ50djFFqRQTURbB5I6k8V4w4\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 7,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_lashinbang_marui",
+  "nom": "Lashinbang Hakata Marui",
+  "natif": "らしんばん 博多マルイ店",
+  "cat": "acheter",
+  "catTxt": "Objets d'anime d'occasion",
+  "lat": 33.5891138,
+  "lon": 130.4192547,
+  "texte": "Cette petite boutique Lashinbang du 7e étage de Marui vend des figurines, des objets d'anime et des cartes Pokémon et One Piece d'occasion. Elle se visite dans la foulée du Pokémon Center et de Surugaya, dans le même bâtiment.",
+  "adresse": "Hakata Marui, 7e étage, 9-1 Hakataekichuogai, Hakata-ku (福岡市博多区博多駅中央街9-1 博多マルイ 7階)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJZR7Cbl2RQTUROZWbEe06Juw\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 14,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_mangasouko_tsukiguma",
+  "nom": "Manga Souko Tsukiguma",
+  "natif": "マンガ倉庫 月隈店",
+  "cat": "acheter",
+  "catTxt": "Grand entrepôt d'occasion",
+  "lat": 33.5804485,
+  "lon": 130.4746251,
+  "texte": "Ce grand magasin d'occasion de la chaîne Manga Souko occupe deux étages entiers, à l'est de l'aéroport, loin des quartiers touristiques. Figurines, jouets, jeux vidéo et objets d'anime d'occasion y sont très nombreux, avec deux zones de machines à pinces. Un client habitué le décrit comme le plus fourni de la ville en figurines d'occasion, et l'accès le plus simple est le taxi.",
+  "adresse": "3-18-1 Higashitsukiguma, Hakata-ku (福岡市博多区東月隈3-18-1)",
+  "horaires": "Tous les jours : 10 h à 22 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1320
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJkeT4JI6bQTURcmJNTpVg_dE\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 6,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_surugaya_giga",
+  "nom": "Surugaya GIGA Fukuoka Kasuga",
+  "natif": "駿河屋GIGA 福岡春日店",
+  "cat": "acheter",
+  "catTxt": "Très grand magasin d'occasion",
+  "lat": 33.5200977,
+  "lon": 130.4514282,
+  "texte": "Ce magasin GIGA est le format le plus grand de la chaîne Surugaya, à Kasuga, au sud de Fukuoka. Il vend des jeux vidéo rétro, des figurines, des jouets et des objets de collection d'occasion, et il met en vente en ligne ses pièces rares. La boutique Hard Off et Hobby Off de Shirouzu est à environ 1,2 km.",
+  "adresse": "8-1-3 Noborimachi, Kasuga (春日市昇町8-1-3)",
+  "horaires": "Tous les jours : 10 h à 21 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1290
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1290
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1290
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1290
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1290
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1290
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1290
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJZ3kDVwCXQTURzqN8DHvi-mc\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller. Pièces rares d'après la page de la boutique sur le site de Surugaya, lue le 15 novembre 2026.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 6,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_hobbyoff_kasuga",
+  "nom": "Hard Off et Hobby Off Kasuga Shirouzu",
+  "natif": "ハードオフ・ホビーオフ 春日白水店",
+  "cat": "acheter",
+  "catTxt": "Électronique, jouets et rayon des invendus",
+  "lat": 33.5092061,
+  "lon": 130.4496045,
+  "texte": "Ce magasin réunit Hard Off au rez-de-chaussée, pour l'électronique, les disques et les jeux, et Hobby Off à l'étage, pour les figurines, les jouets et les maquettes. Le rayon junk, ces objets vendus en l'état à très bas prix, y est bien fourni d'après les avis. Il se visite avec Surugaya GIGA, à environ 1,2 km.",
+  "adresse": "1-93 Shirouzugaoka, Kasuga (春日市白水ヶ丘1-93)",
+  "horaires": "Tous les jours : 10 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJLcJqP06XQTURnLVlL2PwJ5U\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 15,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
  }
 ]

@@ -1728,9 +1728,54 @@
   "notoriete": 0,
   "photo": false,
   "proche": true,
-  "source": "Texte d'après Wikivoyage en anglais, article « Fukuoka », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller.",
+  "source": "Texte d'après Wikivoyage en anglais, article « Fukuoka », traduit en français. Position : Wikivoyage. Wikivoyage n'est pas toujours à jour : vérifie dans Google Maps que le lieu est encore ouvert avant d'y aller. Horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ48-N8beRQTURyQDOkx2DU2s\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026.",
   "niveau": 3,
-  "priorite": 700
+  "priorite": 700,
+  "horaires": "Tous les jours : 9 h 30 à 22 h.",
+  "ouvert": {
+   "1": [
+    [
+     570,
+     1320
+    ]
+   ],
+   "2": [
+    [
+     570,
+     1320
+    ]
+   ],
+   "3": [
+    [
+     570,
+     1320
+    ]
+   ],
+   "4": [
+    [
+     570,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     570,
+     1320
+    ]
+   ],
+   "6": [
+    [
+     570,
+     1320
+    ]
+   ],
+   "0": [
+    [
+     570,
+     1320
+    ]
+   ]
+  }
  },
  {
   "id": "sug_fukuoka_kakavaka",
@@ -4540,8 +4585,20 @@
     "titre": "Dans le centre LaLaport",
     "lignes": [
      [
-      "Gundam Side-F",
-      "Boutique officielle de maquettes Gundam au 4e étage, avec une petite salle de jeux Gundam à côté, ouverte de 10 h à 21 h."
+      "Gundam Park Fukuoka",
+      "Espace Gundam ouvert de 10 h à 21 h, avec la boutique Gundam Side-F, ses maquettes réservées à ce lieu et une petite salle de jeux Gundam."
+     ],
+     [
+      "VS PARK",
+      "Salle de jeux sportifs inspirés des jeux télévisés, au 4e étage."
+     ],
+     [
+      "Cinéma et restaurants",
+      "Un cinéma TOHO et l'une des plus grandes zones de restaurants de Kyushu."
+     ],
+     [
+      "Spo-Cha de Round1",
+      "À environ 2 km du centre, pour finir la journée par du sport."
      ]
     ]
    }
@@ -4890,5 +4947,655 @@
   "top": true,
   "couvert": true,
   "theme": "chicha"
+ },
+ {
+  "id": "top_fukuoka_hareruya2",
+  "nom": "Hareruya 2 Fukuoka",
+  "natif": "晴れる屋2 福岡店",
+  "cat": "acheter",
+  "catTxt": "Cartes Pokémon",
+  "lat": 33.5889008,
+  "lon": 130.3959765,
+  "texte": "Cette boutique de la chaîne Hareruya 2 ne vend que des cartes Pokémon, à l'unité comme en paquets scellés. Elle se trouve au 2e étage d'un immeuble de Daimyo, à quelques minutes à pied de C-labo et de Mandarake. Les cartes à l'unité sont rangées par type, ce qui rend la recherche rapide.",
+  "adresse": "Bpr Square Tenjin Daimyo, 2e étage, 2-1-53 Daimyo, Chuo-ku (福岡市中央区大名2-1-53)",
+  "horaires": "Lundi au vendredi : 12 h à 21 h. Samedi et dimanche : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     720,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     720,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     720,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     720,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     720,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJEfTe_36RQTUR60yRt7CcWKA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 9,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_doragoon",
+  "nom": "Dora-goon Hakata",
+  "natif": "ドラグーン博多",
+  "cat": "acheter",
+  "catTxt": "Cartes à collectionner",
+  "lat": 33.5925871,
+  "lon": 130.4175055,
+  "texte": "Cette boutique de cartes à collectionner se trouve à moins de 10 minutes à pied de la gare de Hakata et du Pokémon Center. Elle vend des cartes Pokémon, One Piece, Yu-Gi-Oh! et Gundam, à l'unité et en paquets scellés.",
+  "adresse": "4e étage, 1-3-22 Hakataekimae, Hakata-ku (福岡市博多区博多駅前1-3-22)",
+  "horaires": "Lundi au vendredi : 12 h à 22 h. Samedi et dimanche : 10 h à 22 h.",
+  "ouvert": {
+   "1": [
+    [
+     720,
+     1320
+    ]
+   ],
+   "2": [
+    [
+     720,
+     1320
+    ]
+   ],
+   "3": [
+    [
+     720,
+     1320
+    ]
+   ],
+   "4": [
+    [
+     720,
+     1320
+    ]
+   ],
+   "5": [
+    [
+     720,
+     1320
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1320
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1320
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJK7CzixCRQTURIoJBhZsnk04\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 10,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_clabo",
+  "nom": "C-labo Fukuoka Tenjin",
+  "natif": "カードラボ 福岡天神店",
+  "cat": "acheter",
+  "catTxt": "Cartes à collectionner",
+  "lat": 33.5903166,
+  "lon": 130.3960401,
+  "texte": "Cette boutique de la chaîne Card Labo vend des cartes Pokémon et One Piece à l'unité et en paquets. Elle se trouve à Tenjin, à quelques minutes à pied de Hareruya 2. Les prix des cartes à l'unité sont à comparer avec ceux de Hareruya 2 avant d'acheter.",
+  "adresse": "JMF Bldg Tenjin Nishidori 01, 2e étage, 2-8-22 Tenjin, Chuo-ku (福岡市中央区天神2-8-22)",
+  "horaires": "Lundi au vendredi : 11 h à 20 h. Samedi et dimanche : 10 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJVVUV6ZGRQTURDcAn4maM-J8\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 26,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_bookoff",
+  "nom": "Book Off Super Bazaar Mina Tenjin",
+  "natif": "BOOKOFF SUPER BAZAAR ミーナ天神",
+  "cat": "acheter",
+  "catTxt": "Occasion : mangas, jeux, figurines",
+  "lat": 33.5929742,
+  "lon": 130.3983736,
+  "texte": "Ce grand magasin d'occasion de la chaîne Book Off occupe le 7e étage du centre Mina Tenjin. Il vend des mangas, des jeux vidéo, des figurines, des cartes à collectionner et des sacs de marque d'occasion. Une salle de jeux GiGO se trouve au même étage.",
+  "adresse": "Mina Tenjin, 7e étage, 4-3-8 Tenjin, Chuo-ku (福岡市中央区天神4-3-8)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJMZJO6P-RQTURJqGqoxvbsng\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 12,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_lashinbang",
+  "nom": "Lashinbang Fukuoka Tenjin",
+  "natif": "らしんばん 福岡天神店",
+  "cat": "acheter",
+  "catTxt": "Figurines d'occasion",
+  "lat": 33.593365,
+  "lon": 130.3975174,
+  "texte": "Cette boutique de la chaîne Lashinbang vend des figurines et des objets d'anime d'occasion sur deux étages. Elle se trouve au nord de Tenjin, à deux minutes à pied du centre Mina Tenjin. Les pièces les plus rares sont rangées dans les vitrines près de la caisse.",
+  "adresse": "Nakamuraya Daiichi Bldg, 2e et 4e étages, 3-16-21 Tenjin, Chuo-ku (福岡市中央区天神3-16-21)",
+  "horaires": "Lundi au vendredi : 10 h à 21 h. Samedi et dimanche : 10 h à 19 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1170
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1170
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJs7Y66ZGRQTURC9kvOfdpq1M\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 13,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_bic_tenjin",
+  "nom": "Bic Camera Tenjin 1",
+  "natif": "ビックカメラ 天神1号館",
+  "cat": "acheter",
+  "catTxt": "Électronique et téléphones",
+  "lat": 33.5875219,
+  "lon": 130.4007108,
+  "texte": "Ce grand magasin d'électronique de Tenjin vend des téléphones sans abonnement, des ordinateurs et des accessoires. Bic Camera ne prend pas de frais sur le remboursement de la taxe aux touristes depuis le 1er novembre 2026.",
+  "adresse": "1-25-1 Imaizumi, Chuo-ku (福岡市中央区今泉1-25-1)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJk0nzrJqRQTURDQH3sM66ViA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 40,
+  "top": true,
+  "couvert": true
+ },
+ {
+  "id": "top_fukuoka_iosys",
+  "nom": "IOSYS Fukuoka Tenjin",
+  "natif": "イオシス 福岡天神店",
+  "cat": "acheter",
+  "catTxt": "Téléphones neufs et d'occasion",
+  "lat": 33.5899758,
+  "lon": 130.3976157,
+  "texte": "Cette boutique de la chaîne IOSYS vend des téléphones d'occasion et des téléphones neufs sans abonnement, dont des modèles OPPO. Elle était le plus grand magasin de la chaîne à son ouverture en 2019.",
+  "adresse": "2-8-228 Tenjin, Chuo-ku (福岡市中央区天神2-8-228)",
+  "horaires": "Tous les jours sauf le mardi : 11 h à 19 h 30.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1170
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1170
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1170
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1170
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1170
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1170
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJr0TYgAeRQTURP7Hii14lC48\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 41,
+  "top": true,
+  "couvert": true,
+  "fermeture": {
+   "jours": [
+    2
+   ],
+   "texte": "Fermé le mardi",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_donki_nakasu",
+  "nom": "Don Quijote Nakasu",
+  "natif": "ドン・キホーテ 中洲店",
+  "cat": "acheter",
+  "catTxt": "Grand bazar ouvert jour et nuit",
+  "lat": 33.5939851,
+  "lon": 130.4058456,
+  "texte": "Ce magasin Don Quijote de Nakasu est ouvert jour et nuit, à une dizaine de minutes à pied de votre logement. Les valises de la marque maison Jōnetsu Kakaku y sont vendues, comme dans les autres magasins de la chaîne.",
+  "adresse": "3-7-24 Nakasu, Hakata-ku (福岡市博多区中洲3-7-24)",
+  "horaires": "Tous les jours : 24 heures sur 24.",
+  "ouvert": {
+   "1": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "2": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "3": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "4": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "5": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "6": [
+    [
+     0,
+     1440
+    ]
+   ],
+   "0": [
+    [
+     0,
+     1440
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJU6_Qh5SRQTURhTacOuDrmZo\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 42,
+  "top": true,
+  "couvert": true,
+  "sorte": "magasin"
+ },
+ {
+  "id": "top_fukuoka_hands_hakata",
+  "nom": "Hands Hakata",
+  "natif": "ハンズ博多店",
+  "cat": "acheter",
+  "catTxt": "Objets du quotidien et valises",
+  "lat": 33.5907425,
+  "lon": 130.4200615,
+  "texte": "Ce grand magasin d'objets du quotidien occupe cinq étages de la gare de Hakata. Il vend des valises de plusieurs marques, du matériel de voyage, de la papeterie et des cosmétiques.",
+  "adresse": "Amu Plaza Hakata, 1er au 5e étage, 1-1 Hakataekichuogai, Hakata-ku (福岡市博多区博多駅中央街1-1)",
+  "horaires": "Tous les jours : 10 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJBVmI6seRQTURMQyRWEJoJCA\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 43,
+  "top": true,
+  "couvert": true,
+  "sorte": "magasin"
+ },
+ {
+  "id": "top_fukuoka_vs_park",
+  "nom": "VS PARK de LaLaport",
+  "natif": "VS PARK WITH G ららぽーと福岡店",
+  "cat": "faire",
+  "catTxt": "Jeux sportifs façon télévision",
+  "lat": 33.5659,
+  "lon": 130.4409,
+  "texte": "Cette salle de jeux sportifs de Bandai Namco propose plus de 24 épreuves inspirées des jeux télévisés, au 4e étage de LaLaport. Les adultes y jouent aussi, et un forfait à volonté est vendu en nombre limité. La statue du Gundam se trouve devant le même centre.",
+  "adresse": "LaLaport Fukuoka, 4e étage, 6-23-1 Naka, Hakata-ku (福岡市博多区那珂6-23-1)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ4_0WFuiRQTURxlN32OlD-ck\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller. Horaires de la salle non relevés : ce sont ceux du centre LaLaport. Contenu d'après la fiche de la salle sur Iko-yo, lue le 15 novembre 2026.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 35,
+  "top": true,
+  "couvert": true,
+  "theme": "jeu",
+  "sorte": "sport"
  }
 ]

@@ -6048,5 +6048,454 @@
   "top": true,
   "couvert": true,
   "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_komehyo_daimyo",
+  "nom": "KOMEHYO Fukuoka Tenjin",
+  "natif": "KOMEHYO FUKUOKA TENJIN",
+  "cat": "acheter",
+  "catTxt": "Luxe d'occasion, sacs, montres, vêtements",
+  "lat": 33.5885497,
+  "lon": 130.3963083,
+  "texte": "Ce magasin de la chaîne Komehyo, ouvert en mars 2026, est le plus grand de la marque à Kyushu, avec plus de 3 000 articles de luxe d'occasion sur deux étages. Les sacs, les bijoux, les montres et les vêtements de grandes maisons y sont réunis.",
+  "adresse": "FPG Links Daimyo II, rez-de-chaussée et 1er étage, 1-12-60 Daimyo, Chuo-ku (福岡市中央区大名1-12-60)",
+  "horaires": "Tous les jours : 11 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ-UL_u0iRQTURxLRmn2Zs-AM\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller. Taille et contenu d'après la page d'ouverture du site de Komehyo et Walkerplus, lues le 15 novembre 2026.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 11,
+  "top": true,
+  "couvert": true
+ },
+ {
+  "id": "top_fukuoka_ragtag",
+  "nom": "RAGTAG Fukuoka",
+  "natif": "RAGTAG 福岡店",
+  "cat": "acheter",
+  "catTxt": "Vêtements de créateurs d'occasion",
+  "lat": 33.587092,
+  "lon": 130.3961036,
+  "texte": "Cette boutique de la chaîne RAGTAG vend des vêtements, des chaussures et des sacs de créateurs d'occasion, rangés avec soin. L'étage est réservé aux grandes maisons, et des clients y citent des pièces Gucci et Saint Laurent.",
+  "adresse": "Neo Heights Daimyo II, rez-de-chaussée et 1er étage, 1-15-31 Daimyo, Chuo-ku (福岡市中央区大名1-15-31)",
+  "horaires": "Tous les jours : 11 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJocZ2-4WRQTURAHSzhLmmf-8\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 10,
+  "top": true,
+  "couvert": true
+ },
+ {
+  "id": "top_fukuoka_okura",
+  "nom": "OKURA Fukuoka Tenjin",
+  "natif": "OKURA 福岡天神店",
+  "cat": "acheter",
+  "catTxt": "Sacs et montres de luxe d'occasion",
+  "lat": 33.5868307,
+  "lon": 130.3991501,
+  "texte": "Cette petite boutique d'Imaizumi garde ses sacs et ses montres de luxe d'occasion sous vitrine, donc il faut demander pour les voir. Les clients y citent un grand choix de sacs Hermès et des pièces Chanel anciennes, avec une remise qui grandit avec le nombre d'articles.",
+  "adresse": "1-21-10 Imaizumi, Chuo-ku (福岡市中央区今泉1-21-10)",
+  "horaires": "Tous les jours : 11 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJU6PjyZuRQTUREY0Sn75pXJg\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 16,
+  "top": true,
+  "couvert": true
+ },
+ {
+  "id": "top_fukuoka_hedy",
+  "nom": "Hedy Vintage Fukuoka",
+  "natif": "Hedy 福岡店",
+  "cat": "acheter",
+  "catTxt": "Sacs de luxe vintage",
+  "lat": 33.5865179,
+  "lon": 130.3996678,
+  "texte": "Cette boutique vend des sacs et des accessoires de luxe vintage, comme Louis Vuitton et Prada, en bon état. Son site montre le stock avant la visite.",
+  "adresse": "Koei Bldg 102, 1-13-17 Imaizumi, Chuo-ku (福岡市中央区今泉1-13-17)",
+  "horaires": "Tous les jours : 11 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJb1TntKORQTURBmHTVyAxiqM\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 17,
+  "top": true,
+  "couvert": true
+ },
+ {
+  "id": "top_fukuoka_daikokuya",
+  "nom": "Daikokuya Tenjin",
+  "natif": "大黒屋 福岡天神本店",
+  "cat": "acheter",
+  "catTxt": "Montres et sacs de luxe d'occasion",
+  "lat": 33.5895418,
+  "lon": 130.3987234,
+  "texte": "Cette boutique de la chaîne Daikokuya vend des montres de luxe d'occasion au rez-de-chaussée et des sacs aux étages. Les clients y citent des montres anciennes en bon état, comme une Omega Speedmaster.",
+  "adresse": "2-10-2 Tenjin, Chuo-ku (福岡市中央区天神2-10-2)",
+  "horaires": "Tous les jours : 11 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJK9ijoo-RQTURm61a1KkxPCM\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 18,
+  "top": true,
+  "couvert": true
+ },
+ {
+  "id": "top_fukuoka_hightimes",
+  "nom": "HIGHTIMES VINTAGE",
+  "natif": "HIGHTIMES VINTAGE",
+  "cat": "acheter",
+  "catTxt": "Bijoux et accessoires vintage",
+  "lat": 33.5869199,
+  "lon": 130.3964023,
+  "texte": "Cette petite boutique de Daimyo est spécialisée dans les bijoux vintage, avec aussi des sacs, des ceintures et des montres Seiko anciennes. Des clients y ont trouvé des boucles d'oreilles Chanel et une bague Tiffany.",
+  "adresse": "Neo Heights Daimyo, rez-de-chaussée B, 1-15-7 Daimyo, Chuo-ku (福岡市中央区大名1-15-7)",
+  "horaires": "Tous les jours sauf le mercredi : 11 h à 19 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1140
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1140
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1140
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1140
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1140
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1140
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ7fwpNwCRQTURXzDFIjUivog\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 19,
+  "top": true,
+  "couvert": true,
+  "fermeture": {
+   "jours": [
+    3
+   ],
+   "texte": "Fermé le mercredi",
+   "source": "fiche"
+  }
+ },
+ {
+  "id": "top_fukuoka_2ndstreet_daimyo",
+  "nom": "2nd Street Daimyo",
+  "natif": "セカンドストリート 大名店",
+  "cat": "acheter",
+  "catTxt": "Friperie de marques",
+  "lat": 33.5882037,
+  "lon": 130.3953317,
+  "texte": "Cette friperie de la chaîne 2nd Street classe ses vêtements, ses chaussures et ses sacs par marque et par style, sur deux étages. Des clients la décrivent comme l'une des 2nd Street les plus riches en pièces de luxe, mais à des prix élevés.",
+  "adresse": "1-12-49 Daimyo, Chuo-ku (福岡市中央区大名1-12-49)",
+  "horaires": "Tous les jours : 11 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     660,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     660,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     660,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     660,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     660,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     660,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     660,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJQfICdIaRQTURrLiRDmZqPZI\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 24,
+  "top": true,
+  "couvert": true
  }
 ]

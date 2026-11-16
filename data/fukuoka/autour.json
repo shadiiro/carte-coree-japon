@@ -6497,5 +6497,199 @@
   "priorite": 24,
   "top": true,
   "couvert": true
+ },
+ {
+  "id": "top_fukuoka_saga_chateau",
+  "nom": "Château de Saga, musée d'histoire",
+  "natif": "佐賀県立佐賀城本丸歴史館",
+  "cat": "voir",
+  "catTxt": "Château et histoire",
+  "lat": 33.245348,
+  "lon": 130.302703,
+  "texte": "Ce musée occupe une partie reconstruite du palais des seigneurs de Saga, sur le site de l'ancien château. Il présente le rôle de Saga à la fin de l'époque d'Edo, avec un audioguide en anglais, en coréen et en chinois. L'entrée se fait contre un don libre. À cinq minutes à pied, la salle panoramique du dernier étage de la préfecture de Saga accueille chaque soir des projections d'images.",
+  "adresse": "2-18-1 Jonai, Saga (佐賀市城内2-18-1)",
+  "horaires": "Tous les jours : 9 h 30 à 18 h.",
+  "ouvert": {
+   "1": [
+    [
+     570,
+     1080
+    ]
+   ],
+   "2": [
+    [
+     570,
+     1080
+    ]
+   ],
+   "3": [
+    [
+     570,
+     1080
+    ]
+   ],
+   "4": [
+    [
+     570,
+     1080
+    ]
+   ],
+   "5": [
+    [
+     570,
+     1080
+    ]
+   ],
+   "6": [
+    [
+     570,
+     1080
+    ]
+   ],
+   "0": [
+    [
+     570,
+     1080
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJHw6CCXzKQTURbm3sc9LmcuQ\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller. Horaires et entrée d'après la fiche de l'office de tourisme d'ANA, lue le 16 novembre 2026.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 5,
+  "top": true,
+  "couvert": true,
+  "sorte": "temple"
+ },
+ {
+  "id": "top_fukuoka_bookoff_plus_saga",
+  "nom": "Book Off Plus Saga Nambu Bypass",
+  "natif": "BOOKOFF PLUS 佐賀南部バイパス店",
+  "cat": "acheter",
+  "catTxt": "Grand magasin d'occasion",
+  "lat": 33.2390376,
+  "lon": 130.3007156,
+  "texte": "Ce grand Book Off du sud de Saga vend aussi des vêtements et de l'électronique, en plus des mangas, des figurines et des cartes. Des clients y citent le plus grand choix de cartes Pokémon anciennes et récentes qu'ils aient vu à Kyushu. Le rayon de maquettes Gundam est petit, mais quelques boîtes y sont moins chères qu'ailleurs.",
+  "adresse": "297 Fukuro, Honjomachi, Saga (佐賀市本庄町袋297)",
+  "horaires": "Tous les jours : 10 h à 20 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1200
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1200
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJ3X5vU4bKQTUROBA3vAmphZI\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 6,
+  "top": true,
+  "couvert": true,
+  "sorte": "pop"
+ },
+ {
+  "id": "top_fukuoka_yamada_honjo",
+  "nom": "Yamada Denki Honjō",
+  "natif": "ヤマダデンキ 佐賀本庄店",
+  "cat": "acheter",
+  "catTxt": "Électronique et téléphones neufs",
+  "lat": 33.2390239,
+  "lon": 130.2928144,
+  "texte": "Ce grand magasin d'électronique est à environ 700 mètres de Book Off Plus Saga. Il vend des téléphones neufs, des ordinateurs, de l'électroménager et des accessoires.",
+  "adresse": "253-3 Honjo, Honjomachi, Saga (佐賀市本庄町本庄253-3)",
+  "horaires": "Tous les jours : 10 h à 21 h.",
+  "ouvert": {
+   "1": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "2": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "3": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "4": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "5": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "6": [
+    [
+     600,
+     1260
+    ]
+   ],
+   "0": [
+    [
+     600,
+     1260
+    ]
+   ]
+  },
+  "source": "Texte écrit pour cette carte. Adresse, position et horaires d'après <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJhQd_FYzKQTURYRGXLk8xpa0\" target=\"_blank\" rel=\"noopener\">sa fiche Google Maps</a>, lue le 14 novembre 2026. Les horaires restent à vérifier avant d'y aller.",
+  "prevu": "Ajouté pour votre séjour à Fukuoka, d'après vos goûts.",
+  "photo": false,
+  "proche": true,
+  "niveau": 2,
+  "priorite": 12,
+  "top": true,
+  "couvert": true
  }
 ]
